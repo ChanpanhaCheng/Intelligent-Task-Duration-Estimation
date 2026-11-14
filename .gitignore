@@ -1,0 +1,40 @@
+# Local system files
+.DS_Store
+Thumbs.db
+
+# Local Codex specialist setup
+/sub-agent/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Web dependencies and generated output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# Generated ML outputs
+/artifacts/
+/runs/
+/mlruns/
+*.joblib
+*.pkl
