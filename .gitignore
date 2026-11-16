@@ -4,6 +4,8 @@ Thumbs.db
 
 # Local Codex specialist setup
 /sub-agent/
+/AGENTS.md
+/.codex/config.toml
 
 # Python environments and caches
 .venv/
