@@ -1,6 +1,6 @@
-﻿title,Description,task_type,Priority,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
-URL constructor is deprecated in Java 20,https://inside.java/2023/02/15/quality-heads-up/,Improvement,Minor,6.00810527,2024-01-29T09:22:06.637Z,0.04310545,OFBIZ-12881,A0021,assignee,47,2024-01-26T08:03:15.000Z,2024-01-29T10:24:10.948Z,Implemented
-Apply orderItemAttributes when adding to Shoppingcart from addToCartFromOrder,"When adding products with an attribute, these are not transferred via the addToCartFromOrder function",Bug,Minor,13.92366676,2024-01-31T14:27:47.538Z,113.10996220,OFBIZ-12886,A0027,project,123,2024-01-31T14:27:34.000Z,2024-05-23T17:06:08.272Z,Fixed
+﻿title,Description,task_type,Priority,priority_value,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
+URL constructor is deprecated in Java 20,https://inside.java/2023/02/15/quality-heads-up/,Improvement,Low,2,6.00810527,2024-01-29T09:22:06.637Z,0.04310545,OFBIZ-12881,A0021,assignee,47,2024-01-26T08:03:15.000Z,2024-01-29T10:24:10.948Z,Implemented
+Apply orderItemAttributes when adding to Shoppingcart from addToCartFromOrder,"When adding products with an attribute, these are not transferred via the addToCartFromOrder function",Bug,Low,2,13.92366676,2024-01-31T14:27:47.538Z,113.10996220,OFBIZ-12886,A0027,project,123,2024-01-31T14:27:34.000Z,2024-05-23T17:06:08.272Z,Fixed
 Upgrade node.js from v16.13.1 to v20,"We currently use Node.js 16 during the OFBiz build:
  * to retrieve javascript modules (resolved using NPM)
  * to build react components as part of the example plugin.
@@ -8,9 +8,9 @@ Upgrade node.js from v16.13.1 to v20,"We currently use Node.js 16 during the OFB
 
 Node 16 is now end-of-life ([https://github.com/nodejs/Release/#end-of-life-releases)]
 
-Explore upgrading OFBiz usage of Node.js to version 20.",Task,Minor,5.63304160,2024-02-16T14:21:40.366Z,1.07413581,OFBIZ-12901,A0010,assignee,34,2024-02-15T18:05:28.000Z,2024-02-17T16:08:25.700Z,Implemented
-Transform DOCKER.md into DOCKER.adoc ,Transform DOCKER.md into DOCKER.adoc in order to include it in developer-manual.adoc and in README.adoc.,Improvement,Minor,5.88383445,2024-02-22T17:33:06.280Z,0.51976709,OFBIZ-12905,A0021,assignee,48,2024-02-19T09:01:36.000Z,2024-02-23T06:01:34.157Z,Implemented
-Include DOCKER.adoc in developer-manual.adoc and in README.adoc.,This will ease use of Docker by OFBiz users,Task,Minor,5.77436368,2024-02-23T06:03:53.228Z,0.16939588,OFBIZ-12911,A0021,assignee,49,2024-02-23T06:03:43.000Z,2024-02-23T10:07:49.032Z,Implemented
+Explore upgrading OFBiz usage of Node.js to version 20.",Task,Low,2,5.63304160,2024-02-16T14:21:40.366Z,1.07413581,OFBIZ-12901,A0010,assignee,34,2024-02-15T18:05:28.000Z,2024-02-17T16:08:25.700Z,Implemented
+Transform DOCKER.md into DOCKER.adoc ,Transform DOCKER.md into DOCKER.adoc in order to include it in developer-manual.adoc and in README.adoc.,Improvement,Low,2,5.88383445,2024-02-22T17:33:06.280Z,0.51976709,OFBIZ-12905,A0021,assignee,48,2024-02-19T09:01:36.000Z,2024-02-23T06:01:34.157Z,Implemented
+Include DOCKER.adoc in developer-manual.adoc and in README.adoc.,This will ease use of Docker by OFBiz users,Task,Low,2,5.77436368,2024-02-23T06:03:53.228Z,0.16939588,OFBIZ-12911,A0021,assignee,49,2024-02-23T06:03:43.000Z,2024-02-23T10:07:49.032Z,Implemented
 PDF (Apache FOP) and CSV drop-down rendering lists all drop-down options,"Rendering of drop-down field widgets for FOP and CSV screens incorrectly includes all options available for that drop-down rather than the current value for that field.
 
 This behaviour can be observed in the Balance Sheet PDF report from the accounting application. Comparing demo stable to trunk:
@@ -23,7 +23,7 @@ Proposed fix is to only render the description for a drop-down field's current v
  * CsvFormMacroLibrary.ftl
  * FoFormMacroLibrary.ftl
 
- ",Bug,Minor,5.50278715,2024-02-25T17:34:13.096Z,0.03268424,OFBIZ-12914,A0010,assignee,35,2024-02-25T17:32:49.000Z,2024-02-25T18:21:17.014Z,Fixed
+ ",Bug,Low,2,5.50278715,2024-02-25T17:34:13.096Z,0.03268424,OFBIZ-12914,A0010,assignee,35,2024-02-25T17:32:49.000Z,2024-02-25T18:21:17.014Z,Fixed
 Error when exporting Comparative Income Statement report to PDF,"When exporting the Accounting application's Comparative Income Statement report to PDF, an error is displayed and the PDF is not produced:
 {quote}The Following Errors Occurred:
 
@@ -33,23 +33,23 @@ This error can be reproduced on demo-trunk at: [OFBiz: Accounting Manager: (apac
 
 The error does not occur for the same report on demo-stable at: [ComparativeIncomeStatements.pdf (apache.org)|https://demo-stable.ofbiz.apache.org/accounting/control/ComparativeIncomeStatements.pdf?period1FromDate=2009-12-31+18%3A00%3A00.000&currencyUomId=USD&period2GlFiscalTypeId=ACTUAL&period2FromDate=2009-12-31+18%3A00%3A00.000&period2ThruDate=2024-02-26+01%3A24%3A24.864&period1ThruDate=2024-02-26+01%3A24%3A24.864&organizationPartyId=Company&period1GlFiscalTypeId=ACTUAL]
 
- ",Bug,Major,5.35083984,2024-02-26T08:01:36.653Z,0.30841201,OFBIZ-12915,A0010,assignee,36,2024-02-26T07:31:11.000Z,2024-02-26T15:25:43.451Z,Fixed
+ ",Bug,Normal,3,5.35083984,2024-02-26T08:01:36.653Z,0.30841201,OFBIZ-12915,A0010,assignee,36,2024-02-26T07:31:11.000Z,2024-02-26T15:25:43.451Z,Fixed
 Move from hard-code menu location to parameterized,"Customization is a key aspect of the OFBiz (Open For Business) platform, providing businesses with a robust and adaptable base to customize their enterprise software solutions according to their unique operational requirements. 
 
 The *Menus.xml file of a component, essential for designing user interfaces that are both intuitive and tailored to the specific roles and tasks of its users, plays a significant role in this context, as referenced within screen widgets and Freemarker templates.
 
 However, as customizations and the project's source code evolve over time, the likelihood of encountering merge conflicts increases significantly, especially when attempting to incorporate customizations alongside ongoing bug fixes and enhancements from the project. 
 
-To improve the appeal of OFbiz and the developer experience, it is recommended to shift from fixed menu locations to a parameterized approach in our components and plugins. This change would enable developers to more seamlessly incorporate a 'custom' menu, facilitating the integration of project updates.",Improvement,Major,5.66226433,2024-02-28T16:48:13.363Z,13.64937134,OFBIZ-12918,A0021,assignee,50,2024-02-27T14:44:51.000Z,2024-03-13T08:23:19.047Z,Fixed
-Allow uploading ZUGFeRD compliant pdf files,,Improvement,Minor,5.66226433,2024-02-29T08:51:09.030Z,0.00521146,OFBIZ-12920,A0021,assignee,50,2024-02-28T08:57:34.000Z,2024-02-29T08:58:39.300Z,Implemented
+To improve the appeal of OFbiz and the developer experience, it is recommended to shift from fixed menu locations to a parameterized approach in our components and plugins. This change would enable developers to more seamlessly incorporate a 'custom' menu, facilitating the integration of project updates.",Improvement,Normal,3,5.66226433,2024-02-28T16:48:13.363Z,13.64937134,OFBIZ-12918,A0021,assignee,50,2024-02-27T14:44:51.000Z,2024-03-13T08:23:19.047Z,Fixed
+Allow uploading ZUGFeRD compliant pdf files,,Improvement,Low,2,5.66226433,2024-02-29T08:51:09.030Z,0.00521146,OFBIZ-12920,A0021,assignee,50,2024-02-28T08:57:34.000Z,2024-02-29T08:58:39.300Z,Implemented
 IntelliJ: Test sources not recognised in IDE,"IntelliJ configures its project structure based on build.gradle, creating IntelliJ 'modules' which map to gradle projects and source sets.
 
 When IntelliJ refreshes its project configuration from build.gradle, several error messages are displayed regarding deduplication of content roots.
 
 Further, when viewing a test class in the IDE, a status message indicates it is a 'Java file outside source root'.
 
- ",Bug,Major,13.32377261,2024-02-29T17:27:14.416Z,0.62222706,OFBIZ-12923,A0010,assignee,38,2024-02-29T17:26:53.000Z,2024-03-01T08:23:14.834Z,Fixed
-Make sure no pdf files containing unwanted attachments can be uploaded,,Improvement,Major,5.55134172,2024-03-04T09:04:53.406Z,9.95886664,OFBIZ-12926,A0021,assignee,51,2024-03-04T07:01:38.000Z,2024-03-14T08:05:39.484Z,Fixed
+ ",Bug,Normal,3,13.32377261,2024-02-29T17:27:14.416Z,0.62222706,OFBIZ-12923,A0010,assignee,38,2024-02-29T17:26:53.000Z,2024-03-01T08:23:14.834Z,Fixed
+Make sure no pdf files containing unwanted attachments can be uploaded,,Improvement,Normal,3,5.55134172,2024-03-04T09:04:53.406Z,9.95886664,OFBIZ-12926,A0021,assignee,51,2024-03-04T07:01:38.000Z,2024-03-14T08:05:39.484Z,Fixed
 OFBiz doesn't allow upload.,"In demo trunk and local with demo data in an existing agreement, no files of following type can be uploaded:
  * pdf
  * xlsx
@@ -168,13 +168,13 @@ java.lang.Exception: Error in Service [createAnonFile]: For security reason only
 2024-03-05 09:22:57,840 |jsse-nio-8443-exec-4 |ServiceDispatcher             |E| Error in Service [createContentFromUploadedFile]: For security reason only valid files of supported image formats (GIF, JPEG, PNG, TIFF), SVG, PDF, and ZIP or text files with safe names (only Alpha-Numeric characters, hyphen, underscore and spaces, only 1 dot, name and extension not empty) and contents are accepted.
 2024-03-05 09:22:57,840 |jsse-nio-8443-exec-4 |TransactionUtil               |I| Transaction rollback only not set, rollback only is already set.
 2024-03-05 09:22:5// code placeholder
-{code}",Bug,Major,5.55134172,2024-03-05T08:41:45.199Z,9.01466602,OFBIZ-12929,A0021,assignee,51,2024-03-05T08:30:28.000Z,2024-03-14T09:02:52.343Z,Implemented
+{code}",Bug,Normal,3,5.55134172,2024-03-05T08:41:45.199Z,9.01466602,OFBIZ-12929,A0021,assignee,51,2024-03-05T08:30:28.000Z,2024-03-14T09:02:52.343Z,Implemented
 Prevent possible file race conditions with SecuredUpload class,"While trying to upload PDF files I found a possible file race conditions in  DataServices::createFileMethod and DataServices::updateFileMethod
 
-The same could exist in several places in ImageManagementServices and ProductServices classes",Bug,Major,5.55134172,2024-03-12T09:02:28.972Z,1.96163226,OFBIZ-12937,A0021,assignee,51,2024-03-12T06:24:36.000Z,2024-03-14T08:07:13.999Z,Fixed
+The same could exist in several places in ImageManagementServices and ProductServices classes",Bug,Normal,3,5.55134172,2024-03-12T09:02:28.972Z,1.96163226,OFBIZ-12937,A0021,assignee,51,2024-03-12T06:24:36.000Z,2024-03-14T08:07:13.999Z,Fixed
 ‎SecuredUpload‎::checkMaxLinesLength put in a regression for PDF files,"As commented at [https://s.apache.org/wpkuj,] while working on OFBIZ-12926 I realised that checkMaxLinesLength put in a possible regression for PDF files.
 
-As a summary: we can't use checkMaxLinesLength for PDF files because they may contain several CharSet encodings. Hence no possibility to use Files::readAllLines that needs a sole CharSet. So we need to bypass this check.",Bug,Major,5.55134172,2024-03-12T09:11:45.117Z,1.95539649,OFBIZ-12936,A0021,assignee,51,2024-03-12T06:03:36.000Z,2024-03-14T08:07:31.374Z,Fixed
+As a summary: we can't use checkMaxLinesLength for PDF files because they may contain several CharSet encodings. Hence no possibility to use Files::readAllLines that needs a sole CharSet. So we need to bypass this check.",Bug,Normal,3,5.55134172,2024-03-12T09:11:45.117Z,1.95539649,OFBIZ-12936,A0021,assignee,51,2024-03-12T06:03:36.000Z,2024-03-14T08:07:31.374Z,Fixed
 BlueLight theme error when launching OFBiz,"We have this error for BlueLight theme. HumanResShortcutAppBar and AccountingShortcutAppBar are concerned. Tomahawk (derived from BlueLight) seems OK.
  
 {noformat}
@@ -350,25 +350,25 @@ java.lang.RuntimeException: Error rendering included menu named [HumanResShortcu
 2024-03-12 14:39:40,924 |jsse-nio-8443-exec-7 |ControlServlet                |W| *** NOTICE: ControlServlet finished w/ a transaction in place! Rolling back.
 2024-03-12 14:39:40,924 |jsse-nio-8443-exec-7 |TransactionUtil               |E| [TransactionUtil.rollback]
  {noformat}
- ",Bug,Major,5.55134172,2024-03-12T16:48:50.591Z,0.64886198,OFBIZ-12938,A0021,assignee,51,2024-03-12T13:59:09.000Z,2024-03-13T08:23:12.266Z,Fixed
-PARTY - Move from hard-code menu location to parameterized,Move the menu location in the various party screens from hard-coded to parameterized.,Sub-task,Major,5.61942496,2024-03-16T14:05:59.810Z,0.00013648,OFBIZ-12945,A0021,assignee,57,2024-03-16T09:31:02.000Z,2024-03-16T14:06:11.602Z,Implemented
+ ",Bug,Normal,3,5.55134172,2024-03-12T16:48:50.591Z,0.64886198,OFBIZ-12938,A0021,assignee,51,2024-03-12T13:59:09.000Z,2024-03-13T08:23:12.266Z,Fixed
+PARTY - Move from hard-code menu location to parameterized,Move the menu location in the various party screens from hard-coded to parameterized.,Sub-task,Normal,3,5.61942496,2024-03-16T14:05:59.810Z,0.00013648,OFBIZ-12945,A0021,assignee,57,2024-03-16T09:31:02.000Z,2024-03-16T14:06:11.602Z,Implemented
 Modal title not supported on hyperlink in form fields,"Hyperlinks elements can trigger the opening of a modal window (link-type=""layered-modal""). OFBiz uses jQuery UI Dialog to achieve this, and parameters for this library are passed through a set of data-dialog-* ** attributes on the ""a"" tag, in ""HtmlFormMacroLibrary::makeHyperlinkString"" Freemarker macro. Then in OfbizUtil.js, links that should open modals are processed : data-dialog-* are used to configure jQueryUI Dialog module.
  
 In OfbizUtil.js, data-dialog-text attribute is used to set the title of the modal (text in the colored top bar). The value of this attribute is set using the ""text"" parameter in  ""makeHyperlinkString"" macro. However, this macro does not declare a ""text"" parameter in its signature, and HtmlMacroFormRenderer::makeHyperlinkString does not support it.
 
  As a result, we cannot set the modal title when using a `hyperlink` tag  with a `text` attribute in a form (although the code indicates otherwise).
 
-!image-2024-03-14-08-58-13-835.png!",Bug,Major,0.05229714,2024-03-19T15:03:28.145Z,0.84000618,OFBIZ-12940,A0019,assignee,4,2024-03-13T16:58:04.000Z,2024-03-20T11:13:04.679Z,Fixed
+!image-2024-03-14-08-58-13-835.png!",Bug,Normal,3,0.05229714,2024-03-19T15:03:28.145Z,0.84000618,OFBIZ-12940,A0019,assignee,4,2024-03-13T16:58:04.000Z,2024-03-20T11:13:04.679Z,Fixed
 ListFixedAssets generates an error,"When doing a search/find on assets in accounting following error is generated
 
 {code:java}
 java.lang.RuntimeException: Error rendering included grid named [ListFixedAssets] at location [component://accounting/widget/FixedAssetForms.xml]: java.lang.IllegalArgumentException: Error in form [ListFixedAssets] calling service with name [calculateFixedAssetDepreciation]: org.apache.ofbiz.service.GenericServiceException: Error running Groovy method [calculateFixedAssetDepreciation] in Groovy file [component://accounting/src/main/groovy/org/apache/ofbiz/accounting/fixedasset/FixedAssetServices.groovy]: (Cannot cast object '1711' with class 'java.lang.String' to class 'int')java.lang.IllegalArgumentException: Error in form [ListFixedAssets] calling service with name [calculateFixedAssetDepreciation]: org.apache.ofbiz.service.GenericServiceException: Error running Groovy method [calculateFixedAssetDepreciation] in Groovy file [component://accounting/src/main/groovy/org/apache/ofbiz/accounting/fixedasset/FixedAssetServices.groovy]: (Cannot cast object '1711' with class 'java.lang.String' to class 'int')
 {code}
-see https://demo-trunk.ofbiz.apache.org/accounting/control/ListFixedAssets",Bug,Major,5.52254067,2024-03-21T08:46:56.191Z,0.35765028,OFBIZ-12956,A0021,assignee,58,2024-03-21T08:30:50.000Z,2024-03-21T17:21:57.175Z,Fixed
-ISMGR - Move from hard-coded menu location to parameterized,Move the menu location in the various isomer screens from hard-coded to parameterized.,Sub-task,Major,5.43500016,2024-03-22T07:41:57.273Z,0.00136028,OFBIZ-12954,A0021,assignee,59,2024-03-20T15:46:02.000Z,2024-03-22T07:43:54.801Z,Implemented
+see https://demo-trunk.ofbiz.apache.org/accounting/control/ListFixedAssets",Bug,Normal,3,5.52254067,2024-03-21T08:46:56.191Z,0.35765028,OFBIZ-12956,A0021,assignee,58,2024-03-21T08:30:50.000Z,2024-03-21T17:21:57.175Z,Fixed
+ISMGR - Move from hard-coded menu location to parameterized,Move the menu location in the various isomer screens from hard-coded to parameterized.,Sub-task,Normal,3,5.43500016,2024-03-22T07:41:57.273Z,0.00136028,OFBIZ-12954,A0021,assignee,59,2024-03-20T15:46:02.000Z,2024-03-22T07:43:54.801Z,Implemented
 Convert PeriodServices.xml mini-lang to groovyDSL,"Migration of file PeriodServices.xml to groovy with service : 
 * findCustomTimePeriods
-* getPreviousTimePeriod",Sub-task,Minor,5.34443949,2024-03-26T11:23:57.524Z,0.10149845,OFBIZ-12962,A0021,assignee,60,2024-03-25T17:10:36.000Z,2024-03-26T13:50:06.990Z,Implemented
+* getPreviousTimePeriod",Sub-task,Low,2,5.34443949,2024-03-26T11:23:57.524Z,0.10149845,OFBIZ-12962,A0021,assignee,60,2024-03-25T17:10:36.000Z,2024-03-26T13:50:06.990Z,Implemented
 Fix problems with Eclipse about multi module dependencies.,"On my journey to come back using Eclipse, i got some issues when loading trunk :
 
 The package xxx is accessible from more than one module.
@@ -377,7 +377,7 @@ This kind of issue appear when a project bring a dependency that is already in a
 
 The patch avoid loading 'pull-parser' and 'xpp3' dependencies that are already present in jdk17.
 
- ",Bug,Minor,0.03458862,2024-03-26T13:06:07.269Z,0.01404118,OFBIZ-12963,A0035,assignee,4,2024-03-26T10:49:39.000Z,2024-03-26T13:26:20.427Z,Fixed
+ ",Bug,Low,2,0.03458862,2024-03-26T13:06:07.269Z,0.01404118,OFBIZ-12963,A0035,assignee,4,2024-03-26T10:49:39.000Z,2024-03-26T13:26:20.427Z,Fixed
 Fix Accounting Groovy tests,"As mentionned in OFBIZ-12985 after OFBIZ-12813 the Groovy tests fail.
 
 There are severtal aspects, at least for now:
@@ -393,9 +393,9 @@ This is a subtask for the accounting component. The only changes are to move Gro
 
 This fixes the inability to find the files where they are expected. Remains few issues related to the point 3.
 
-",Sub-task,Major,5.25848964,2024-04-04T17:10:34.643Z,0.71619922,OFBIZ-12995,A0021,assignee,61,2024-04-04T16:45:55.000Z,2024-04-05T10:21:54.256Z,Fixed
-Lookup Pop ups cannot be dragged to move position,"For example，menu path is Party->Parties， and click the icon （User Login ID）, the popup can't drag and move。",Bug,Major,0.03047913,2024-04-05T08:01:38.247Z,0.01974149,OFBIZ-12992,A0035,assignee,5,2024-04-04T12:40:10.000Z,2024-04-05T08:30:03.912Z,Fixed
-Fix Assetmain Groovy tests,Unable to load test suite class : org.apache.ofbiz.assetmaint.test.FixedAssetMaintTests,Bug,Major,5.18522689,2024-04-07T11:44:16.155Z,4.15524422,OFBIZ-13003,A0021,assignee,62,2024-04-07T11:29:07.000Z,2024-04-11T15:27:49.256Z,Fixed
+",Sub-task,Normal,3,5.25848964,2024-04-04T17:10:34.643Z,0.71619922,OFBIZ-12995,A0021,assignee,61,2024-04-04T16:45:55.000Z,2024-04-05T10:21:54.256Z,Fixed
+Lookup Pop ups cannot be dragged to move position,"For example，menu path is Party->Parties， and click the icon （User Login ID）, the popup can't drag and move。",Bug,Normal,3,0.03047913,2024-04-05T08:01:38.247Z,0.01974149,OFBIZ-12992,A0035,assignee,5,2024-04-04T12:40:10.000Z,2024-04-05T08:30:03.912Z,Fixed
+Fix Assetmain Groovy tests,Unable to load test suite class : org.apache.ofbiz.assetmaint.test.FixedAssetMaintTests,Bug,Normal,3,5.18522689,2024-04-07T11:44:16.155Z,4.15524422,OFBIZ-13003,A0021,assignee,62,2024-04-07T11:29:07.000Z,2024-04-11T15:27:49.256Z,Fixed
 Convert Invoice relation screen to dynamic Compound,"After the work on the task OFBIZ-11808, and the migration started for workeffort screens on OFBIZ-12292, the purpose is to migrate all screen linked to Invoice entity with idea to reduce the code and use widget improvement developped last years
 
 This migration cover invoice related screens from invoiceOverview to managment screens and forms for each invoice sub item such as:
@@ -410,9 +410,9 @@ This migration cover invoice related screens from invoiceOverview to managment s
  - Term
  - TimeEntry
 
- ",Improvement,Minor,0.02868953,2024-04-11T09:08:58.848Z,32.28864422,OFBIZ-12994,A0035,assignee,6,2024-04-04T15:42:01.000Z,2024-05-13T16:04:37.709Z,Fixed
-Fix Ecommerce Groovy tests,Unable to load test suite class : org.apache.ofbiz.ecommerce.OrderNotificationTests,Sub-task,Major,0.20983895,2024-04-11T15:26:54.903Z,0.03781117,OFBIZ-13009,A0019,assignee,5,2024-04-11T15:13:11.000Z,2024-04-11T16:21:21.788Z,Fixed
-FACILITY- Move from hard-coded menu location to parameterized,Move the menu location in the various facility screens from hard-coded to parameterized.,Sub-task,Major,5.18522689,2024-04-17T14:22:41.214Z,0.04339653,OFBIZ-12976,A0021,assignee,62,2024-03-29T07:08:25.000Z,2024-04-17T15:25:10.674Z,Implemented
+ ",Improvement,Low,2,0.02868953,2024-04-11T09:08:58.848Z,32.28864422,OFBIZ-12994,A0035,assignee,6,2024-04-04T15:42:01.000Z,2024-05-13T16:04:37.709Z,Fixed
+Fix Ecommerce Groovy tests,Unable to load test suite class : org.apache.ofbiz.ecommerce.OrderNotificationTests,Sub-task,Normal,3,0.20983895,2024-04-11T15:26:54.903Z,0.03781117,OFBIZ-13009,A0019,assignee,5,2024-04-11T15:13:11.000Z,2024-04-11T16:21:21.788Z,Fixed
+FACILITY- Move from hard-coded menu location to parameterized,Move the menu location in the various facility screens from hard-coded to parameterized.,Sub-task,Normal,3,5.18522689,2024-04-17T14:22:41.214Z,0.04339653,OFBIZ-12976,A0021,assignee,62,2024-03-29T07:08:25.000Z,2024-04-17T15:25:10.674Z,Implemented
 Issue when caching a query with a selectField,"When a query with a field selection and a cache() option is done, the result is put in cache with the incomplete genericValue (I mean without all the fields).
 
 Then when an other query with the same condition and cache option is done, even whitout the field selection, the result returned is the incomplete version of the GenericValue that has been stored in cache.
@@ -423,16 +423,16 @@ The code in the PR prevent from adding in cache an incomplete genericValue and f
 testCache has been added to entity-query-tests test case. It can be launched with 
 ./gradlew 'ofbiz -t component=entity'
 or
-./gradlew 'ofbiz -t component=entity -t suitename=entitytests -t case=entity-query-tests'",Bug,Minor,0.02868953,2024-05-02T07:45:03.671Z,0.00095589,OFBIZ-13072,A0035,assignee,6,2024-04-26T09:36:05.000Z,2024-05-02T07:46:26.260Z,Fixed
+./gradlew 'ofbiz -t component=entity -t suitename=entitytests -t case=entity-query-tests'",Bug,Low,2,0.02868953,2024-05-02T07:45:03.671Z,0.00095589,OFBIZ-13072,A0035,assignee,6,2024-04-26T09:36:05.000Z,2024-05-02T07:46:26.260Z,Fixed
 Duplicate main menu button after plugin creation,"After creating a plugin with 'gradlew createPlugin -PpluginId=myplugin' there is a duplicate main menu button in the backend menu of the new plugin.
 
-I am going to provide a fix for that.",Bug,Minor,29.33756396,2024-05-03T13:48:42.399Z,15.79687198,OFBIZ-13080,A0026,project,153,2024-05-03T13:48:20.000Z,2024-05-19T08:56:12.138Z,Fixed
+I am going to provide a fix for that.",Bug,Low,2,29.33756396,2024-05-03T13:48:42.399Z,15.79687198,OFBIZ-13080,A0026,project,153,2024-05-03T13:48:20.000Z,2024-05-19T08:56:12.138Z,Fixed
 Find Record buttons not working in Entity Data Maintenance,"The Find Record buttons A - Z to filter for specific entities are not working right now.
 
-I am going to provide a pull request for a fix.",Bug,Minor,29.33756396,2024-05-06T08:47:06.033Z,0.19140920,OFBIZ-13083,A0026,project,153,2024-05-06T08:46:02.000Z,2024-05-06T13:22:43.788Z,Fixed
+I am going to provide a pull request for a fix.",Bug,Low,2,29.33756396,2024-05-06T08:47:06.033Z,0.19140920,OFBIZ-13083,A0026,project,153,2024-05-06T08:46:02.000Z,2024-05-06T13:22:43.788Z,Fixed
 Corrections/updates to DOCKER.adoc,"A few updates should be made to file, DOCKER.adoc:
  * The example docker-build commands are missing the period (.) at the end of the line that refers to the current directory as the docker context. User running the example will see an error if the period (or some other directory) is not stated on the command line.
- * Since docker v23.0.0 setting the environment variable, DOCKER_BUILDKIT, to 1 has no effect. Setting this environment variable can be removed from the examples.",Improvement,Trivial,12.99809195,2024-05-08T12:06:18.436Z,0.13494370,OFBIZ-13087,A0010,assignee,39,2024-05-08T10:13:49.000Z,2024-05-08T15:20:37.572Z,Implemented
+ * Since docker v23.0.0 setting the environment variable, DOCKER_BUILDKIT, to 1 has no effect. Setting this environment variable can be removed from the examples.",Improvement,Lowest,1,12.99809195,2024-05-08T12:06:18.436Z,0.13494370,OFBIZ-13087,A0010,assignee,39,2024-05-08T10:13:49.000Z,2024-05-08T15:20:37.572Z,Implemented
 Error when calling EntityQuery.from() with a dynamicView via groovy DSL,"There is a ""No signature of method "" error when executing the script FindInventoryItemsByLabels.groovy which use Groovy DSL syntax to call method EntityQuery.from(DynamicViewEntity dve)
 
 This is due to the fact that the from() DSL is currently only defined for calling the method with an entityName String.
@@ -443,18 +443,18 @@ The purpose of this Jira is to add the Groovy DSL for EntityQuery.from(DynamicVi
 
 In a trunk ofbiz with demo data loaded, load file attached and go to [SearchInventoryItemsByLabels page|[https://localhost:8443/facility/control/SearchInventoryItemsByLabels?facilityId=WebStoreWarehouse]]. 
 
-Then select 'Label test' and submit the search form",Bug,Minor,4.05771716,2024-05-13T16:05:35.424Z,0.00661625,OFBIZ-13077,A0035,assignee,8,2024-05-02T13:11:41.000Z,2024-05-13T16:15:07.068Z,Fixed
+Then select 'Label test' and submit the search form",Bug,Low,2,4.05771716,2024-05-13T16:05:35.424Z,0.00661625,OFBIZ-13077,A0035,assignee,8,2024-05-02T13:11:41.000Z,2024-05-13T16:15:07.068Z,Fixed
 The non ASCII language in UiLabels.xml are not correctly handled during plugin creation,"You get this error:
 
 2024-05-19 09:52:41,314 |jsse-nio-8443-exec-3 |UtilProperties                |W| XML file for locale  could not be loaded.
 org.xml.sax.SAXParseException: Invalid byte 3 of 3-byte UTF-8 sequence.
 
-When removing ZH labels it works. We should keep only English languages or amend the createPlugin Gradle task. In this issue I'll remove ZH labels and put a comment as documentation about that for developers in framework/resources/templates/UiLabels.xml",Sub-task,Major,5.10361054,2024-05-19T08:47:06.042Z,1.01465012,OFBIZ-13095,A0021,assignee,63,2024-05-19T08:38:07.000Z,2024-05-20T09:08:11.812Z,Fixed
+When removing ZH labels it works. We should keep only English languages or amend the createPlugin Gradle task. In this issue I'll remove ZH labels and put a comment as documentation about that for developers in framework/resources/templates/UiLabels.xml",Sub-task,Normal,3,5.10361054,2024-05-19T08:47:06.042Z,1.01465012,OFBIZ-13095,A0021,assignee,63,2024-05-19T08:38:07.000Z,2024-05-20T09:08:11.812Z,Fixed
 Add permission check for view-maps and change defaults for request-maps,"If a user is not authorized, the system should not allow access to rendered views.
 
 Additionally, the default for the request-map paramerters ""auth"" and ""https"" should be set to ""true"".
 
-This improvement aims to enhance security by preventing unauthorized access.",Improvement,Major,29.06993990,2024-08-14T14:08:02.092Z,19.70252431,OFBIZ-13130,A0026,project,160,2024-08-14T14:07:53.000Z,2024-09-03T06:59:40.192Z,Fixed
+This improvement aims to enhance security by preventing unauthorized access.",Improvement,Normal,3,29.06993990,2024-08-14T14:08:02.092Z,19.70252431,OFBIZ-13130,A0026,project,160,2024-08-14T14:07:53.000Z,2024-09-03T06:59:40.192Z,Fixed
 Correction of form display when there are grid and forms combination within a same xml file,"When we have forms and grids mixed in the same file, there seems to be several cases that can provoke a bad display of a form due to mixed type combination
 
 - if we extend a form within a file containing a grid (see attached patch)
@@ -474,7 +474,7 @@ https://localhost:8443/sfa/control/Events
 
 Create an event assigned to yourself so it should appear in both tasks lists.
 
-You will see the difference when applying the modifications from the pull request",Bug,Minor,3.60759484,2024-08-30T06:57:25.551Z,0.01635226,OFBIZ-13127,A0035,assignee,9,2024-07-19T15:38:41.000Z,2024-08-30T07:20:58.386Z,Fixed
+You will see the difference when applying the modifications from the pull request",Bug,Low,2,3.60759484,2024-08-30T06:57:25.551Z,0.01635226,OFBIZ-13127,A0035,assignee,9,2024-07-19T15:38:41.000Z,2024-08-30T07:20:58.386Z,Fixed
 Allow to define a view link condition when creating a DynamicView,"The goal of this jira is to allow the creation of a dynamic view with an entity-condition only view-link.
 
 Currently, it is not possible to link two members entities from a dve with a condition different from a key map 'ALIAS1.field1 == ALIAS2.field2'
@@ -483,12 +483,12 @@ Currently, it is not possible to link two members entities from a dve with a con
 As it has been done for xml view-entities (https://issues.apache.org/jira/browse/OFBIZ-11179), I propose to add the possbility to use the ViewEntityCondition definition when creating a DynamicView
 I tried to stay as close as possible as the current EntityCondition writing but don't hesitate if you see a any way to simplify it. 
 
-I attached a file to illustrate the purpose of this feature",Improvement,Minor,3.24847058,2024-08-30T07:53:10.273Z,0.00217729,OFBIZ-13125,A0035,assignee,10,2024-07-12T11:53:16.000Z,2024-08-30T07:56:18.391Z,Implemented
+I attached a file to illustrate the purpose of this feature",Improvement,Low,2,3.24847058,2024-08-30T07:53:10.273Z,0.00217729,OFBIZ-13125,A0035,assignee,10,2024-07-12T11:53:16.000Z,2024-08-30T07:56:18.391Z,Implemented
 "Logout may create a ""HTTP Status 500 - Internal Server Error""","It was 1st reported by https://lists.apache.org/thread/7m0kl086g7p77pvzp5o8vrctz7hk8odn
-Another thread exists in dev ML: https://lists.apache.org/thread/fkgz1cnwx68nlgdfhl58vhgk2cdor5hm",Bug,Major,5.20521517,2024-09-08T13:11:08.579Z,0.07998914,OFBIZ-13136,A0021,assignee,65,2024-09-07T15:58:57.000Z,2024-09-08T15:06:19.641Z,Fixed
+Another thread exists in dev ML: https://lists.apache.org/thread/fkgz1cnwx68nlgdfhl58vhgk2cdor5hm",Bug,Normal,3,5.20521517,2024-09-08T13:11:08.579Z,0.07998914,OFBIZ-13136,A0021,assignee,65,2024-09-07T15:58:57.000Z,2024-09-08T15:06:19.641Z,Fixed
 Test suite launch with case name is not possible from webtools,"In TestSuiteInfo screens, when we select a case to run, the full test suite is executed.
 
-For instance: in [order test suite|https://demo-trunk.ofbiz.apache.org/webtools/control/TestSuiteInfo/order], if we click on  order-requirement-tests ""run case"" link all ordertests suite is run.",Bug,Minor,2.95335301,2024-10-04T09:03:31.874Z,0.00708829,OFBIZ-13144,A0035,assignee,11,2024-10-04T09:02:35.000Z,2024-10-04T09:13:44.302Z,Fixed
+For instance: in [order test suite|https://demo-trunk.ofbiz.apache.org/webtools/control/TestSuiteInfo/order], if we click on  order-requirement-tests ""run case"" link all ordertests suite is run.",Bug,Low,2,2.95335301,2024-10-04T09:03:31.874Z,0.00708829,OFBIZ-13144,A0035,assignee,11,2024-10-04T09:02:35.000Z,2024-10-04T09:13:44.302Z,Fixed
 ControlServlet falls into error with Cookies log output when Debug log level is switched one,"When running OfBiz with debug level logging, the ControlServlet on WebApp falls into a runtime error as follows when a web page is invoked:
 
 Servlet.service() for servlet [ControlServlet] in context with path [/cdc-resmon] threw exception java.lang.ArrayStoreException: javax.servlet.http.Cookie
@@ -497,9 +497,9 @@ This is caused by the way Cookies are lined up to be streamed using a Cookie[].
 
 instead, Cookies should be rendered to a Map before being streamed to String for logging.
 
- ",Bug,Major,30.94730311,2024-10-10T21:21:58.419Z,0.41608738,OFBIZ-13148,A0006,project,166,2024-10-10T21:21:40.000Z,2024-10-11T07:21:08.369Z,Fixed
+ ",Bug,Normal,3,30.94730311,2024-10-10T21:21:58.419Z,0.41608738,OFBIZ-13148,A0006,project,166,2024-10-10T21:21:40.000Z,2024-10-11T07:21:08.369Z,Fixed
 Updated several (transitive) dependencies,"https://github.com/apache/ofbiz-framework/pull/819 (framework)
-https://github.com/apache/ofbiz-plugins/pull/125 (plugins)",Sub-task,Minor,5.05723974,2024-10-14T10:48:34.437Z,0.28320163,OFBIZ-13123,A0021,assignee,67,2024-07-04T07:19:36.000Z,2024-10-14T17:36:23.058Z,Implemented
+https://github.com/apache/ofbiz-plugins/pull/125 (plugins)",Sub-task,Low,2,5.05723974,2024-10-14T10:48:34.437Z,0.28320163,OFBIZ-13123,A0021,assignee,67,2024-07-04T07:19:36.000Z,2024-10-14T17:36:23.058Z,Implemented
 Use Development Containers as development environments with necessary build tools already available,"Development Containers are becoming a popular method of ensuring a container-based development environment has all the tools needed by a developer to work on a project.
 
 Development Containers ([https://containers.dev/)] depend on the developer's host system running a container runtime, such as Docker. They are supported in IntelliJ and VS Code.
@@ -518,7 +518,7 @@ Further reading:
 
 [https://containers.dev/]
 
- ",Improvement,Trivial,12.67651325,2024-10-15T15:08:59.347Z,8.91294640,OFBIZ-13151,A0010,assignee,40,2024-10-15T14:14:48.000Z,2024-10-24T13:03:37.916Z,Implemented
+ ",Improvement,Lowest,1,12.67651325,2024-10-15T15:08:59.347Z,8.91294640,OFBIZ-13151,A0010,assignee,40,2024-10-15T14:14:48.000Z,2024-10-24T13:03:37.916Z,Implemented
 String to numeric conversion does not support non-breaking spaces,"When submitting a form with numeric values, OFBiz uses a text input (`<input type=""text""/>`), so all characters (entered by hand or pasted) are allowed in the input.
 
 On form's submission, for numeric fields, the string is parsed using `java.text.NumberFormat` class (parse method), using a number instance formatter.
@@ -531,21 +531,21 @@ This can lead to a situation where a visually correct form stores wrong values :
 
 [^Peek 05-11-2024 10-59.mp4]
 
-One of our client reported this situation while pasting values from external tools. Some values where truncated, because the external tool used non-breaking spaces when displaying values.",Bug,Minor,4.91675699,2024-11-07T15:04:56.431Z,5.18429253,OFBIZ-13168,A0021,assignee,69,2024-11-05T10:09:02.000Z,2024-11-12T19:30:19.306Z,Fixed
-Prevent URL parameters manipulation,,Improvement,Major,4.91675699,2024-11-08T15:40:54.524Z,25.12663206,OFBIZ-13147,A0021,assignee,69,2024-10-10T06:54:44.000Z,2024-12-03T18:43:15.534Z,Implemented
+One of our client reported this situation while pasting values from external tools. Some values where truncated, because the external tool used non-breaking spaces when displaying values.",Bug,Low,2,4.91675699,2024-11-07T15:04:56.431Z,5.18429253,OFBIZ-13168,A0021,assignee,69,2024-11-05T10:09:02.000Z,2024-11-12T19:30:19.306Z,Fixed
+Prevent URL parameters manipulation,,Improvement,Normal,3,4.91675699,2024-11-08T15:40:54.524Z,25.12663206,OFBIZ-13147,A0021,assignee,69,2024-10-10T06:54:44.000Z,2024-12-03T18:43:15.534Z,Implemented
 Helveticus: jsTree visual glitch on hover,"On Helveticus theme, we have a visual glitch on jsTree links. This is caused by a CSS transition introduced in this theme.
 
-",Sub-task,Major,4.92057892,2024-11-14T08:17:38.047Z,0.00575045,OFBIZ-13174,A0021,assignee,70,2024-11-13T13:53:35.000Z,2024-11-14T08:25:54.886Z,Fixed
+",Sub-task,Normal,3,4.92057892,2024-11-14T08:17:38.047Z,0.00575045,OFBIZ-13174,A0021,assignee,70,2024-11-13T13:53:35.000Z,2024-11-14T08:25:54.886Z,Fixed
 Bug persisting uploaded files with service attachUploadToDataResource,"There is a bug in DataServicesScript::attachUploadToDataResource which causes this service to be unable to save uploaded files to the database.
 
 
 There is a boolean property ""forceLocal"" which is filled by the method UtilProperties.getPropertyAsValue. This method returns a string instead of a boolean which causes Groovy to interpret this value as ""true"" even if you configure that property to be ""false"".
 
 You can work around this problem by using an empty string in your properties when you want this boolean to be ""false"".
-A solution would be to use UtilProperties.getPropertyAsBoolean instead.",Bug,Minor,5.13295704,2024-12-06T14:59:07.188Z,0.01331045,OFBIZ-13191,A0021,assignee,72,2024-12-06T14:38:35.000Z,2024-12-06T15:18:17.211Z,Fixed
-[SECURITY] (CVE-2024-36104) Path traversal leading to RCE,Better avoid special encoded characters sequences ,Sub-task,Major,5.06282490,2025-01-13T16:36:45.650Z,3.79921464,OFBIZ-13092,A0021,assignee,73,2024-05-15T10:29:43.000Z,2025-01-17T11:47:37.795Z,Fixed
-Migrate Build Scan publication to develocity.apache.org,"The OFBiz project publishes Build Scans to the Develocity instance at ge.apache.org. This instance migrating to a new URL, develocity.apache.org. Build scans published to ge.apache.org after today will not be migrated to the new Develocity instance.",Task,Minor,5.06282490,2025-01-15T09:27:18.161Z,1.23598297,OFBIZ-13201,A0021,assignee,73,2025-01-14T22:12:52.000Z,2025-01-16T15:07:07.090Z,Implemented
-"ProjectServices: Project creation with template id should call ""createProject"" instead of ""createProjet""",,Improvement,Minor,4.99495220,2025-01-28T08:29:18.032Z,0.00455862,OFBIZ-13205,A0021,assignee,75,2025-01-28T07:12:22.000Z,2025-01-28T08:35:51.897Z,Fixed
+A solution would be to use UtilProperties.getPropertyAsBoolean instead.",Bug,Low,2,5.13295704,2024-12-06T14:59:07.188Z,0.01331045,OFBIZ-13191,A0021,assignee,72,2024-12-06T14:38:35.000Z,2024-12-06T15:18:17.211Z,Fixed
+[SECURITY] (CVE-2024-36104) Path traversal leading to RCE,Better avoid special encoded characters sequences ,Sub-task,Normal,3,5.06282490,2025-01-13T16:36:45.650Z,3.79921464,OFBIZ-13092,A0021,assignee,73,2024-05-15T10:29:43.000Z,2025-01-17T11:47:37.795Z,Fixed
+Migrate Build Scan publication to develocity.apache.org,"The OFBiz project publishes Build Scans to the Develocity instance at ge.apache.org. This instance migrating to a new URL, develocity.apache.org. Build scans published to ge.apache.org after today will not be migrated to the new Develocity instance.",Task,Low,2,5.06282490,2025-01-15T09:27:18.161Z,1.23598297,OFBIZ-13201,A0021,assignee,73,2025-01-14T22:12:52.000Z,2025-01-16T15:07:07.090Z,Implemented
+"ProjectServices: Project creation with template id should call ""createProject"" instead of ""createProjet""",,Improvement,Low,2,4.99495220,2025-01-28T08:29:18.032Z,0.00455862,OFBIZ-13205,A0021,assignee,75,2025-01-28T07:12:22.000Z,2025-01-28T08:35:51.897Z,Fixed
 Registration of an user in ecommerce throws an error,"2025-02-12 08:00:30,102 |sse-nio-8443-exec-12 |ScriptUtil                    |W| Error running groovy script [
                 org.apache.ofbiz.webapp.control.LoginWorker.doBasicLogin(createdUserLogin, request)
                 org.apache.ofbiz.webapp.control.LoginWorker.autoLoginSet(request, response)
@@ -557,7 +557,7 @@ Registration of an user in ecommerce throws an error,"2025-02-12 08:00:30,102 |s
             ]: javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: static org.apache.ofbiz.webapp.control.LoginWorker.doBasicLogin() is applicable for argument types: (o.a.o.e.GenericValue, o.a.c.c.R
 equestFacade) values: [[lastUpdatedStamp:2025-02-12 08:00:28.212, successiveFailedLogins:null, passwordHint:null, ...], ...]
 Possible solutions: doBasicLogin(org.apache.ofbiz.entity.GenericValue, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse), doBasicLogout(org.apache.ofbiz.entity.GenericValue, javax.servlet.http.HttpServletRequ
-est, javax.servlet.http.HttpServletResponse)",Bug,Major,4.86558127,2025-02-12T17:48:59.537Z,0.00939716,OFBIZ-13210,A0021,assignee,77,2025-02-12T07:24:25.000Z,2025-02-12T18:02:31.452Z,Fixed
+est, javax.servlet.http.HttpServletResponse)",Bug,Normal,3,4.86558127,2025-02-12T17:48:59.537Z,0.00939716,OFBIZ-13210,A0021,assignee,77,2025-02-12T07:24:25.000Z,2025-02-12T18:02:31.452Z,Fixed
 Ofbiz Setup failing to setup the product store,"In a clean installation, the Product Store screen in Ofbiz Setup fails to update with the following error:
 {code:java}
 ofbiz24  | Caused by: org.apache.ofbiz.entity.GenericDataSourceException: SQL Exception while executing the following:INSERT INTO public.PRODUCT_STORE_SHIPMENT_METH (PRODUCT_STORE_SHIP_METH_ID, PRODUCT_STORE_ID, SHIPMENT_METHOD_TYPE_ID, PARTY_ID, ROLE_TYPE_ID, COMPANY_PARTY_ID, MIN_WEIGHT, MAX_WEIG
@@ -582,31 +582,31 @@ Issue is present in trunk and 24.09 branch. (working in stable branch).
 
 The method createProductStoreWithDefaultSetting is expecting the table ShipmentMethodType to be empty to insert the seed data from OfbizSetupShippingData.xml.
 
-But because OFBIZ-12608 introduced new seed data that inserts one record in ShipmentMethodType, the condition expecting the table to be empty is not met anymore and then the shipping data is not initialized.",Bug,Major,4.80332250,2025-02-17T15:41:01.025Z,0.78990797,OFBIZ-13211,A0021,assignee,78,2025-02-16T03:21:22.000Z,2025-02-18T10:38:29.074Z,Fixed
+But because OFBIZ-12608 introduced new seed data that inserts one record in ShipmentMethodType, the condition expecting the table to be empty is not met anymore and then the shipping data is not initialized.",Bug,Normal,3,4.80332250,2025-02-17T15:41:01.025Z,0.78990797,OFBIZ-13211,A0021,assignee,78,2025-02-16T03:21:22.000Z,2025-02-18T10:38:29.074Z,Fixed
 Add a date range picker field type,"Implement a new field type, based on https://www.daterangepicker.com/.
 
 More details about the intention and the choices that have been made [here|https://lists.apache.org/thread/bymllxn7ysdz3ooksfgwmwffdv1hyoxq]
 
-In a nutshell : build a new form field that would be a wrapper around [DRP|https://www.daterangepicker.com/.] functionalities.",Sub-task,Minor,4.75251979,2025-02-18T11:04:36.170Z,13.01290002,OFBIZ-13209,A0021,assignee,79,2025-02-10T09:48:06.000Z,2025-03-03T11:23:10.732Z,Fixed
+In a nutshell : build a new form field that would be a wrapper around [DRP|https://www.daterangepicker.com/.] functionalities.",Sub-task,Low,2,4.75251979,2025-02-18T11:04:36.170Z,13.01290002,OFBIZ-13209,A0021,assignee,79,2025-02-10T09:48:06.000Z,2025-03-03T11:23:10.732Z,Fixed
 Update best-bet behavior in ContentUrlTag.java,"At https://github.com/apache/ofbiz-framework/pull/883/files jovelromeo proposed to enhance the way OFBiz handles null requests in appendContentPrefix.
 
 bq. If no.http is enable the best-bet behavior should probably be to use secure prefix.
 
-I consider this a bug so will backport it. Unfortunately the PR is based on 18.12 branch and does not apply in trunk (and anyway have formatting issues). Fortunately the patch is simple and can be easily manually adapted and copied.",Bug,Major,4.85577454,2025-03-11T12:41:09.584Z,0.07553316,OFBIZ-13217,A0021,assignee,80,2025-03-11T12:39:02.000Z,2025-03-11T14:29:55.649Z,Fixed
-Authentication refresh token mechanism feature,,Improvement,Major,4.79675922,2025-03-12T13:48:57.838Z,45.77937054,OFBIZ-13212,A0021,assignee,81,2025-02-28T05:45:25.000Z,2025-04-27T08:31:15.453Z,Implemented
-Correct the typo of entity name in cancelReplacementOrderItems method ,"In applications/order/src/main/groovy/org/apache/ofbiz/order/order/OrderReturnServicesScript.groovy, inside *cancelReplacementOrderItems(),* ""ReturnItems"" entity name needs to be replaced with ""ReturnItem"".",Bug,Minor,4.79675922,2025-03-18T10:25:37.437Z,0.09730088,OFBIZ-13218,A0021,assignee,81,2025-03-17T18:35:22.000Z,2025-03-18T12:45:44.233Z,Fixed
-"Typo ""TenantDataSouces"" for entity name in confluence documentation","""TenantDataSouces"" needs to be changed to ""TenantDataSource""",Bug,Minor,4.73944875,2025-04-25T08:01:59.412Z,0.00257076,OFBIZ-13227,A0021,assignee,82,2025-04-25T07:46:06.000Z,2025-04-25T08:05:41.526Z,Fixed
+I consider this a bug so will backport it. Unfortunately the PR is based on 18.12 branch and does not apply in trunk (and anyway have formatting issues). Fortunately the patch is simple and can be easily manually adapted and copied.",Bug,Normal,3,4.85577454,2025-03-11T12:41:09.584Z,0.07553316,OFBIZ-13217,A0021,assignee,80,2025-03-11T12:39:02.000Z,2025-03-11T14:29:55.649Z,Fixed
+Authentication refresh token mechanism feature,,Improvement,Normal,3,4.79675922,2025-03-12T13:48:57.838Z,45.77937054,OFBIZ-13212,A0021,assignee,81,2025-02-28T05:45:25.000Z,2025-04-27T08:31:15.453Z,Implemented
+Correct the typo of entity name in cancelReplacementOrderItems method ,"In applications/order/src/main/groovy/org/apache/ofbiz/order/order/OrderReturnServicesScript.groovy, inside *cancelReplacementOrderItems(),* ""ReturnItems"" entity name needs to be replaced with ""ReturnItem"".",Bug,Low,2,4.79675922,2025-03-18T10:25:37.437Z,0.09730088,OFBIZ-13218,A0021,assignee,81,2025-03-17T18:35:22.000Z,2025-03-18T12:45:44.233Z,Fixed
+"Typo ""TenantDataSouces"" for entity name in confluence documentation","""TenantDataSouces"" needs to be changed to ""TenantDataSource""",Bug,Low,2,4.73944875,2025-04-25T08:01:59.412Z,0.00257076,OFBIZ-13227,A0021,assignee,82,2025-04-25T07:46:06.000Z,2025-04-25T08:05:41.526Z,Fixed
 [SECURITY]  Several CVEs in Apache Tomcat,"https://lists.apache.org/thread/q4ld9xtv3zrvvs3ykp4b2f9j2tvhq6bl
-https://lists.apache.org/thread/x7l5ldwkson33bf4b3s3738lwjql618z",Bug,Major,5.17162784,2025-04-29T11:05:50.956Z,0.17786269,OFBIZ-13229,A0021,assignee,84,2025-04-29T07:14:49.000Z,2025-04-29T15:21:58.292Z,Fixed
+https://lists.apache.org/thread/x7l5ldwkson33bf4b3s3738lwjql618z",Bug,Normal,3,5.17162784,2025-04-29T11:05:50.956Z,0.17786269,OFBIZ-13229,A0021,assignee,84,2025-04-29T07:14:49.000Z,2025-04-29T15:21:58.292Z,Fixed
 Create a document on Confluence that lists glossary of Manufacturing concepts ,"Create a glossary document for business users evaluating Apache OFBiz for Manufacturing Execution and Planning System. This document should include key concepts used in the manufacturing industry and what are they called in Apache OFBiz. 
 
-Goal is to help business users in evaluating Apache OFBiz and this document can serve as a helpful beginner’s guide.",Task,Major,28.18462843,2025-05-09T13:11:32.275Z,270.70326956,OFBIZ-13232,A0053,project,186,2025-05-08T13:56:50.000Z,2026-02-04T06:04:14.765Z,Fixed
+Goal is to help business users in evaluating Apache OFBiz and this document can serve as a helpful beginner’s guide.",Task,Normal,3,28.18462843,2025-05-09T13:11:32.275Z,270.70326956,OFBIZ-13232,A0053,project,186,2025-05-08T13:56:50.000Z,2026-02-04T06:04:14.765Z,Fixed
 Fix autocompletion for lookups with target-parameters,"Description: When entering value in lookups with target-parameter option, the autocompletion does not return anything. An error ""Uncaught TypeError: DOMPurify.sanitize(...).val is not a function"" is returned (Tested with theme helveticus, rainbowstone and flatgrey)
 
 To reproduce:
     Go to the following page on a trunk environment and test autocompletion in lookups 'From Contact Mech' or 'To Contact Mech':
-    [https://localhost:8443/partymgr/control/EditCommunicationEvent]  or [https://demo-trunk.ofbiz.apache.org/partymgr/control/EditCommunicationEvent]",Bug,Minor,2.70783095,2025-05-20T15:18:09.615Z,0.00940191,OFBIZ-13236,A0035,assignee,12,2025-05-16T07:56:49.000Z,2025-05-20T15:31:41.940Z,Fixed
-Create a Document for Setting Up Routing in Apache OFBiz,"Create a document that explains the concept of routing and routing tasks in Apache OFBiz. The document should define what routing is, outline its role in the production process, and clarify how routing tasks guide the manufacturing flow.It should also include a guide for creating and configuring routing and routing tasks within Apache OFBiz.",Task,Major,28.03395877,2025-06-02T04:50:24.002Z,7.00087155,OFBIZ-13239,A0053,project,187,2025-05-30T10:02:37.000Z,2025-06-09T04:51:39.304Z,Fixed
+    [https://localhost:8443/partymgr/control/EditCommunicationEvent]  or [https://demo-trunk.ofbiz.apache.org/partymgr/control/EditCommunicationEvent]",Bug,Low,2,2.70783095,2025-05-20T15:18:09.615Z,0.00940191,OFBIZ-13236,A0035,assignee,12,2025-05-16T07:56:49.000Z,2025-05-20T15:31:41.940Z,Fixed
+Create a Document for Setting Up Routing in Apache OFBiz,"Create a document that explains the concept of routing and routing tasks in Apache OFBiz. The document should define what routing is, outline its role in the production process, and clarify how routing tasks guide the manufacturing flow.It should also include a guide for creating and configuring routing and routing tasks within Apache OFBiz.",Task,Normal,3,28.03395877,2025-06-02T04:50:24.002Z,7.00087155,OFBIZ-13239,A0053,project,187,2025-05-30T10:02:37.000Z,2025-06-09T04:51:39.304Z,Fixed
 ArithmeticException when producing inventory with general cost set on routing task,"h3. {*}Description{*}:
 
 We are encountering a runtime exception when attempting to produce inventory from a *Production Run* in the *Manufacturing* module. This issue specifically occurs when a *general cost* is configured on a {*}routing task{*}.
@@ -635,10 +635,10 @@ java.lang.ArithmeticException: Non-terminating decimal expansion; no exact repre
 	at java.base/java.math.BigDecimal.divide(BigDecimal.java:1780)
 	at org.apache.ofbiz.manufacturing.jobshopmgt.ProductionRunServices.productionRunProduce(ProductionRunServices.java:1872)
  
-This happens when {{unitCost = totalCost.divide(quantity)}} is called and the result is a non-terminating decimal (e.g., 10 / 3).",Bug,Major,10.56042716,2025-06-10T09:36:51.399Z,0.00767156,OFBIZ-13254,A0012,assignee,5,2025-06-10T07:15:35.000Z,2025-06-10T09:47:54.222Z,Fixed
+This happens when {{unitCost = totalCost.divide(quantity)}} is called and the result is a non-terminating decimal (e.g., 10 / 3).",Bug,Normal,3,10.56042716,2025-06-10T09:36:51.399Z,0.00767156,OFBIZ-13254,A0012,assignee,5,2025-06-10T07:15:35.000Z,2025-06-10T09:47:54.222Z,Fixed
 Calendar Exception Days Ignored in Production Run End Date Calculation.,"Within the *Manufacturing → Calendar* tab, users can define non-working days using the *""Add Calendar Exception Day""* form. However, even after correctly setting up exception days, the system fails to consider them when calculating the end date of a production run.
 
-As a result, the projected end date does not align with real-world schedules, leading to inaccuracies in planning and execution.",Improvement,Minor,27.77438536,2025-06-18T05:31:46.571Z,35.34899661,OFBIZ-13261,A0061,project,189,2025-06-17T09:18:29.000Z,2025-07-23T13:54:19.878Z,Fixed
+As a result, the projected end date does not align with real-world schedules, leading to inaccuracies in planning and execution.",Improvement,Low,2,27.77438536,2025-06-18T05:31:46.571Z,35.34899661,OFBIZ-13261,A0061,project,189,2025-06-17T09:18:29.000Z,2025-07-23T13:54:19.878Z,Fixed
 Fix ClassCastException in EntityConditionBuilder.createNode when using EntityFunction keys,"After upgrading to JDK 17, a {{ClassCastException}} occurs when using  key types such as {{EntityFunction$UPPER}} in {{EntityConditionBuilder}}
 
 This is due to stricter module boundaries and cast enforcement in JDK 17, which no longer allows implicit down casting from {{Object}} to {{String }}when the actual object is not a {{{}String{}}}.
@@ -646,15 +646,15 @@ This is due to stricter module boundaries and cast enforcement in JDK 17, which 
  
 {code:java}
 : java.lang.ClassCastException: class org.apache.ofbiz.entity.condition.EntityFunction$UPPER cannot be cast to class java.lang.String
-(org.apache.ofbiz.entity.condition.EntityFunction$UPPER is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap'){code}",Bug,Major,8.80163456,2025-06-23T13:53:56.047Z,0.62151025,OFBIZ-13268,A0012,assignee,6,2025-06-23T13:38:24.000Z,2025-06-24T04:48:54.533Z,Fixed
-Viewing records in Webtools/Entity Data Management got broken,This follows https://lists.apache.org/thread/mf2686218hn1v7sdz38cno4d6nyk7tl4 ,Bug,Major,5.11287766,2025-07-14T15:02:27.971Z,0.01867909,OFBIZ-13274,A0021,assignee,85,2025-07-14T14:59:41.000Z,2025-07-14T15:29:21.844Z,Fixed
+(org.apache.ofbiz.entity.condition.EntityFunction$UPPER is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap'){code}",Bug,Normal,3,8.80163456,2025-06-23T13:53:56.047Z,0.62151025,OFBIZ-13268,A0012,assignee,6,2025-06-23T13:38:24.000Z,2025-06-24T04:48:54.533Z,Fixed
+Viewing records in Webtools/Entity Data Management got broken,This follows https://lists.apache.org/thread/mf2686218hn1v7sdz38cno4d6nyk7tl4 ,Bug,Normal,3,5.11287766,2025-07-14T15:02:27.971Z,0.01867909,OFBIZ-13274,A0021,assignee,85,2025-07-14T14:59:41.000Z,2025-07-14T15:29:21.844Z,Fixed
 [SECURITY]  Several CVEs in Apache Tomcat,"In trunk :
 https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.43
 
 In 24.09.01
 https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.107
 
-More at https://lists.apache.org/list.html?announce@tomcat.apache.org",Bug,Major,5.11287766,2025-07-14T15:20:08.469Z,0.00730685,OFBIZ-13275,A0021,assignee,85,2025-07-14T15:15:50.000Z,2025-07-14T15:30:39.781Z,Fixed
+More at https://lists.apache.org/list.html?announce@tomcat.apache.org",Bug,Normal,3,5.11287766,2025-07-14T15:20:08.469Z,0.00730685,OFBIZ-13275,A0021,assignee,85,2025-07-14T15:15:50.000Z,2025-07-14T15:30:39.781Z,Fixed
 "Canceling a partially received Purchase Order receipt throws a ""Required Field Missing: Receipt Id"" error.","When a Purchase Order is partially received and the user clicks the *Cancel* button on the Receipt screen, the system displays an error message:
 The Following Errors Occurred:
 Required Field Missing: Receipt Id.
@@ -692,8 +692,8 @@ ERROR: Facility with ID not found
 Clicking *Cancel* should properly cancel the receipt without requiring manual entry of the Receipt ID.
 
 *Actual Result:*
-An error is thrown stating ""Required Field Missing: Receipt Id"" and ""Facility with ID not found"", preventing the cancel operation.",Bug,Minor,27.38526076,2025-08-12T09:53:12.589Z,153.07296411,OFBIZ-13283,A0061,project,193,2025-08-12T09:44:54.000Z,2026-01-12T11:38:16.688Z,Fixed
-The rest-api plugin is not working with Tomcat 10,Details: https://lists.apache.org/thread/qpnb0ff482hqbpxy0glyf4bj77zfsov1,Bug,Major,7.63304537,2025-08-20T19:15:26.957Z,0.00010080,OFBIZ-13286,A0012,assignee,7,2025-08-20T09:18:14.000Z,2025-08-20T19:15:35.666Z,Fixed
+An error is thrown stating ""Required Field Missing: Receipt Id"" and ""Facility with ID not found"", preventing the cancel operation.",Bug,Low,2,27.38526076,2025-08-12T09:53:12.589Z,153.07296411,OFBIZ-13283,A0061,project,193,2025-08-12T09:44:54.000Z,2026-01-12T11:38:16.688Z,Fixed
+The rest-api plugin is not working with Tomcat 10,Details: https://lists.apache.org/thread/qpnb0ff482hqbpxy0glyf4bj77zfsov1,Bug,Normal,3,7.63304537,2025-08-20T19:15:26.957Z,0.00010080,OFBIZ-13286,A0012,assignee,7,2025-08-20T09:18:14.000Z,2025-08-20T19:15:35.666Z,Fixed
 Repeated REST API exception results in generic 500 error instead of specific response,"When a REST API exposed via the {{rest-api}} module is called and an exception occurs during execution, OFBiz initially returns an appropriate error response. However, if the same API is called again and the exception persists, OFBiz returns a generic HTTP 500 Internal Server Error without providing the specific error message or exception details that were returned on the first call.
 
 
@@ -708,12 +708,12 @@ Repeated REST API exception results in generic 500 error instead of specific res
  # The second response returns HTTP 500 Internal Server Error without the original error message.
 
 *Expected Behavior:*
- * The API should return a consistent and descriptive error response each time the same exception occurs, not a generic 500 error.",Bug,Major,6.67892730,2025-08-21T10:48:21.560Z,1.98180476,OFBIZ-13278,A0012,assignee,8,2025-07-29T05:03:46.000Z,2025-08-23T10:22:09.491Z,Fixed
+ * The API should return a consistent and descriptive error response each time the same exception occurs, not a generic 500 error.",Bug,Normal,3,6.67892730,2025-08-21T10:48:21.560Z,1.98180476,OFBIZ-13278,A0012,assignee,8,2025-07-29T05:03:46.000Z,2025-08-23T10:22:09.491Z,Fixed
 Regression when willing to enter decimals,"Pierre Smits, who is not allowed to create Jira issues, reported me that contrary to current stable version (24.09), you can't enter decimals in places that require it.
 
 It gave me the example of product prices. I also found that it's not possible when creating a requirement with the quantity value: ordermgr/control/EditRequirement.
 
-I remember some changes about that, but it's not quite clear in my mind.",Bug,Major,4.99563893,2025-10-05T13:56:26.186Z,13.89228950,OFBIZ-13297,A0021,assignee,87,2025-10-02T09:01:16.000Z,2025-10-19T11:21:19.999Z,Fixed
+I remember some changes about that, but it's not quite clear in my mind.",Bug,Normal,3,4.99563893,2025-10-05T13:56:26.186Z,13.89228950,OFBIZ-13297,A0021,assignee,87,2025-10-02T09:01:16.000Z,2025-10-19T11:21:19.999Z,Fixed
 Error map is missing in the returned service result,"To reproduce :
  # Create a service
 
@@ -754,7 +754,7 @@ def.setMode(ModelService.OUT_PARAM);
 def.setOptional(true);
 def.setInternal(true);
 service.addParam(def); {code}
- ",Bug,Major,4.99563893,2025-10-15T09:09:49.908Z,0.99058350,OFBIZ-13303,A0021,assignee,87,2025-10-11T06:29:05.000Z,2025-10-16T08:56:16.322Z,Fixed
+ ",Bug,Normal,3,4.99563893,2025-10-15T09:09:49.908Z,0.99058350,OFBIZ-13303,A0021,assignee,87,2025-10-11T06:29:05.000Z,2025-10-16T08:56:16.322Z,Fixed
 OFBiz entity import screen is broken,"The entity import screen broken, while import data it throw following error 
 h1. HTTP Status 500 - Internal Server Error
 
@@ -766,13 +766,13 @@ Steps to reproduce:
 
  
 
- ",Bug,Major,5.05060068,2025-10-27T12:24:02.613Z,0.87423488,OFBIZ-13308,A0021,assignee,89,2025-10-27T12:00:18.000Z,2025-10-28T09:22:56.507Z,Fixed
-Hide Server Version Information on Error Pages,"OFBiz displays the server version information on the default error pages. To make error responses cleaner and more generic, we should prevent the version details from being shown.",Improvement,Minor,6.15702480,2025-10-27T18:47:06.394Z,0.01557226,OFBIZ-13309,A0012,assignee,9,2025-10-27T18:46:35.000Z,2025-10-27T19:09:31.837Z,Implemented
+ ",Bug,Normal,3,5.05060068,2025-10-27T12:24:02.613Z,0.87423488,OFBIZ-13308,A0021,assignee,89,2025-10-27T12:00:18.000Z,2025-10-28T09:22:56.507Z,Fixed
+Hide Server Version Information on Error Pages,"OFBiz displays the server version information on the default error pages. To make error responses cleaner and more generic, we should prevent the version details from being shown.",Improvement,Low,2,6.15702480,2025-10-27T18:47:06.394Z,0.01557226,OFBIZ-13309,A0012,assignee,9,2025-10-27T18:46:35.000Z,2025-10-27T19:09:31.837Z,Implemented
 BalanceSheet generates an error,"When accessing [https://demo-trunk.ofbiz.apache.org/accounting/control/BalanceSheet?organizationPartyId=Company] following error is thrown
 {code:java}
-java.lang.IllegalArgumentException: Error running script at location [component://accounting/src/main/groovy/org/apache/ofbiz/accounting/reports/BalanceSheet.groovy]: org.apache.ofbiz.service.ExecutionServiceException: ERROR: Could not complete the Prepare data for the Income Statement [GeneralLedgerServices.xml#prepareIncomeStatement] process [problem invoking the [getAcctgTransEntriesAndTransTotal] service with the map named [acctgTransEntriesAndTransTotalMap] containing [{userLogin=[GenericEntity:UserLogin][createdStamp,2024-04-24 15:39:29.792(java.sql.Timestamp)][createdTxStamp,2024-04-24 15:39:29.788(java.sql.Timestamp)][currentPassword,{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a(java.lang.String)][disabledBy,null()][disabledDateTime,null()][enabled,null()][externalAuthId,null()][hasLoggedOut,null()][isSystem,null()][lastCurrencyUom,null()][lastLocale,null()][lastTimeZone,Europe/Amsterdam(java.lang.String)][lastUpdatedStamp,2024-04-25 08:48:07.463(java.sql.Timestamp)][lastUpdatedTxStamp,2024-04-25 08:48:07.428(java.sql.Timestamp)][partyId,admin(java.lang.String)][passwordHint,null()][requirePasswordChange,null()][successiveFailedLogins,null()][userLdapDn,null()][userLoginId,admin(java.lang.String)], customTimePeriodEndDate=2024-04-25 16:10:46.214, isPosted=Y, glAccountId=409000, organizationPartyId=Company, locale=en_US}]: The following required parameter is missing: customTimePeriodStartDate] {code}",Bug,Major,5.00419661,2025-11-26T10:39:18.360Z,0.04517196,OFBIZ-13070,A0021,assignee,90,2024-04-25T14:14:04.000Z,2025-11-26T11:44:21.217Z,Fixed
+java.lang.IllegalArgumentException: Error running script at location [component://accounting/src/main/groovy/org/apache/ofbiz/accounting/reports/BalanceSheet.groovy]: org.apache.ofbiz.service.ExecutionServiceException: ERROR: Could not complete the Prepare data for the Income Statement [GeneralLedgerServices.xml#prepareIncomeStatement] process [problem invoking the [getAcctgTransEntriesAndTransTotal] service with the map named [acctgTransEntriesAndTransTotalMap] containing [{userLogin=[GenericEntity:UserLogin][createdStamp,2024-04-24 15:39:29.792(java.sql.Timestamp)][createdTxStamp,2024-04-24 15:39:29.788(java.sql.Timestamp)][currentPassword,{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a(java.lang.String)][disabledBy,null()][disabledDateTime,null()][enabled,null()][externalAuthId,null()][hasLoggedOut,null()][isSystem,null()][lastCurrencyUom,null()][lastLocale,null()][lastTimeZone,Europe/Amsterdam(java.lang.String)][lastUpdatedStamp,2024-04-25 08:48:07.463(java.sql.Timestamp)][lastUpdatedTxStamp,2024-04-25 08:48:07.428(java.sql.Timestamp)][partyId,admin(java.lang.String)][passwordHint,null()][requirePasswordChange,null()][successiveFailedLogins,null()][userLdapDn,null()][userLoginId,admin(java.lang.String)], customTimePeriodEndDate=2024-04-25 16:10:46.214, isPosted=Y, glAccountId=409000, organizationPartyId=Company, locale=en_US}]: The following required parameter is missing: customTimePeriodStartDate] {code}",Bug,Normal,3,5.00419661,2025-11-26T10:39:18.360Z,0.04517196,OFBIZ-13070,A0021,assignee,90,2024-04-25T14:14:04.000Z,2025-11-26T11:44:21.217Z,Fixed
 In several locations strings are compared with == and !=,"Should be compared with equals, unless they are interned. But even for interned strings equals() is safe
-Will provide a PR",Bug,Major,4.94970184,2025-11-29T13:14:35.130Z,0.06298948,OFBIZ-13320,A0021,assignee,91,2025-11-29T11:40:07.000Z,2025-11-29T14:45:17.421Z,Fixed
+Will provide a PR",Bug,Normal,3,4.94970184,2025-11-29T13:14:35.130Z,0.06298948,OFBIZ-13320,A0021,assignee,91,2025-11-29T11:40:07.000Z,2025-11-29T14:45:17.421Z,Fixed
 [optimization] There are several locations where in the loop we can exit early,"It concerns loops where the only action is searching for match.
 For example:
                 for (String packageFilter : packageFilterSet) {
@@ -781,19 +781,19 @@ For example:
                         break; // to be added
                     }
                 }
-I'm going to provide a PR",Improvement,Minor,4.94970184,2025-11-29T13:19:14.343Z,0.06020030,OFBIZ-13319,A0021,assignee,91,2025-11-29T10:58:35.000Z,2025-11-29T14:45:55.649Z,Implemented
+I'm going to provide a PR",Improvement,Low,2,4.94970184,2025-11-29T13:19:14.343Z,0.06020030,OFBIZ-13319,A0021,assignee,91,2025-11-29T10:58:35.000Z,2025-11-29T14:45:55.649Z,Implemented
 docker-entrypoint.sh does not properly handle variable OFBIZ_DISABLE_COMPONENTS,"The linked GH PR by [Javier Ochoa|https://github.com/javier-ochoa] fixes it so that the OFBIZ_DISABLE_COMPONENTS variable can be accepted being a list of comma-separated values, and disable one after another.
 
-After quickly reviewing that sounds good to me. We are unable to test this but by pushing it and checking on demo. I guess not changing the list for now (only Birt plugins).",Improvement,Major,4.84458126,2025-12-03T09:33:59.398Z,10.24084266,OFBIZ-13314,A0021,assignee,93,2025-11-14T12:03:10.000Z,2025-12-13T15:20:48.204Z,Fixed
+After quickly reviewing that sounds good to me. We are unable to test this but by pushing it and checking on demo. I guess not changing the list for now (only Birt plugins).",Improvement,Normal,3,4.84458126,2025-12-03T09:33:59.398Z,10.24084266,OFBIZ-13314,A0021,assignee,93,2025-11-14T12:03:10.000Z,2025-12-13T15:20:48.204Z,Fixed
 Invalid characters encountered,"Noticed during code analysis with SonarQube:
 
-Invalid character encountered in file ofbiz-framework/framework/webapp/src/main/java/org/apache/ofbiz/webapp/control/ConfigXMLReader.java at line 407 for encoding UTF-8. Please fix file content or configure the encoding to be used using property 'sonar.sourceEncoding'.",Bug,Trivial,4.84458126,2025-12-09T08:00:16.487Z,0.01343032,OFBIZ-13325,A0021,assignee,93,2025-12-08T15:50:41.000Z,2025-12-09T08:19:36.867Z,Fixed
+Invalid character encountered in file ofbiz-framework/framework/webapp/src/main/java/org/apache/ofbiz/webapp/control/ConfigXMLReader.java at line 407 for encoding UTF-8. Please fix file content or configure the encoding to be used using property 'sonar.sourceEncoding'.",Bug,Lowest,1,4.84458126,2025-12-09T08:00:16.487Z,0.01343032,OFBIZ-13325,A0021,assignee,93,2025-12-08T15:50:41.000Z,2025-12-09T08:19:36.867Z,Fixed
 Rewriting the UtilCacheTests,"The UtilCacheTest class was written 15 years ago, and has barely been updated since.
 It's very low level, so sensitive to modify, and may require attentive review.
-But these tests are quite hard to read, so i offer to, if not rewrite, at least try to explicit make the tests more readable.",Improvement,Minor,4.79318603,2025-12-10T08:04:09.362Z,42.22968389,OFBIZ-13311,A0021,assignee,94,2025-11-05T08:33:24.000Z,2026-01-21T13:34:54.050Z,Fixed
+But these tests are quite hard to read, so i offer to, if not rewrite, at least try to explicit make the tests more readable.",Improvement,Low,2,4.79318603,2025-12-10T08:04:09.362Z,42.22968389,OFBIZ-13311,A0021,assignee,94,2025-11-05T08:33:24.000Z,2026-01-21T13:34:54.050Z,Fixed
 Update to Apache Tika 3.0.0,"Follows [https://lists.apache.org/thread/wz7ds83q39t74n5lloy87m504m9r7gs9]
 
- ",Improvement,Major,4.85052979,2025-12-20T08:50:39.150Z,0.06383851,OFBIZ-13155,A0021,assignee,95,2024-10-21T08:31:18.000Z,2025-12-20T10:22:34.797Z,Implemented
+ ",Improvement,Normal,3,4.85052979,2025-12-20T08:50:39.150Z,0.06383851,OFBIZ-13155,A0021,assignee,95,2024-10-21T08:31:18.000Z,2025-12-20T10:22:34.797Z,Implemented
 Fix various bugs in receive against purchase orders,"With Confluences pages
 [Step-by-step workflow: purchase orders with one shipment and one invoice|https://cwiki.apache.org/confluence/display/OFBENDUSER/Step-by-step+workflow%3A+purchase+orders+with+one+shipment+and+one+invoice]
 and
@@ -801,11 +801,11 @@ and
 
 [~jacopoc] has reported several issues that [~golja] has begun to fix  with [PR-932|https://github.com/apache/ofbiz-framework/pull/932]
 
-This Jira issue is created as either an umbrella task with later subtasks or possibly a simple bugs fixes issues in relation with PR-932",Bug,Major,4.80066842,2025-12-25T08:09:19.640Z,15.23313918,OFBIZ-13327,A0021,assignee,96,2025-12-13T07:31:33.000Z,2026-01-09T13:45:02.865Z,Fixed
+This Jira issue is created as either an umbrella task with later subtasks or possibly a simple bugs fixes issues in relation with PR-932",Bug,Normal,3,4.80066842,2025-12-25T08:09:19.640Z,15.23313918,OFBIZ-13327,A0021,assignee,96,2025-12-13T07:31:33.000Z,2026-01-09T13:45:02.865Z,Fixed
 CommonEmptyHeader wrong value,"CommonEmptyHeader in framework/common/config/CommonUiLabels.xml used to hold the value of a simple space.
 
 In Issue 7345 UiLabels were alphabetical sorted but at the sime time the value was changed from a space to nothing at all, leading to the Label key beeing displayed in forms that use this label, instead of it beeing 'empty'. This unintentional change needs to be reverted.
-!image-2026-01-19-11-00-59-026.png!",Bug,Trivial,4.80066842,2026-01-21T14:54:26.817Z,0.01327977,OFBIZ-13342,A0021,assignee,96,2026-01-19T10:04:24.000Z,2026-01-21T15:13:34.189Z,Fixed
+!image-2026-01-19-11-00-59-026.png!",Bug,Lowest,1,4.80066842,2026-01-21T14:54:26.817Z,0.01327977,OFBIZ-13342,A0021,assignee,96,2026-01-19T10:04:24.000Z,2026-01-21T15:13:34.189Z,Fixed
 Correcting phrasing in README.adoc," 
 
 OFBIZ-13360: Corrected phrasing in README.adoc
@@ -814,7 +814,7 @@ Changed ""On Windows don't put OFBiz in a directory with space/s in the path""
 to ""On Windows, do not install OFBiz in a directory whose path contains spaces""
 for clarity and consistency.
 
-This improvement enhances documentation readability and grammar.",Improvement,Minor,4.75131390,2026-02-05T18:39:28.056Z,0.00558818,OFBIZ-13360,A0021,assignee,97,2026-02-05T18:01:54.000Z,2026-02-05T18:47:30.875Z,Fixed
+This improvement enhances documentation readability and grammar.",Improvement,Low,2,4.75131390,2026-02-05T18:39:28.056Z,0.00558818,OFBIZ-13360,A0021,assignee,97,2026-02-05T18:01:54.000Z,2026-02-05T18:47:30.875Z,Fixed
 "When receiving inventory from the ‘Receive Inventory Against Purchase Order’ screen, invoices generated for purchase orders containing more than one item are incomplete","Currently, when a purchase order contains more than one item and  inventory is received from the  ‘Receive Inventory Against Purchase Order’ screen, the invoice generated by the system reports only the first item processed, while the remaining items are ignored. 
 
  
@@ -844,9 +844,9 @@ As shown in the screenshot below, the invoice reports only the 9 units of GZ-100
 
 !5_invoice_annotated.png|width=931,height=156!
 
- ",Bug,Major,4.70288813,2026-02-09T08:50:25.327Z,0.00357063,OFBIZ-13358,A0021,assignee,98,2026-02-03T15:24:12.000Z,2026-02-09T08:55:33.829Z,Fixed
+ ",Bug,Normal,3,4.70288813,2026-02-09T08:50:25.327Z,0.00357063,OFBIZ-13358,A0021,assignee,98,2026-02-03T15:24:12.000Z,2026-02-09T08:55:33.829Z,Fixed
 [SECURITY]  Several CVEs in Apache Tomcat,"trunk: https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.52
-stable: https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.115",Bug,Major,4.65542027,2026-02-18T08:23:22.817Z,0.02870008,OFBIZ-13365,A0021,assignee,99,2026-02-18T08:21:40.000Z,2026-02-18T09:04:42.504Z,Fixed
+stable: https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.115",Bug,Normal,3,4.65542027,2026-02-18T08:23:22.817Z,0.02870008,OFBIZ-13365,A0021,assignee,99,2026-02-18T08:21:40.000Z,2026-02-18T09:04:42.504Z,Fixed
 Some widget form targets violate security checks,"{color:#2e3436}ran into errors violating link security checks:{color}
 
 {color:#2e3436}1){color}
@@ -874,7 +874,7 @@ Some widget form targets violate security checks,"{color:#2e3436}ran into errors
 
 {color:#2e3436}should be{color}
 
-{color:#2e3436}target=""EditFeatureCategoryFeatures""{color}",Bug,Minor,4.60915307,2026-02-19T16:18:37.346Z,0.06360756,OFBIZ-13364,A0021,assignee,100,2026-02-17T16:17:28.000Z,2026-02-19T17:50:13.039Z,Fixed
+{color:#2e3436}target=""EditFeatureCategoryFeatures""{color}",Bug,Low,2,4.60915307,2026-02-19T16:18:37.346Z,0.06360756,OFBIZ-13364,A0021,assignee,100,2026-02-17T16:17:28.000Z,2026-02-19T17:50:13.039Z,Fixed
 AI Agent Skills for OFBiz Apps/Plugins Development,"As AI agents become increasingly central to development, using an *agent skills file* is essential for providing the instructions necessary to execute tasks effectively.
 
 You can learn more about the importance and application of these files at [https://agentskills.io/home].
@@ -892,12 +892,12 @@ You can access them through my GitHub repository and documentation below:
 - [Skills Summary|https://github.com/arunpati/ofbiz-app-dev-agent/blob/main/SKILLS_SUMMARY.md]
 - [Readme|https://github.com/arunpati/ofbiz-app-dev-agent/blob/main/README.md]
 
-I’m looking forward to your feedback on how we can best integrate these.",Wish,Trivial,27.07920649,2026-03-03T04:04:34.773Z,9.06857097,OFBIZ-13367,A0003,project,214,2026-02-28T06:45:07.000Z,2026-03-12T05:43:19.305Z,Implemented
+I’m looking forward to your feedback on how we can best integrate these.",Wish,Lowest,1,27.07920649,2026-03-03T04:04:34.773Z,9.06857097,OFBIZ-13367,A0003,project,214,2026-02-28T06:45:07.000Z,2026-03-12T05:43:19.305Z,Implemented
 Remove obsolete enableRemoteStreaming from solrconfig.xml,"Since Solr 8.11.3 the variable 'enableRemoteStreaming' controlling the streaming of remoteURLs has been removed from solrconfig.xml and is now set via SystemPropertys due to security concerns.
 
 See also: https://issues.apache.org/jira/browse/SOLR-14853
 
-References in solrconfig.xml are ignored and should be removed.",Bug,Minor,4.56414767,2026-03-05T14:48:17.910Z,0.00236196,OFBIZ-13368,A0021,assignee,101,2026-03-04T10:52:12.000Z,2026-03-05T14:51:41.983Z,Fixed
+References in solrconfig.xml are ignored and should be removed.",Bug,Low,2,4.56414767,2026-03-05T14:48:17.910Z,0.00236196,OFBIZ-13368,A0021,assignee,101,2026-03-04T10:52:12.000Z,2026-03-05T14:51:41.983Z,Fixed
 DateTime pickers are not displayed according to the locale,"Currently when a date picker is rendered, the date format and names seems to be displayed in english even if a jQuery date picker plugin translation file exists for the selected locale (ex: for spanish with file datepicker-es.js) 
 
  
@@ -908,7 +908,7 @@ Go to  [find order page|https://demo-trunk.ofbiz.apache.org/ordermgr/control/fi
 
  
 
-The goal of the proposed fix is to transmit the locale to the context of the macro renderer for macro using ",Improvement,Minor,2.50025948,2026-03-20T16:18:21.700Z,0.00309538,OFBIZ-13328,A0035,assignee,13,2025-12-16T15:12:09.000Z,2026-03-20T16:22:49.141Z,Fixed
+The goal of the proposed fix is to transmit the locale to the context of the macro renderer for macro using ",Improvement,Low,2,2.50025948,2026-03-20T16:18:21.700Z,0.00309538,OFBIZ-13328,A0035,assignee,13,2025-12-16T15:12:09.000Z,2026-03-20T16:22:49.141Z,Fixed
 Error when forcing PO completion if receipt contains rejected units,"When a PO receipt contains rejected units, clicking the *“Force Complete Purchase Order”* button in the Order Details screen generates an error because the {{cancelRemainingPurchaseOrderItems}} service does not take rejected items into account when computing the units to cancel.
 
  
@@ -965,7 +965,7 @@ The problem is that, currently, the service only accounts for accepted quantitie
 
  
 
- ",Bug,Major,4.51942428,2026-03-27T08:52:08.098Z,0.04259866,OFBIZ-13373,A0021,assignee,102,2026-03-14T18:19:34.000Z,2026-03-27T09:53:28.622Z,Fixed
+ ",Bug,Normal,3,4.51942428,2026-03-27T08:52:08.098Z,0.04259866,OFBIZ-13373,A0021,assignee,102,2026-03-14T18:19:34.000Z,2026-03-27T09:53:28.622Z,Fixed
 Pressing sort button in any UI view will end with NPE,"Pressing sort button for field ends with error:
 
 java.lang.NullPointerException: Cannot invoke ""Object.getClass()"" because ""object"" is null org.apache.ofbiz.webapp.control.ControlFilter.doFilter(ControlFilter.java:188) javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:53) org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:70)
@@ -976,7 +976,7 @@ if ( (object.getClass().equals(String.class)
  
 need to be:
  
-if ( object != null && (object.getClass().equals(String.class) \|\| object instanceof Collection))",Bug,Major,4.51942428,2026-04-01T07:11:15.395Z,0.35838912,OFBIZ-13378,A0021,assignee,102,2026-03-30T09:10:47.000Z,2026-04-01T15:47:20.215Z,Fixed
+if ( object != null && (object.getClass().equals(String.class) \|\| object instanceof Collection))",Bug,Normal,3,4.51942428,2026-04-01T07:11:15.395Z,0.35838912,OFBIZ-13378,A0021,assignee,102,2026-03-30T09:10:47.000Z,2026-04-01T15:47:20.215Z,Fixed
 Not possible to add product to Promo Action Rule,"Adding a product to Promo Rule with action Product For Special Price finishing with error:
 
 The Following Errors Occurred:
@@ -994,11 +994,11 @@ How to reproduce:
  # Create action with Product for [Special Promo] price
  # Choose Product in Actions Products For Action field and press Add Action Products
 
- ",Bug,Major,4.51942428,2026-04-01T07:22:27.686Z,1.05281487,OFBIZ-13379,A0021,assignee,102,2026-03-30T13:25:23.000Z,2026-04-02T08:38:30.891Z,Fixed
+ ",Bug,Normal,3,4.51942428,2026-04-01T07:22:27.686Z,1.05281487,OFBIZ-13379,A0021,assignee,102,2026-03-30T13:25:23.000Z,2026-04-02T08:38:30.891Z,Fixed
 [SECURITY]  Several CVEs in Apache Tomcat,"Details :
 https://tomcat.apache.org/security-10.html  (trunk)
-https://tomcat.apache.org/security-9.html (24.09)",Sub-task,Major,4.44608154,2026-04-10T13:43:38.125Z,0.10381124,OFBIZ-13381,A0021,assignee,104,2026-04-10T13:43:29.000Z,2026-04-10T16:13:07.416Z,Fixed
-The logs demos are not working,See https://lists.apache.org/thread/ppvrrspmc473ox872v51fcj6s9yvmsxl,Bug,Major,12.58471893,2026-04-10T15:02:52.835Z,0.02769313,OFBIZ-13382,A0010,assignee,41,2026-04-10T14:33:12.000Z,2026-04-10T15:42:45.521Z,Fixed
+https://tomcat.apache.org/security-9.html (24.09)",Sub-task,Normal,3,4.44608154,2026-04-10T13:43:38.125Z,0.10381124,OFBIZ-13381,A0021,assignee,104,2026-04-10T13:43:29.000Z,2026-04-10T16:13:07.416Z,Fixed
+The logs demos are not working,See https://lists.apache.org/thread/ppvrrspmc473ox872v51fcj6s9yvmsxl,Bug,Normal,3,12.58471893,2026-04-10T15:02:52.835Z,0.02769313,OFBIZ-13382,A0010,assignee,41,2026-04-10T14:33:12.000Z,2026-04-10T15:42:45.521Z,Fixed
 Accounting - New Agreement shows wrong form,"New Agreement shows EditBillingAccount instead of Agreement Form
 
 Steps:
@@ -1008,7 +1008,7 @@ Steps:
 
 Reproducible on stable demo 
 
-Patch is attached.",Bug,Major,4.40472659,2026-04-14T12:57:29.149Z,0.02534340,OFBIZ-13384,A0021,assignee,105,2026-04-14T08:24:53.000Z,2026-04-14T13:33:58.819Z,Fixed
+Patch is attached.",Bug,Normal,3,4.40472659,2026-04-14T12:57:29.149Z,0.02534340,OFBIZ-13384,A0021,assignee,105,2026-04-14T08:24:53.000Z,2026-04-14T13:33:58.819Z,Fixed
 Possible NPE in PayPal services,"PayPalServices.setExpressCheckout:
 
  
@@ -1022,27 +1022,27 @@ Possible NPE in PayPal services,"PayPalServices.setExpressCheckout:
 
  
 
-using cart before checking if it is null",Bug,Major,4.40472659,2026-04-14T12:57:39.503Z,0.24730538,OFBIZ-13385,A0021,assignee,105,2026-04-14T08:31:59.000Z,2026-04-14T18:53:46.688Z,Fixed
+using cart before checking if it is null",Bug,Normal,3,4.40472659,2026-04-14T12:57:39.503Z,0.24730538,OFBIZ-13385,A0021,assignee,105,2026-04-14T08:31:59.000Z,2026-04-14T18:53:46.688Z,Fixed
 Fix Production Run cost calculation logic to exclude returned items from material cost calculations,"In the Manufacturing module, while executing the production run, during final material consolidation and cost calculation, the leftover/unused inventory items that are returned, are reflected with negative quantities and are incorrectly included in the final used material list, resulting in inflated material costs and discrepancies in financial reports, causing the reported production costs to be inaccurate.
 The issue occurs specifically in the cost calculation logic used in the Production Run's ""Actual Costs"" section and affects related cost reports and screens within the manufacturing module. Because of this, the financial data does not correctly reflect the actual consumption of materials, leading to potential errors in operational and strategic decision-making.
-",Bug,Minor,4.32494337,2026-05-11T07:57:38.717Z,0.04951942,OFBIZ-13243,A0021,assignee,107,2025-06-03T10:54:48.000Z,2026-05-11T09:08:57.195Z,Fixed
+",Bug,Low,2,4.32494337,2026-05-11T07:57:38.717Z,0.04951942,OFBIZ-13243,A0021,assignee,107,2025-06-03T10:54:48.000Z,2026-05-11T09:08:57.195Z,Fixed
 Add userFullName field to UserLogin entity and remove dependency on Party for display name,"Currently, user display names are derived from the Party entity (Person/PartyNameView).
 This creates a tight dependency between the framework and the Party/Content data model, which belongs to the application layer.
 
  
 
-Introduce a {{userFullName}} field in the {{UserLogin}} entity to eliminate the framework’s dependency on the {{Party}} data model for retrieving user display names. ",Sub-task,Minor,18.95470541,2026-05-22T09:22:21.395Z,7.05536817,OFBIZ-13391,A0012,assignee,11,2026-04-29T06:48:00.000Z,2026-05-29T10:42:05.205Z,Implemented
+Introduce a {{userFullName}} field in the {{UserLogin}} entity to eliminate the framework’s dependency on the {{Party}} data model for retrieving user display names. ",Sub-task,Low,2,18.95470541,2026-05-22T09:22:21.395Z,7.05536817,OFBIZ-13391,A0012,assignee,11,2026-04-29T06:48:00.000Z,2026-05-29T10:42:05.205Z,Implemented
 User Profile Management Page,"Add a new page to view and manage the logged-in user profile.
 
 From this page, users should be able to update:
  * Name
  * Password
  * Timezone
- * Locale",Sub-task,Major,18.95470541,2026-05-26T09:55:30.181Z,0.04763128,OFBIZ-13419,A0012,assignee,11,2026-05-22T09:43:28.000Z,2026-05-26T11:04:05.524Z,Implemented
-Update framework code to use UserLogin.userFullName instead of Party-based name lookup,Update all framework-level code and templates that currently resolve the logged-in user’s display name from Party/Person data. The framework should use the new {{userFullName}} field from the {{UserLogin}} entity instead.,Sub-task,Minor,17.37911590,2026-05-26T11:06:15.116Z,0.00010843,OFBIZ-13392,A0012,assignee,12,2026-04-29T06:49:34.000Z,2026-05-26T11:06:24.484Z,Implemented
+ * Locale",Sub-task,Normal,3,18.95470541,2026-05-26T09:55:30.181Z,0.04763128,OFBIZ-13419,A0012,assignee,11,2026-05-22T09:43:28.000Z,2026-05-26T11:04:05.524Z,Implemented
+Update framework code to use UserLogin.userFullName instead of Party-based name lookup,Update all framework-level code and templates that currently resolve the logged-in user’s display name from Party/Person data. The framework should use the new {{userFullName}} field from the {{UserLogin}} entity instead.,Sub-task,Low,2,17.37911590,2026-05-26T11:06:15.116Z,0.00010843,OFBIZ-13392,A0012,assignee,12,2026-04-29T06:49:34.000Z,2026-05-26T11:06:24.484Z,Implemented
 Add dedicated permission for updating other user passwords,"The {{LoginServices}} currently use the {{PARTYMGR_UPDATE}} permission to determine whether a user is authorized to set/reset another user’s password.
 
-Introduce a dedicated {{SECURITY_PWD_UPDATE}} permission specifically for cross-user password updates/reset operations.",Sub-task,Major,16.04226917,2026-05-26T12:44:53.726Z,0.03386142,OFBIZ-13426,A0012,assignee,13,2026-05-26T10:44:36.000Z,2026-05-26T13:33:39.353Z,Implemented
+Introduce a dedicated {{SECURITY_PWD_UPDATE}} permission specifically for cross-user password updates/reset operations.",Sub-task,Normal,3,16.04226917,2026-05-26T12:44:53.726Z,0.03386142,OFBIZ-13426,A0012,assignee,13,2026-05-26T10:44:36.000Z,2026-05-26T13:33:39.353Z,Implemented
 Import Party service fails with exception,"While using the {*}Import Party feature{*}, the service invocation fails with a {{{}GenericServiceException{}}}. The backend throws an unexpected exception indicating a missing header name.
 
 *Steps to Reproduce*
@@ -1106,7 +1106,7 @@ Caused by: java.lang.IllegalArgumentException: A header name is missing in [part
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at org.apache.ofbiz.service.engine.StandardJavaEngine.serviceInvoker(StandardJavaEngine.java:101)
 	... 36 more {code}
-{{}}",Bug,Major,25.38457931,2026-06-05T10:41:18.591Z,56.13570604,OFBIZ-13435,A0056,project,229,2026-06-05T10:40:46.000Z,2026-07-31T13:56:43.593Z,Fixed
+{{}}",Bug,Normal,3,25.38457931,2026-06-05T10:41:18.591Z,56.13570604,OFBIZ-13435,A0056,project,229,2026-06-05T10:40:46.000Z,2026-07-31T13:56:43.593Z,Fixed
 order item attribute autoReserve not stored,"Creating an order, adding a product, checking 'Auto Reserve', no inventory reservation happens (service reserveStoreInventory is not called).
 
 The problem results from a missing entry in the order_item_attribute table.
@@ -1115,7 +1115,7 @@ component://order/template/entry/cart/ShowCart.ftl 
 
 order_item_attr_autoReserve
 
-attribute is not stored",Bug,Major,25.38457931,2026-06-05T11:52:28.470Z,34.93808804,OFBIZ-13386,A0056,project,229,2026-04-16T08:32:07.000Z,2026-07-10T10:23:19.277Z,Fixed
+attribute is not stored",Bug,Normal,3,25.38457931,2026-06-05T11:52:28.470Z,34.93808804,OFBIZ-13386,A0056,project,229,2026-04-16T08:32:07.000Z,2026-07-10T10:23:19.277Z,Fixed
 sendInvoicePerEmail fails with MissingMethodException: invalid makeValidContext() call in InvoiceServicesScript.groovy,"**Summary**
 The `sendInvoicePerEmail` service in
 `component://accounting/src/main/groovy/org/apache/ofbiz/accounting/invoice/InvoiceServicesScript.groovy`
@@ -1148,7 +1148,7 @@ Use the 3-argument overload, passing the target service name and the IN mode:
 Patch attached.
 
 **Environment**
-OFBiz <your version/branch>, Groovy 5.0.0-alpha-11, JDK 17",Bug,Major,25.38457931,2026-06-05T14:36:07.796Z,0.00030013,OFBIZ-13388,A0013,project,229,2026-04-23T06:02:18.000Z,2026-06-05T14:36:33.727Z,Fixed
+OFBiz <your version/branch>, Groovy 5.0.0-alpha-11, JDK 17",Bug,Normal,3,25.38457931,2026-06-05T14:36:07.796Z,0.00030013,OFBIZ-13388,A0013,project,229,2026-04-23T06:02:18.000Z,2026-06-05T14:36:33.727Z,Fixed
 Remove deprecated and defunct 3rd Party Payment Integrations from applications,"Remove the following payment gateway integrations from {{applications/accounting/}} whose third-party APIs and SDKs are no longer operational, deprecated, and haven't been maintained for a while:
  * PCCharge & RITA (GO Software / Verifone): Verifone announced end-of-life in April 2015; all support terminated on October 1, 2015. Both communicate over raw TCP/IP sockets to a local Windows daemon with no cloud successor.
 Ref: [https://3dmerchant.com/blog/merchant-processing-industry-news/pccharge-life-notice-verifone]
@@ -1172,7 +1172,7 @@ Ref: [https://developer.cybersource.com/docs/cybs/en-us/so-p12/migration/all/so
 
  * {color:#000000}Authorize.Net AIM: The integration posts to {{transact.dll}} using Name-Value Pair (NVP) fields prefixed with {{x_}} — the exact pattern Authorize.net has deprecated. AIM is officially labeled ""Deprecated"" and will no longer receive updates including payment network mandate compliance updates.{color}Ref: [https://developer.authorize.net/api/upgrade_guide.html]
 
-Dev Mailing List Reference: https://lists.apache.org/thread/tdcgcq63k2m96vrjkl91w9691zvbvog8",Improvement,Major,25.27421287,2026-06-23T11:01:58.543Z,2.98407355,OFBIZ-13446,A0036,project,230,2026-06-22T11:22:39.000Z,2026-06-26T10:39:02.498Z,Fixed
+Dev Mailing List Reference: https://lists.apache.org/thread/tdcgcq63k2m96vrjkl91w9691zvbvog8",Improvement,Normal,3,25.27421287,2026-06-23T11:01:58.543Z,2.98407355,OFBIZ-13446,A0036,project,230,2026-06-22T11:22:39.000Z,2026-06-26T10:39:02.498Z,Fixed
 Remove the WebPOS plugin and move to the attic,"Remove the WebPOS plugin.
 
 [https://github.com/apache/ofbiz-plugins/tree/trunk/webpos]
@@ -1203,10 +1203,10 @@ As a first step, we could consider:
 
  # Deprecating the plugin if community interest is low.
 
- # Eventually archiving or removing the plugin if no active maintenance exists.",Task,Minor,25.27421287,2026-06-26T09:14:17.562Z,0.00092532,OFBIZ-13445,A0003,project,230,2026-06-19T12:31:32.000Z,2026-06-26T09:15:37.510Z,Fixed
+ # Eventually archiving or removing the plugin if no active maintenance exists.",Task,Low,2,25.27421287,2026-06-26T09:14:17.562Z,0.00092532,OFBIZ-13445,A0003,project,230,2026-06-19T12:31:32.000Z,2026-06-26T09:15:37.510Z,Fixed
 The port offset is being applied twice when loading WebSite properties.,"In the method {{{}from(GenericValue){}}}, web site default settings are loaded. Configurations are overridden by the WebSite being used. In particular, a port offset is always added here, which can be set via the start parameters. Therefore, it is not necessary to adjust the WebSite entry in the database to store an alternative port to 8443. The method {{from(HttpServletRequest)}} calls the method {{from(GenericValue)}} itself and additionally sets the port offset. The result is that an offset is added twice.
 
-My suggestion is that {{addPortoffset}} is initialized with {{false}} and only set to {{true}} when new WebSiteProperties are created.",Bug,Minor,25.06919810,2026-06-30T12:26:44.289Z,0.01162946,OFBIZ-13352,A0003,project,232,2026-01-29T10:50:45.000Z,2026-06-30T12:43:29.074Z,Fixed
+My suggestion is that {{addPortoffset}} is initialized with {{false}} and only set to {{true}} when new WebSiteProperties are created.",Bug,Low,2,25.06919810,2026-06-30T12:26:44.289Z,0.01162946,OFBIZ-13352,A0003,project,232,2026-01-29T10:50:45.000Z,2026-06-30T12:43:29.074Z,Fixed
 Apache OFBiz MRP — Procurement Lead Time Not Applied to Purchase Requirements,"_Feature gap / enhancement request · verified on trunk (commit 18109c9fe7), Java 17, demo data_
 h3. Use case
 
@@ -1237,7 +1237,7 @@ _Supplier record for Glue — standardLeadTimeDays = 15. This value is configure
 _Baseline MRP run — every purchased PRODUCT_REQUIREMENT has requirementStartDate equal to requiredByDate (no procurement offset); only manufactured items are back-scheduled._
 
 !tc3_finishedgood_requirements.png!
-_Even with delivery days set, the proposed purchase requirements still have requirementStartDate equal to requiredByDate — the supplier's delivery time is not factored into the dates._",Task,Major,24.96165489,2026-07-03T16:10:16.817Z,6.91668801,OFBIZ-13451,A0015,project,233,2026-06-29T09:19:39.000Z,2026-07-10T14:10:18.661Z,Fixed
+_Even with delivery days set, the proposed purchase requirements still have requirementStartDate equal to requiredByDate — the supplier's delivery time is not factored into the dates._",Task,Normal,3,24.96165489,2026-07-03T16:10:16.817Z,6.91668801,OFBIZ-13451,A0015,project,233,2026-06-29T09:19:39.000Z,2026-07-10T14:10:18.661Z,Fixed
 MRP applies the global SUPPLIER calendar to resolve ProductFacility.daysToShip instead of Facility specific Calendars,"Currently in MRP, the {{requirementStartDate}} for a purchased product (no BoM) is computed by walking backward from the {{requiredByDate}} over a single global {{TechDataCalendar}} with {{{}calendarId = ""SUPPLIER""{}}}.
 
 Part of that backward offset is {{ProductFacility.daysToShip}} (honoured for {{SALES_ORDER_SHIP}} events). However, {{daysToShip}} is a *facility-level* attribute representing handling/ship work performed at the facility — so applying a *supplier-side* calendar doesn't look like a sound approach.
@@ -1261,9 +1261,9 @@ Add a new facility calendar type (and optionally demo {{FacilityCalendar}} rows)
 h2. Backward compatibility
  * Behaviour changes *only* for purchased products at facilities that have a {{SHIPPING}} {{FacilityCalendar}} configured. With none configured, the result is identical to today (global DEFAULT calendar, or direct arithmetic when absent).
  * This activates the previously-unused {{FacilityCalendar}} / {{FacilityCalendarType}} entities for their intended purpose.
- * The pre-existing limitation that {{TechDataServices}} backward functions ({{{}capacityRemainingBackward{}}}, {{{}endPreviousDay{}}}) do not honour {{TechDataCalendarExcDay}} / {{TechDataCalendarExcWeek}} exception days applies equally here and is {*}out of scope{*}.",Improvement,Minor,24.96165489,2026-07-06T12:48:21.312Z,4.05702265,OFBIZ-13452,A0015,project,233,2026-06-30T11:51:05.000Z,2026-07-10T14:10:28.069Z,Fixed
-MissingPropertyException in copyQuote service when copying quote adjustments,An execution failure occurs when invoking the {{copyQuote}} service with the {{copyQuoteAdjustments}} parameter set to {{{}Y{}}}. The service aborts with a {{groovy.lang.MissingPropertyException}} during the retrieval and processing of quote adjustments.,Bug,Minor,11.00480345,2026-07-10T12:28:34.207Z,0.00074385,OFBIZ-13458,A0003,assignee,4,2026-07-10T11:56:43.000Z,2026-07-10T12:29:38.476Z,Fixed
-Move FinAccount title to above FinAccountTabBar,For a unified user experience the title of a financial account should move to above the menu of financial account.,Improvement,Major,8.80399153,2026-07-10T14:16:08.625Z,0.00071928,OFBIZ-13018,A0003,assignee,5,2024-04-13T07:18:12.000Z,2026-07-10T14:17:10.771Z,Fixed
+ * The pre-existing limitation that {{TechDataServices}} backward functions ({{{}capacityRemainingBackward{}}}, {{{}endPreviousDay{}}}) do not honour {{TechDataCalendarExcDay}} / {{TechDataCalendarExcWeek}} exception days applies equally here and is {*}out of scope{*}.",Improvement,Low,2,24.96165489,2026-07-06T12:48:21.312Z,4.05702265,OFBIZ-13452,A0015,project,233,2026-06-30T11:51:05.000Z,2026-07-10T14:10:28.069Z,Fixed
+MissingPropertyException in copyQuote service when copying quote adjustments,An execution failure occurs when invoking the {{copyQuote}} service with the {{copyQuoteAdjustments}} parameter set to {{{}Y{}}}. The service aborts with a {{groovy.lang.MissingPropertyException}} during the retrieval and processing of quote adjustments.,Bug,Low,2,11.00480345,2026-07-10T12:28:34.207Z,0.00074385,OFBIZ-13458,A0003,assignee,4,2026-07-10T11:56:43.000Z,2026-07-10T12:29:38.476Z,Fixed
+Move FinAccount title to above FinAccountTabBar,For a unified user experience the title of a financial account should move to above the menu of financial account.,Improvement,Normal,3,8.80399153,2026-07-10T14:16:08.625Z,0.00071928,OFBIZ-13018,A0003,assignee,5,2024-04-13T07:18:12.000Z,2026-07-10T14:17:10.771Z,Fixed
 Updating certain fields on invoices and invoice items does not allow you to enter a blank value.,"On an invoice or invoice line, it is not possible to set certain fields to null.
 For example, if the Invoice.invoiceMessage field contains a message and if you want to delete this message by setting it to empty, the update service ignores null fields and the message remains.
 
@@ -1274,7 +1274,7 @@ The same test can be performed on invoice lines.
 
 The attached patch corrects the problem.
 
- ",Bug,Major,7.33677949,2026-07-31T10:44:58.119Z,0.07834774,OFBIZ-13359,A0003,assignee,6,2026-02-05T14:15:46.000Z,2026-07-31T12:37:47.364Z,Fixed
+ ",Bug,Normal,3,7.33677949,2026-07-31T10:44:58.119Z,0.07834774,OFBIZ-13359,A0003,assignee,6,2026-02-05T14:15:46.000Z,2026-07-31T12:37:47.364Z,Fixed
 Catalog : Not able to update Inventory Facility for the Product Store,"Getting following error while updating inventory facility over product store. 
 
 Error calling event: org.apache.ofbiz.webapp.event.EventHandlerException: Service invocation error (groovy.lang.MissingMethodException: No signature of method: org.apache.ofbiz.entity.GenericDelegator.storeByCondition() is applicable for argument types: (String, org.apache.ofbiz.entity.condition.EntityConditionBuilder$ConditionHolder...) values: [ProductStoreFacility, ((thruDate IS NULL OR thruDate >= '2026-07-30 17:48:40.973') AND productStoreId = '9100' AND fromDate <= '2026-07-30 17:48:40.973'), ...]<br/>Possible solutions: storeByCondition(java.lang.String, java.util.Map, org.apache.ofbiz.entity.condition.EntityCondition))
@@ -1283,7 +1283,7 @@ Error calling event: org.apache.ofbiz.webapp.event.EventHandlerException: Servic
 
 !image-2026-07-30-18-30-29-290.png!
 
- ",Bug,Major,24.52743598,2026-07-31T13:40:49.152Z,0.09270657,OFBIZ-13472,A0007,project,239,2026-07-30T13:01:13.000Z,2026-07-31T15:54:19.000Z,Fixed
+ ",Bug,Normal,3,24.52743598,2026-07-31T13:40:49.152Z,0.09270657,OFBIZ-13472,A0007,project,239,2026-07-30T13:01:13.000Z,2026-07-31T15:54:19.000Z,Fixed
 OrderManager findOrders print error,"Go to Order > Find Orders
 
 Check some orders
@@ -1315,7 +1315,7 @@ net.sf.saxon.trans.XPathException: org.apache.fop.fo.ValidationException: Docume
 
  
 
-The demo installation has the same problem.",Bug,Critical,12.52934134,2026-09-16T04:59:12.286Z,0.18460152,OFBIZ-13505,A0003,assignee,8,2026-08-28T12:35:35.000Z,2026-09-16T09:25:01.857Z,Fixed
+The demo installation has the same problem.",Bug,High,4,12.52934134,2026-09-16T04:59:12.286Z,0.18460152,OFBIZ-13505,A0003,assignee,8,2026-08-28T12:35:35.000Z,2026-09-16T09:25:01.857Z,Fixed
 Open combined PDF in browser from Find Orders Print (PDF) action when no printer is selected,"*Current behavior*
 
 On Find Orders (ordermgr), the ""Print (PDF)"" mass action renders one PDF per selected
@@ -1345,7 +1345,7 @@ behavior and spool the jobs to that printer.
 
 - Depends on OFBIZ-13505, which fixes the rendering defects currently breaking the
   mass PDF actions.
-- Existing printing and Create File behavior is unchanged.",Improvement,Minor,12.52934134,2026-09-16T05:16:00.128Z,0.18120689,OFBIZ-13598,A0003,assignee,8,2026-09-16T04:58:25.000Z,2026-09-16T09:36:56.403Z,Fixed
+- Existing printing and Create File behavior is unchanged.",Improvement,Low,2,12.52934134,2026-09-16T05:16:00.128Z,0.18120689,OFBIZ-13598,A0003,assignee,8,2026-09-16T04:58:25.000Z,2026-09-16T09:36:56.403Z,Fixed
 "Auto-generated indicator (Y/N) fields silently default to ""Y"" and overwrite a NULL value on unrelated form saves","*Problem*
 
 {{ModelFormFieldBuilder.induceFieldInfoFromEntityField()}} builds the auto-generated {{<drop-down>}} control for an {{{}indicator{}}}-type entity field differently depending on context:
@@ -1382,7 +1382,7 @@ Note: {{allocateInventory}} itself already has a narrower, pre-existing fix (OFB
 
 Raised on [dev@ofbiz.apache.org|mailto:dev@ofbiz.apache.org] (""[DISCUSS] Auto-generated indicator fields silently default to first <option> (Y/N) when unset - framework-level fix?"", 2026-08-24). Community feedback (Divesh Dutta) favored the framework-level fix over a per-field patch, since the per-field approach doesn't prevent recurrence for other entities' nullable indicator fields.
 
-*Related:* OFBIZ-12001 (PR #1237) — prior narrower fix for {{ProductStore.allocateInventory}} display default.",Improvement,Major,24.35659021,2026-10-06T07:15:40.950Z,6.94497015,OFBIZ-13503,A0042,project,243,2026-08-25T06:11:56.000Z,2026-10-13T05:56:26.371Z,Fixed
+*Related:* OFBIZ-12001 (PR #1237) — prior narrower fix for {{ProductStore.allocateInventory}} display default.",Improvement,Normal,3,24.35659021,2026-10-06T07:15:40.950Z,6.94497015,OFBIZ-13503,A0042,project,243,2026-08-25T06:11:56.000Z,2026-10-13T05:56:26.371Z,Fixed
 BOMNode.substituteNode throws NullPointerException when a ProductManufacturingRule has no quantity,"In BOMNode.substituteNode the rule quantity is read like this:
 
 {code:java}
@@ -1425,4 +1425,4 @@ ruleQuantity = BigDecimal.ZERO;
 }
 {code}
 
-and remove the try/catch, which cannot be reached for this case.",Bug,Minor,10.06005391,2026-10-24T07:29:25.591Z,0.00073922,OFBIZ-13694,A0003,assignee,10,2026-10-17T08:51:52.000Z,2026-10-24T07:30:29.460Z,Fixed
+and remove the try/catch, which cannot be reached for this case.",Bug,Low,2,10.06005391,2026-10-24T07:29:25.591Z,0.00073922,OFBIZ-13694,A0003,assignee,10,2026-10-17T08:51:52.000Z,2026-10-24T07:30:29.460Z,Fixed

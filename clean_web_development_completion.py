@@ -12,11 +12,18 @@ from pathlib import Path
 SOURCE = Path("web_development_completion_2024_plus")
 OUTPUT = Path("web_development_completion_2024_plus_cleaned")
 COLUMNS = [
-    "title", "Description", "task_type", "Priority",
+    "title", "Description", "task_type", "Priority", "priority_value",
     "assignee_average_completion_days", "actual_start_date",
     "actual_completion_duration_days", "issue_key", "assignee_id",
     "average_source", "prior_completed_tasks_used", "Created", "Resolved", "Resolution",
 ]
+PRIORITY_VALUES = {"Highest": 5, "High": 4, "Normal": 3, "Low": 2, "Lowest": 1}
+PRIORITY_ALIASES = {
+    "Blocker": "Highest", "P1": "Highest",
+    "Critical": "High",
+    "Major": "Normal", "P3": "Normal", "Medium": "Normal",
+    "Minor": "Low", "Trivial": "Lowest",
+}
 GREETING = re.compile(r"^(hello|hi|dear)\b", re.I)
 SIGN_OFF = re.compile(r"^(thanks?(?:\s*(?:&|and)\s*regards)?|regards|best regards|kind regards|thank you)[\s,!.]*$", re.I)
 
@@ -61,17 +68,26 @@ def clean_file(path: Path) -> int:
     count = 0
     with path.open(encoding="utf-8-sig", newline="") as source, destination.open("w", encoding="utf-8", newline="") as target:
         reader = csv.DictReader(source)
-        if reader.fieldnames != COLUMNS:
+        if reader.fieldnames not in (COLUMNS, [column for column in COLUMNS if column != "priority_value"]):
             raise ValueError(f"{path.name}: unexpected source schema")
         writer = csv.DictWriter(target, fieldnames=COLUMNS, quoting=csv.QUOTE_MINIMAL)
         writer.writeheader()
         for row_number, raw in enumerate(reader, start=2):
-            cleaned = {key: text(raw[key]) for key in COLUMNS}
+            cleaned = {key: text(raw.get(key)) for key in COLUMNS}
             if any(not cleaned[key] for key in ("title", "task_type", "Priority", "issue_key", "Created", "Resolved")):
                 raise ValueError(f"{path.name}, row {row_number}: a required field is blank")
             if cleaned["issue_key"] in seen:
                 continue
             seen.add(cleaned["issue_key"])
+            priority = cleaned["Priority"]
+            priority = PRIORITY_ALIASES.get(priority, priority)
+            if priority not in PRIORITY_VALUES:
+                raise ValueError(f"{path.name}, row {row_number}: unknown priority {priority!r}")
+            value = str(PRIORITY_VALUES[priority])
+            if "priority_value" in raw and cleaned["priority_value"] != value:
+                raise ValueError(f"{path.name}, row {row_number}: priority_value must be {value}")
+            cleaned["Priority"] = priority
+            cleaned["priority_value"] = value
             cleaned["Description"] = description(raw["Description"])
             cleaned["task_type"] = {"Bug": "Bug Fix", "New Feature": "Feature Development"}.get(cleaned["task_type"], cleaned["task_type"])
             for field in ("assignee_average_completion_days", "actual_completion_duration_days"):

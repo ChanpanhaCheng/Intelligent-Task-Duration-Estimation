@@ -1,4 +1,4 @@
-﻿title,Description,task_type,Priority,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
+﻿title,Description,task_type,Priority,priority_value,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
 Upgrade Commons Fileupload to FileUpload Jakarta Servlet 6,"There is a new version of JakartaEE FileUpload
 
 {code:xml}
@@ -7,7 +7,7 @@ Upgrade Commons Fileupload to FileUpload Jakarta Servlet 6,"There is a new versi
   <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
   <version>2.0.0-M2</version>
 </dependency>
-{code}",Improvement,Major,2.72385609,2024-01-24T08:10:51.312Z,8.00890689,WW-5388,A0033,assignee,4,2024-01-24T08:00:32.000Z,2024-02-01T08:23:40.867Z,Fixed
+{code}",Improvement,Normal,3,2.72385609,2024-01-24T08:10:51.312Z,8.00890689,WW-5388,A0033,assignee,4,2024-01-24T08:00:32.000Z,2024-02-01T08:23:40.867Z,Fixed
 I18nInterceptor and invalid locale,"Exception if locale contains trimable characters:
 
  
@@ -44,7 +44,7 @@ java.lang.IllegalArgumentException: Invalid locale format: de
         at org.apache.struts2.interceptor.I18nInterceptor.getLocaleFromParam(I18nInterceptor.java:188) ~[org.apache.struts-struts2-core-6.3.0.2-.jar:6.3.0.2]
         at org.apache.struts2.interceptor.I18nInterceptor$SessionLocaleHandler.find(I18nInterceptor.java:321) ~[org.apache.struts-struts2-core-6.3.0.2-.jar:6.3.0.2]
 {code}
- ",Bug,Minor,3.78086625,2024-05-11T05:24:26.382Z,2.04105517,WW-5422,A0033,assignee,5,2024-05-08T20:47:04.000Z,2024-05-13T06:23:33.549Z,Fixed
+ ",Bug,Low,2,3.78086625,2024-05-11T05:24:26.382Z,2.04105517,WW-5422,A0033,assignee,5,2024-05-08T20:47:04.000Z,2024-05-13T06:23:33.549Z,Fixed
 AfterInvocation of BackgroundProcess is not called when an exception occurs when using ExecuteAndWaitInterceptor,"In my project, we are using Struts2.5.x and recently started using the ExecuteAndWaitInterceptor. We have extended BackgroundProcess and overridden the beforeInvocation and afterInvocation methods to perform certain actions before and after the invocation of an action. However, we are facing a problem where afterInvocation is not called when an exception occurs. Here is the relevant code:
 
  
@@ -89,7 +89,7 @@ try {
   throw t;
 }
 afterInvocation();{code}
-Please consider these modifications to ensure that afterInvocation is called even when an exception occurs.",Bug,Major,3.78086625,2024-05-11T06:25:05.385Z,3.47956178,WW-5414,A0033,assignee,5,2024-04-15T01:55:03.000Z,2024-05-14T17:55:39.523Z,Fixed
+Please consider these modifications to ensure that afterInvocation is called even when an exception occurs.",Bug,Normal,3,3.78086625,2024-05-11T06:25:05.385Z,3.47956178,WW-5414,A0033,assignee,5,2024-04-15T01:55:03.000Z,2024-05-14T17:55:39.523Z,Fixed
 Struts2 Validator is failing in OGNL with constructor call,"An FieldExpression validator using a constructor call in its OGNL expression fails.
 {code:xml|title=Example validation configuration}
 <?xml version=""1.0"" encoding=""UTF-8""?>
@@ -128,7 +128,7 @@ When the method is called,
  * {{*memberModifiers*}} evaluates to 1
  * {{*memberClass*}} to the class object for {{{}java.util.Date{}}}
 
-This causes the if to resolve to {{false}} and throwing the exception. I cannot see how anyone could call any constructor at all.",Bug,Major,3.78086625,2024-05-12T07:03:01.871Z,2.45384880,WW-5415,A0033,assignee,5,2024-04-17T08:36:04.000Z,2024-05-14T17:56:34.407Z,Fixed
+This causes the if to resolve to {{false}} and throwing the exception. I cannot see how anyone could call any constructor at all.",Bug,Normal,3,3.78086625,2024-05-12T07:03:01.871Z,2.45384880,WW-5415,A0033,assignee,5,2024-04-17T08:36:04.000Z,2024-05-14T17:56:34.407Z,Fixed
 "ClassCastException with tag ""set"" when variable name has length=1","I think it is caused by the refactor of WW-5333
 
 When the tag ""set"" is used to define a variable whose name is of length 1, a java.lang.ClassCastException (class java.lang.Character cannot be cast to class java.lang.String ) is thrown.
@@ -175,8 +175,8 @@ java.lang.ClassCastException: class java.lang.Character cannot be cast to class 
 {code}
 When name is of length 1, the key is created as Character not String, and it fails when trying to store in a 
 AttributeMap extends AbstractMap<String, Object>
- ",Bug,Major,3.35984963,2024-06-02T12:00:26.833Z,2.71171961,WW-5424,A0033,assignee,8,2024-05-29T12:26:02.000Z,2024-06-05T05:05:19.407Z,Fixed
-Upgrade to Apache Struts Master 15,,Improvement,Major,3.35984963,2024-06-02T17:13:59.346Z,2.49459478,WW-5412,A0033,assignee,8,2024-04-10T15:59:01.000Z,2024-06-05T05:06:12.335Z,Fixed
+ ",Bug,Normal,3,3.35984963,2024-06-02T12:00:26.833Z,2.71171961,WW-5424,A0033,assignee,8,2024-05-29T12:26:02.000Z,2024-06-05T05:05:19.407Z,Fixed
+Upgrade to Apache Struts Master 15,,Improvement,Normal,3,3.35984963,2024-06-02T17:13:59.346Z,2.49459478,WW-5412,A0033,assignee,8,2024-04-10T15:59:01.000Z,2024-06-05T05:06:12.335Z,Fixed
 Mark as deprecated unused constants in FreemarkerManager,"Mark as @Deprecated
 
 {code:java}
@@ -188,16 +188,16 @@ Mark as deprecated unused constants in FreemarkerManager,"Mark as @Deprecated
     public static final String KEY_REQUEST_PARAMETERS = ""RequestParameters"";
     @Deprecated(since = ""Struts 6.5.0"", forRemoval = true)
     public static final String KEY_HASHMODEL_PRIVATE = ""__FreeMarkerManager.Request__"";
-{code}",Improvement,Minor,3.16086872,2024-06-21T06:25:33.152Z,2.96863442,WW-5431,A0033,assignee,12,2024-06-21T05:39:15.000Z,2024-06-24T05:40:23.166Z,Fixed
-Implement a new html5 theme,"Instead of trying to fix existing tags, it's easier to introduce a new theme which will provide HTML 5 compatible tags",New Feature,Major,37.77965331,2024-07-14T16:14:11.251Z,518.09335656,WW-5444,A0033,assignee,14,2024-07-14T14:15:35.000Z,2025-12-14T18:28:37.258Z,Fixed
+{code}",Improvement,Low,2,3.16086872,2024-06-21T06:25:33.152Z,2.96863442,WW-5431,A0033,assignee,12,2024-06-21T05:39:15.000Z,2024-06-24T05:40:23.166Z,Fixed
+Implement a new html5 theme,"Instead of trying to fix existing tags, it's easier to introduce a new theme which will provide HTML 5 compatible tags",New Feature,Normal,3,37.77965331,2024-07-14T16:14:11.251Z,518.09335656,WW-5444,A0033,assignee,14,2024-07-14T14:15:35.000Z,2025-12-14T18:28:37.258Z,Fixed
 Multiple uploaded files cannot be processed individually,"The ActionFileUploadInterceptor was introduced with WW-5371 (Struts version 6.6.0) and the API has been greatly simplified as a result. However, there is a problem if you upload several files and want to process them individually later. This is no longer possible because the name of the input element (<input type=""file"" name=""myFile"">) is not part of the ""UploadedFile"" class. 
 
-In my opinion, since the class ""UploadedFile"" represents exactly what it is named (an uploaded file) and the input name is part of the multipart request, ""inputName"" should be included as a class member. This keeps the ""UploadedFilesAware"" interface clean and ""inputName"" can be used in the action if required without having to change the API. ",Bug,Minor,37.77965331,2024-09-03T04:53:04.263Z,3.55815869,WW-5461,A0033,assignee,14,2024-09-02T14:13:39.000Z,2024-09-06T18:16:49.174Z,Fixed
+In my opinion, since the class ""UploadedFile"" represents exactly what it is named (an uploaded file) and the input name is part of the multipart request, ""inputName"" should be included as a class member. This keeps the ""UploadedFilesAware"" interface clean and ""inputName"" can be used in the action if required without having to change the API. ",Bug,Low,2,37.77965331,2024-09-03T04:53:04.263Z,3.55815869,WW-5461,A0033,assignee,14,2024-09-02T14:13:39.000Z,2024-09-06T18:16:49.174Z,Fixed
 Address e.printStackTrace,"core/src/main/java/org/apache/struts2/mock/MockObjectTypeDeterminer.java
 
 core/src/main/java/org/apache/struts2/util/ClassPathFinder.java
 
-core/src/main/java/org/apache/struts2/util/PropertiesReader.java",Improvement,Minor,35.49822033,2024-09-07T05:02:40.343Z,3.48501514,WW-5458,A0033,assignee,15,2024-09-01T08:12:19.000Z,2024-09-10T16:41:05.651Z,Fixed
+core/src/main/java/org/apache/struts2/util/PropertiesReader.java",Improvement,Low,2,35.49822033,2024-09-07T05:02:40.343Z,3.48501514,WW-5458,A0033,assignee,15,2024-09-01T08:12:19.000Z,2024-09-10T16:41:05.651Z,Fixed
 Rename tag's parameters into attributes,"Tag's parameters can be confused with HttpParameters, but these are two different things and shouldn't be mixed up due to security reasons.
 
 Using ""attributes"" instead of ""parameters"" can allow to distinguish these two sets of data.
@@ -206,9 +206,9 @@ Once introduced templates should use ""attributes.${attrName}"" instead of ""par
 {code:java}
 <#if attributes.id??>
  id=""${attributes.id}""<#rt/>
-</#if> {code}",Improvement,Major,31.96506356,2024-10-06T16:57:35.390Z,13.67232921,WW-5465,A0033,assignee,17,2024-10-06T16:45:20.000Z,2024-10-20T09:05:44.634Z,Fixed
-ActionFileUploadInterceptor doesn't support multiple HttpServletRequestWrapper,"If a third party filter is used (eg. Sitemesh 3) which wraps {{HttpRequest}} with additional {{HttpServletRequestWrapper}}, the interceptor isn't able detect {{MultiPartRequestWrapper}} in the chain.",Bug,Major,31.96506356,2024-10-16T08:08:25.860Z,0.07728302,WW-5473,A0033,assignee,17,2024-10-16T07:43:46.000Z,2024-10-16T09:59:43.113Z,Fixed
-Remove deprecated Struts Sitemesh plugin,"The Struts 2 Sitemesh plugin bases on Sitemesh 2 which isn't supported any more, there is a task to implement a new plugin based on Sitemesh3 -> WW-4356",Improvement,Major,31.96506356,2024-10-16T08:08:32.623Z,4.04296105,WW-5472,A0033,assignee,17,2024-10-14T05:46:24.000Z,2024-10-20T09:10:24.458Z,Fixed
+</#if> {code}",Improvement,Normal,3,31.96506356,2024-10-06T16:57:35.390Z,13.67232921,WW-5465,A0033,assignee,17,2024-10-06T16:45:20.000Z,2024-10-20T09:05:44.634Z,Fixed
+ActionFileUploadInterceptor doesn't support multiple HttpServletRequestWrapper,"If a third party filter is used (eg. Sitemesh 3) which wraps {{HttpRequest}} with additional {{HttpServletRequestWrapper}}, the interceptor isn't able detect {{MultiPartRequestWrapper}} in the chain.",Bug,Normal,3,31.96506356,2024-10-16T08:08:25.860Z,0.07728302,WW-5473,A0033,assignee,17,2024-10-16T07:43:46.000Z,2024-10-16T09:59:43.113Z,Fixed
+Remove deprecated Struts Sitemesh plugin,"The Struts 2 Sitemesh plugin bases on Sitemesh 2 which isn't supported any more, there is a task to implement a new plugin based on Sitemesh3 -> WW-4356",Improvement,Normal,3,31.96506356,2024-10-16T08:08:32.623Z,4.04296105,WW-5472,A0033,assignee,17,2024-10-14T05:46:24.000Z,2024-10-20T09:10:24.458Z,Fixed
 SiteMesh 3.2.1 does not resolve jsp path after Struts Filter,"Hello, I am trying to make Sitemesh 3.2.1 works with my project updated to Struts 7.0.0-M9 without success.
 Indeed, after StrutsFilter applies, the Servlet path contains the final jsp path as usual. However, because the _RequestPath_ is ridden by Sitemesh from the _FORWARD_SERVLET_PATH_ attribute (WabAppContext.java line 95), SiteMeshFilter uses the original path attribute (my struts action name) instead of the resulting jsp path. So the configured decorator for my jsp can not be resolved anymore (It uses to work with Sitemesh 3.0 and Struts 6.3)
 Is it a known issue or a wrong configuration on my side?
@@ -216,17 +216,17 @@ Is it a known issue or a wrong configuration on my side?
 I am using _org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter_ as Struts filter and _org.sitemesh.config.ConfigurableSiteMeshFilter_ as SiteMesh filter
 
 
-Thanks for your help",Bug,Major,31.96506356,2024-10-16T08:09:35.654Z,32.05170679,WW-5463,A0033,assignee,17,2024-09-25T07:25:07.000Z,2024-11-17T09:24:03.121Z,Fixed
+Thanks for your help",Bug,Normal,3,31.96506356,2024-10-16T08:09:35.654Z,32.05170679,WW-5463,A0033,assignee,17,2024-09-25T07:25:07.000Z,2024-11-17T09:24:03.121Z,Fixed
 Enable incompatible_improvements in Freemaker,"[GitHub PR 87|https://github.com/apache/freemarker/pull/87] Comparing strings is now way faster, if the incompatible_improvements setting is at least 2.3.33.
 
 https://freemarker.apache.org/docs/pgui_config_incompatible_improvements.html#pgui_config_incompatible_improvements_how_to_set
 
-Change log: https://freemarker.apache.org/docs/versions_2_3_33.html",Dependency,Major,28.05993269,2024-10-20T09:20:38.726Z,1.20673265,WW-5427,A0033,assignee,20,2024-06-02T17:08:21.000Z,2024-10-21T14:18:20.427Z,Fixed
+Change log: https://freemarker.apache.org/docs/versions_2_3_33.html",Dependency,Normal,3,28.05993269,2024-10-20T09:20:38.726Z,1.20673265,WW-5427,A0033,assignee,20,2024-06-02T17:08:21.000Z,2024-10-21T14:18:20.427Z,Fixed
 Move Action and ActionChainResult to proper packages,"A lot of classes are put in the main {{org.apache.struts}} package and should be relocated to more proper packages, eg.:
 
 {{org.apache.struts2.Action}} -> {{org.apache.struts2.action.Action}}
 
-{{org.apache.struts2.ActionChainResult}} -> {{org.apache.struts.result.ActionChainResult}}",Improvement,Major,25.61810586,2024-11-02T16:23:47.689Z,0.64084668,WW-5459,A0033,assignee,22,2024-09-01T08:18:49.000Z,2024-11-03T07:46:36.842Z,Fixed
+{{org.apache.struts2.ActionChainResult}} -> {{org.apache.struts.result.ActionChainResult}}",Improvement,Normal,3,25.61810586,2024-11-02T16:23:47.689Z,0.64084668,WW-5459,A0033,assignee,22,2024-09-01T08:18:49.000Z,2024-11-03T07:46:36.842Z,Fixed
 Move text related classes into org.apache.struts2.text,"Move the following classes:
  * AbstractLocalizedTextProvider
  * CompositeTextProvider
@@ -238,16 +238,16 @@ Move text related classes into org.apache.struts2.text,"Move the following class
  * StrutsTextProviderFactory
  * TextProvider
  * TextProviderFactory
- * TextProviderSupport",New Feature,Major,25.61810586,2024-11-02T16:53:15.732Z,0.76608208,WW-5481,A0033,assignee,22,2024-11-02T16:26:31.000Z,2024-11-03T11:16:25.224Z,Fixed
+ * TextProviderSupport",New Feature,Normal,3,25.61810586,2024-11-02T16:53:15.732Z,0.76608208,WW-5481,A0033,assignee,22,2024-11-02T16:26:31.000Z,2024-11-03T11:16:25.224Z,Fixed
 Move locale related classes into dedicated packages,"Move the following classes into org.apache.struts2.locale
  * DefaultLocaleProvider
  * DefaultLocaleProviderFactory
  * LocaleProvider
- * LocaleProviderFactory",New Feature,Major,25.61810586,2024-11-02T23:11:38.762Z,0.60519184,WW-5482,A0033,assignee,22,2024-11-02T22:57:40.000Z,2024-11-03T13:43:07.337Z,Fixed
+ * LocaleProviderFactory",New Feature,Normal,3,25.61810586,2024-11-02T23:11:38.762Z,0.60519184,WW-5482,A0033,assignee,22,2024-11-02T22:57:40.000Z,2024-11-03T13:43:07.337Z,Fixed
 Parameters which are added via ServletDispatcherResult aren't availabe in #parameters,"The fix of WW-4788 was removed  in WW-5450
  
 [https://github.com/apache/struts/commit/9292dc2d07dfd4341e3fc78e21483fe5175ea2ca]
- ",Bug,Major,22.62441798,2024-11-09T09:49:38.168Z,3.97515404,WW-5486,A0033,assignee,25,2024-11-06T07:55:52.000Z,2024-11-13T09:13:51.477Z,Fixed
+ ",Bug,Normal,3,22.62441798,2024-11-09T09:49:38.168Z,3.97515404,WW-5486,A0033,assignee,25,2024-11-06T07:55:52.000Z,2024-11-13T09:13:51.477Z,Fixed
 Implement a new plugin to support Jasper Reports 7,"This requires to implement a new plugin as version 7 is incompatible with 7 even on jrxml lavel:
 
 {noformat}
@@ -263,10 +263,10 @@ with version 7 or newer of the library alone. The conversion from the old file f
 file formats and back can be made using Jaspersoft Studio 7 and later versions of it;
 {noformat}
 
-See https://github.com/apache/struts/pull/1007",New Feature,Major,22.62441798,2024-11-10T07:11:41.355Z,115.94385115,WW-5455,A0033,assignee,25,2024-08-05T05:26:09.000Z,2025-03-06T05:50:50.094Z,Fixed
-Mark DWR plugin as deprecated,DWR project is not supported anymore and there is no version compatible with JakartaEE,New Feature,Major,22.62441798,2024-11-11T16:50:45.345Z,2.91976863,WW-5484,A0033,assignee,25,2024-11-05T17:27:41.000Z,2024-11-14T14:55:13.355Z,Fixed
-Renames master branch to main branch,"Renames branch, update GH actions, update Jenkins pipeline",Improvement,Critical,21.59132425,2024-11-30T08:29:46.363Z,10.34171822,WW-5405,A0033,assignee,28,2024-04-07T09:29:37.000Z,2024-12-10T16:41:50.817Z,Fixed
-Remove unused dependencies,Remove unused dependencies from {{dependencyManagement}} section of the main pom.xml,Dependency,Trivial,21.20340680,2024-12-23T15:51:27.172Z,0.62596412,WW-5503,A0033,assignee,29,2024-12-23T15:45:23.000Z,2024-12-24T06:52:50.472Z,Fixed
+See https://github.com/apache/struts/pull/1007",New Feature,Normal,3,22.62441798,2024-11-10T07:11:41.355Z,115.94385115,WW-5455,A0033,assignee,25,2024-08-05T05:26:09.000Z,2025-03-06T05:50:50.094Z,Fixed
+Mark DWR plugin as deprecated,DWR project is not supported anymore and there is no version compatible with JakartaEE,New Feature,Normal,3,22.62441798,2024-11-11T16:50:45.345Z,2.91976863,WW-5484,A0033,assignee,25,2024-11-05T17:27:41.000Z,2024-11-14T14:55:13.355Z,Fixed
+Renames master branch to main branch,"Renames branch, update GH actions, update Jenkins pipeline",Improvement,High,4,21.59132425,2024-11-30T08:29:46.363Z,10.34171822,WW-5405,A0033,assignee,28,2024-04-07T09:29:37.000Z,2024-12-10T16:41:50.817Z,Fixed
+Remove unused dependencies,Remove unused dependencies from {{dependencyManagement}} section of the main pom.xml,Dependency,Lowest,1,21.20340680,2024-12-23T15:51:27.172Z,0.62596412,WW-5503,A0033,assignee,29,2024-12-23T15:45:23.000Z,2024-12-24T06:52:50.472Z,Fixed
 <s:token /> with devMode enabled causes actionError,"When we upgraded Struts to 6.7.0, any form with a <s:token /> field now fails to submit as a result of an actionError only when devMode is enabled
 
 We see the following error in the logs:
@@ -288,7 +288,7 @@ In Struts 6.4.0, the behaviour was different. The exception is still reported in
 {noformat}
  
 
-I don't think the Action need to be aware of the token value since the TokenInterceptor is handling the validation/logic.",Bug,Minor,20.51749204,2025-01-03T16:05:14.585Z,2.02970830,WW-5498,A0033,assignee,30,2024-12-17T14:57:04.000Z,2025-01-05T16:48:01.382Z,Fixed
+I don't think the Action need to be aware of the token value since the TokenInterceptor is handling the validation/logic.",Bug,Low,2,20.51749204,2025-01-03T16:05:14.585Z,2.02970830,WW-5498,A0033,assignee,30,2024-12-17T14:57:04.000Z,2025-01-05T16:48:01.382Z,Fixed
 Multipart Requests are not recognized,"multipartValidationPattern defined in Dispatcher.java does not allow multipart requests with quotations.
  
 Eg:
@@ -306,7 +306,7 @@ Apache httpcomponents adds "" to the boundary parameter. It's used by soap ui.
  
  
  
- ",Bug,Minor,20.51749204,2025-01-03T16:10:20.840Z,2.02625112,WW-5500,A0033,assignee,30,2024-12-21T20:22:44.000Z,2025-01-05T16:48:08.937Z,Fixed
+ ",Bug,Low,2,20.51749204,2025-01-03T16:10:20.840Z,2.02625112,WW-5500,A0033,assignee,30,2024-12-21T20:22:44.000Z,2025-01-05T16:48:08.937Z,Fixed
 Support injecting empty optional parameters into constructors,"Currently such declaration won't work:
 {code:java}
 public class StrutsBean {
@@ -320,8 +320,8 @@ public class StrutsBean {
 }
 {code}
 
-as it will fail no being able to find a proper constructor",Improvement,Minor,20.51749204,2025-01-05T16:46:19.367Z,20.60619584,WW-5512,A0033,assignee,30,2025-01-05T16:29:13.000Z,2025-01-26T07:19:14.688Z,Fixed
-Deprecates support for tooltip attribute in tags,Current built-in support for tooltip is old and shouldn't be used. Pure CSS solutions are way better.,Improvement,Major,19.36189752,2025-01-16T09:54:26.037Z,1.95300338,WW-5510,A0033,assignee,32,2025-01-05T10:56:18.000Z,2025-01-18T08:46:45.529Z,Fixed
+as it will fail no being able to find a proper constructor",Improvement,Low,2,20.51749204,2025-01-05T16:46:19.367Z,20.60619584,WW-5512,A0033,assignee,30,2025-01-05T16:29:13.000Z,2025-01-26T07:19:14.688Z,Fixed
+Deprecates support for tooltip attribute in tags,Current built-in support for tooltip is old and shouldn't be used. Pure CSS solutions are way better.,Improvement,Normal,3,19.36189752,2025-01-16T09:54:26.037Z,1.95300338,WW-5510,A0033,assignee,32,2025-01-05T10:56:18.000Z,2025-01-18T08:46:45.529Z,Fixed
 The debug Struts tag throws an error.,"When using the debug Struts tag it throws the following errors.
 |{*}Messages{*}:| # org.apache.struts2.text.DefaultTextProvider.texts
  # Caught an exception while getting the property values of org.apache.struts2.text.DefaultTextProvider@61995fff
@@ -334,11 +334,11 @@ The JSP I used:
 {code:java}
 <%@ taglib prefix=""s"" uri=""/struts-tags"" %>
 <s:debug/> {code}
- ",Bug,Major,18.83435527,2025-01-18T21:10:54.409Z,2.82685887,WW-5517,A0033,assignee,33,2025-01-17T22:31:31.000Z,2025-01-21T17:01:35.015Z,Fixed
+ ",Bug,Normal,3,18.83435527,2025-01-18T21:10:54.409Z,2.82685887,WW-5517,A0033,assignee,33,2025-01-17T22:31:31.000Z,2025-01-21T17:01:35.015Z,Fixed
 struts-tags.tld refers to removed attributes,"When WW-4518 was fixed, maxLength (the setter) was removed from TextFieldTag but the struts-tags.tld was not updated and the attribute maxLength remains there for three tags (textfield, password and combobox). This causes problems with code completion as the tld still has the attribute, but on runtime JSP:s do not work with the error ""Unable to find setter method for attribute: [maxLength]""
 
- ",Bug,Major,18.42762225,2025-02-17T08:08:27.059Z,0.05473193,WW-5529,A0033,assignee,35,2025-02-11T10:50:47.000Z,2025-02-17T09:27:15.898Z,Fixed
-Mark org.apache.struts2.util.reflection.ReflectionContextFactory,The interface {{ReflectionContextFactory}} is only used in Config Browser plugin to show validators. It creates a custom {{OgnlContext}} just to fulfill purpose of this one action. It shouldn't be used in production code.,Improvement,Minor,20.56663140,2025-04-23T07:04:35.916Z,4.40223451,WW-5544,A0033,assignee,37,2025-04-23T06:46:28.000Z,2025-04-27T16:43:48.978Z,Fixed
+ ",Bug,Normal,3,18.42762225,2025-02-17T08:08:27.059Z,0.05473193,WW-5529,A0033,assignee,35,2025-02-11T10:50:47.000Z,2025-02-17T09:27:15.898Z,Fixed
+Mark org.apache.struts2.util.reflection.ReflectionContextFactory,The interface {{ReflectionContextFactory}} is only used in Config Browser plugin to show validators. It creates a custom {{OgnlContext}} just to fulfill purpose of this one action. It shouldn't be used in production code.,Improvement,Low,2,20.56663140,2025-04-23T07:04:35.916Z,4.40223451,WW-5544,A0033,assignee,37,2025-04-23T06:46:28.000Z,2025-04-27T16:43:48.978Z,Fixed
 NPE in AbstractFileUploadInterceptor,"I got the following exception:
 
  
@@ -364,7 +364,7 @@ if (file.getContent() == null) {
 if (maximumSize != null && maximumSize < file.length()) { {code}
 If file.getContent() is null (which means StrutsUploadedFile.file is null), then warning is logged but there is no ""return false"" so execution continues and file.length() will throw NPE as file is null in StrutsUploadedFile.
 
- ",Bug,Major,20.14125254,2025-05-05T16:05:31.622Z,1.55060034,WW-5546,A0033,assignee,38,2025-04-30T06:43:24.000Z,2025-05-07T05:18:23.491Z,Fixed
+ ",Bug,Normal,3,20.14125254,2025-05-05T16:05:31.622Z,1.55060034,WW-5546,A0033,assignee,38,2025-04-30T06:43:24.000Z,2025-05-07T05:18:23.491Z,Fixed
 Request attribute jakarta.servlet.forward.servlet_path incorrectly set by ServletDispatcherResult breaking sitemesh integration,"The servlet request parameter jakarta.servlet.forward.servlet_path has the following documentation in tomcat: 
 
 {noformat}
@@ -406,20 +406,20 @@ Sitemesh now picks up the incorrectly set FORWARD_SERVLET_PATH which in my case 
 
 and my decorator is no longer applied, when it was previously.
 
-This behaviour was introduced in WW-5463",Bug,Major,19.66456915,2025-05-08T06:01:06.784Z,4.26789390,WW-5548,A0033,assignee,39,2025-05-07T20:44:15.000Z,2025-05-12T12:26:52.817Z,Fixed
+This behaviour was introduced in WW-5463",Bug,Normal,3,19.66456915,2025-05-08T06:01:06.784Z,4.26789390,WW-5548,A0033,assignee,39,2025-05-07T20:44:15.000Z,2025-05-12T12:26:52.817Z,Fixed
 Support package org.apache.struts2 for interceptors and result-types,"The plugin still expects the classes specified in the class attribute of interceptor tags and result-type tags (in struts.xml) to be subclasses of com.opensymphony.xwork2.interceptor.Interceptor and com.opensymphony.xwork2.Result instead of the new org.apache.struts2.interceptor.Interceptor and org.apache.struts2.result.Result. 
 
 This seems to be configured in the classes Interceptor and ResultType in the package com.intellij.struts2.dom.struts.strutspackage
 
-Perhaps more classes in that package need to be adjusted for the new packages. Maybe there is a way to make the plugin backwards compatible and accept both the old and the new packages.",Bug,Major,19.27965226,2025-08-04T11:41:35.855Z,3.25244905,WW-5558,A0033,assignee,40,2025-08-04T10:48:22.000Z,2025-08-07T17:45:07.453Z,Fixed
+Perhaps more classes in that package need to be adjusted for the new packages. Maybe there is a way to make the plugin backwards compatible and accept both the old and the new packages.",Bug,Normal,3,19.27965226,2025-08-04T11:41:35.855Z,3.25244905,WW-5558,A0033,assignee,40,2025-08-04T10:48:22.000Z,2025-08-07T17:45:07.453Z,Fixed
 Remove deprecated CspSettings#addCspHeaders(),"{code:java}
     /**
      * @deprecated since 6.0.3, use {@link #addCspHeaders(HttpServletRequest, HttpServletResponse)} instead
      */
     @Deprecated
     void addCspHeaders(HttpServletResponse response);
-{code}",Improvement,Minor,25.41489451,2025-08-21T16:41:32.068Z,11.56644546,WW-5511,A0033,assignee,42,2025-01-05T16:11:18.000Z,2025-09-02T06:17:12.956Z,Fixed
-Remove deprecated sanitizeNewlines,Remove {{AbstractMultiPartRequest#sanitizeNewlines}},Improvement,Trivial,25.41489451,2025-08-21T16:42:47.743Z,11.56573437,WW-5502,A0033,assignee,42,2024-12-23T13:20:42.000Z,2025-09-02T06:17:27.193Z,Fixed
+{code}",Improvement,Low,2,25.41489451,2025-08-21T16:41:32.068Z,11.56644546,WW-5511,A0033,assignee,42,2025-01-05T16:11:18.000Z,2025-09-02T06:17:12.956Z,Fixed
+Remove deprecated sanitizeNewlines,Remove {{AbstractMultiPartRequest#sanitizeNewlines}},Improvement,Lowest,1,25.41489451,2025-08-21T16:42:47.743Z,11.56573437,WW-5502,A0033,assignee,42,2024-12-23T13:20:42.000Z,2025-09-02T06:17:27.193Z,Fixed
 CSP Nonce changes within a page,"Sometimes the CSP nonce changes within a page.
 
  
@@ -448,12 +448,12 @@ If the first request is not finished, the second request will change the nonce o
 
  
 
- ",Bug,Major,24.78540339,2025-09-07T07:48:11.036Z,16.90568741,WW-5504,A0033,assignee,44,2024-12-24T11:11:59.000Z,2025-09-24T05:32:22.428Z,Fixed
-Upgrade commons-fileupload to version 1.6.0,,Dependency,Minor,24.78540339,2025-09-10T05:39:12.430Z,0.01627961,WW-5564,A0033,assignee,44,2025-09-10T05:34:48.000Z,2025-09-10T06:02:38.988Z,Fixed
+ ",Bug,Normal,3,24.78540339,2025-09-07T07:48:11.036Z,16.90568741,WW-5504,A0033,assignee,44,2024-12-24T11:11:59.000Z,2025-09-24T05:32:22.428Z,Fixed
+Upgrade commons-fileupload to version 1.6.0,,Dependency,Low,2,24.78540339,2025-09-10T05:39:12.430Z,0.01627961,WW-5564,A0033,assignee,44,2025-09-10T05:34:48.000Z,2025-09-10T06:02:38.988Z,Fixed
 Avoid false positive warning if file doesn't exist,"If files was already removed, cleanup logic in file upload mechanism shouldn't show a warning about not being able to delete the file:
 {noformat}
-There was a problem attempting to delete uploaded file: xxx{noformat}",Improvement,Minor,24.07564601,2025-09-28T10:07:29.007Z,69.90901693,WW-5573,A0033,assignee,46,2025-09-28T10:06:32.000Z,2025-12-07T07:56:28.070Z,Fixed
-Bump commons-logging to version 1.3.5,Upgrade commons-logging to version 1.3.5,Dependency,Minor,24.07564601,2025-09-28T10:11:54.589Z,0.80711892,WW-5574,A0033,assignee,46,2025-09-28T10:10:58.000Z,2025-09-29T05:34:09.664Z,Fixed
+There was a problem attempting to delete uploaded file: xxx{noformat}",Improvement,Low,2,24.07564601,2025-09-28T10:07:29.007Z,69.90901693,WW-5573,A0033,assignee,46,2025-09-28T10:06:32.000Z,2025-12-07T07:56:28.070Z,Fixed
+Bump commons-logging to version 1.3.5,Upgrade commons-logging to version 1.3.5,Dependency,Low,2,24.07564601,2025-09-28T10:11:54.589Z,0.80711892,WW-5574,A0033,assignee,46,2025-09-28T10:10:58.000Z,2025-09-29T05:34:09.664Z,Fixed
 @DoubleRangeFieldValidator and @ShortRangeFieldValidator missing from @Validations container annotation,"The @Validations container annotation does not include fields for {{@DoubleRangeFieldValidator}} and {{@ShortRangeFieldValidator}}, making it impossible to use multiple instances of these validators within a single {{@Validations}} annotation.
 
 Current State:
@@ -486,7 +486,7 @@ Note:
   Files Affected:
   - core/src/main/java/org/apache/struts2/validator/annotations/Validations.java
   - core/src/main/java/org/apache/struts2/validator/AnnotationValidationConfigurationBuilder.java
-",Dependency,Major,23.58057096,2025-10-17T08:16:59.008Z,2.37105175,WW-5579,A0033,assignee,47,2025-10-17T07:09:56.000Z,2025-10-19T17:11:17.879Z,Fixed
+",Dependency,Normal,3,23.58057096,2025-10-17T08:16:59.008Z,2.37105175,WW-5579,A0033,assignee,47,2025-10-17T07:09:56.000Z,2025-10-19T17:11:17.879Z,Fixed
 WithLazyParams interceptors cannot be configured within interceptor stacks,"When an interceptor implements WithLazyParams, the DefaultInterceptorFactory skips all property setting during interceptor creation (lines 71-76 in {{DefaultInterceptorFactory.java}}):
 
 {code:java}
@@ -530,15 +530,15 @@ h2. Affected Components:
 h2. Workaround:
 
 Configure the interceptor directly in the action definition instead of modifying it within a stack reference.
-",Bug,Major,23.13870598,2025-11-16T09:33:58.947Z,1.20159279,WW-5586,A0033,assignee,48,2025-11-16T09:03:21.000Z,2025-11-17T14:24:16.564Z,Fixed
-"Allow dynamically set ""allowedTypes"" and ""allowedExtensions"" for file upload validation","{{${...\}}} expressions don't work in interceptor parameters because {{TextParseUtil.commaDelimitedStringToSet()}} is a pure string splitter with no OGNL evaluation, and interceptor parameters are set at startup when no ValueStack exists.",Improvement,Major,23.13870598,2025-11-16T09:34:03.586Z,6.20891451,WW-5585,A0033,assignee,48,2025-11-12T12:29:50.000Z,2025-11-22T14:34:53.800Z,Fixed
+",Bug,Normal,3,23.13870598,2025-11-16T09:33:58.947Z,1.20159279,WW-5586,A0033,assignee,48,2025-11-16T09:03:21.000Z,2025-11-17T14:24:16.564Z,Fixed
+"Allow dynamically set ""allowedTypes"" and ""allowedExtensions"" for file upload validation","{{${...\}}} expressions don't work in interceptor parameters because {{TextParseUtil.commaDelimitedStringToSet()}} is a pure string splitter with no OGNL evaluation, and interceptor parameters are set at startup when no ValueStack exists.",Improvement,Normal,3,23.13870598,2025-11-16T09:34:03.586Z,6.20891451,WW-5585,A0033,assignee,48,2025-11-12T12:29:50.000Z,2025-11-22T14:34:53.800Z,Fixed
 Allow Preparable interface to work with only per-method prepare*() implementations,"Currently the {{Preparable}} interface requires implementing {{prepare()}} even when using only per-method variants like {{prepareUpload()}} or {{{}prepareEdit(){}}}.
 
 *Proposal*: Change {{prepare()}} to a default method with empty implementation, allowing
 actions to implement only the specific {{prepare*()}} methods they need.
 
-_This is backward-compatible - existing implementations continue to work unchanged._",Improvement,Minor,22.69100979,2025-11-21T08:08:33.465Z,1.26778035,WW-5588,A0033,assignee,49,2025-11-21T08:05:30.000Z,2025-11-22T14:34:09.687Z,Fixed
-Bump ognl:ognl from 3.3.5 to 3.4.8,,Dependency,Major,21.94776813,2025-11-24T07:56:46.398Z,65.16136316,WW-5536,A0033,assignee,51,2025-03-03T09:49:12.000Z,2026-01-28T11:49:08.175Z,Fixed
+_This is backward-compatible - existing implementations continue to work unchanged._",Improvement,Low,2,22.69100979,2025-11-21T08:08:33.465Z,1.26778035,WW-5588,A0033,assignee,49,2025-11-21T08:05:30.000Z,2025-11-22T14:34:09.687Z,Fixed
+Bump ognl:ognl from 3.3.5 to 3.4.8,,Dependency,Normal,3,21.94776813,2025-11-24T07:56:46.398Z,65.16136316,WW-5536,A0033,assignee,51,2025-03-03T09:49:12.000Z,2026-01-28T11:49:08.175Z,Fixed
 Can't specify empty charset on StreamResult,"When serving binary files using StreamResult the Content Type header should NOT contain a charset specification.
 
 If the charset is not specified in the StreamResult, UTF-8 is automatically applied.
@@ -547,8 +547,8 @@ If the charset is specified with an expression, and the expression evaluates to 
 
 ;charset=
 
-specification is added to the content-type header on the StreamResult.",Bug,Minor,32.21393487,2026-01-04T16:11:14.305Z,10.08851873,WW-5602,A0033,assignee,53,2026-01-03T09:47:20.000Z,2026-01-14T18:18:42.323Z,Fixed
-xwork-default.xml is shown as framework config file,"When running Struts IDEA plugin, the plugin shows {{xwork-default.xml}} as on of the config files, which is misleading. This file is only used in testing and should be moved into test resources and renamed to {{struts-tests-default.xml}}",Improvement,Trivial,32.21393487,2026-01-11T09:41:12.323Z,14.98808155,WW-5603,A0033,assignee,53,2026-01-11T09:04:12.000Z,2026-01-26T09:24:02.569Z,Fixed
+specification is added to the content-type header on the StreamResult.",Bug,Low,2,32.21393487,2026-01-04T16:11:14.305Z,10.08851873,WW-5602,A0033,assignee,53,2026-01-03T09:47:20.000Z,2026-01-14T18:18:42.323Z,Fixed
+xwork-default.xml is shown as framework config file,"When running Struts IDEA plugin, the plugin shows {{xwork-default.xml}} as on of the config files, which is misleading. This file is only used in testing and should be moved into test resources and renamed to {{struts-tests-default.xml}}",Improvement,Lowest,1,32.21393487,2026-01-11T09:41:12.323Z,14.98808155,WW-5603,A0033,assignee,53,2026-01-11T09:04:12.000Z,2026-01-26T09:24:02.569Z,Fixed
 Allow configuration of ProxyUtil for cache types,"Since 6.6.0, the ProxyUtil class now always uses the WTLFU cache type when creating its two internal caches. This means that the caffeine 
 library is now mandatory when it was not before.
 {code:java}
@@ -564,7 +564,7 @@ Prior to 6.6.0, setting both of these configuration options would allow you to o
 <constant name=""struts.ognl.beanInfoCacheType"" value=""basic"" />{code}
  
 
-Would it be possible to allow for the cache type used by the ProxyUtil class to be configurable as well similar to the above?",Bug,Minor,32.09958056,2026-02-07T18:59:40.783Z,13.92957094,WW-5514,A0033,assignee,56,2025-01-08T15:18:05.000Z,2026-02-21T17:18:15.712Z,Fixed
+Would it be possible to allow for the cache type used by the ProxyUtil class to be configurable as well similar to the above?",Bug,Low,2,32.09958056,2026-02-07T18:59:40.783Z,13.92957094,WW-5514,A0033,assignee,56,2025-01-08T15:18:05.000Z,2026-02-21T17:18:15.712Z,Fixed
 Adapt to renamed methods in Apache Commons FileUpload 2.0.0-M5,"I fear these changes impact Struts2, if I am not mistaken. With Apache Commons FileUpload 2.0.0-M5 I get:
 
 ??java.lang.NoSuchMethodError: 'void org.apache.commons.fileupload2.jakarta.servlet6.JakartaServletDiskFileUpload.setSizeMax(long)'??
@@ -581,7 +581,7 @@ we can see:
  * Rename AbstractFileUpload.[get|set]FileCountMax() to AbstractFileUpload.[get|set]MaxFileCount(). Thanks to Gary Gregory.
 
 
-So basically from ...SizeMax() to ...MaxSize()",Task,Major,31.72897857,2026-02-18T14:33:23.245Z,0.12513131,WW-5615,A0033,assignee,57,2026-02-18T13:21:58.000Z,2026-02-18T17:33:34.590Z,Fixed
+So basically from ...SizeMax() to ...MaxSize()",Task,Normal,3,31.72897857,2026-02-18T14:33:23.245Z,0.12513131,WW-5615,A0033,assignee,57,2026-02-18T13:21:58.000Z,2026-02-18T17:33:34.590Z,Fixed
 Memory Leak ,"Struts is leaking memory when a WAR is hot deployed in Tomcat: for each hot deploy some classes remain in memory instead of being garbage collected. For big applications this causes OOM memory exceptions very quickly for Meatspace exhaustion because the entire class loader of the app is not released.
 
 For testing the HelloWorld app from struts-examples can be used. Deploy the war in tomcat as the only web app in the server. For each ""reload"" (from Tomcat manager) or simply copying the war file over the deployed one, taking a memory dump (with jmap) and looking at the content with a memory profiler (such as Eclipse MAT) shows that there is one ApplicationContext class for each hot deploy instead of just one.
@@ -592,7 +592,7 @@ The problem is present in version 6.7.4-SNAPSHOT of Feb 28th.
 
  
 
-If the server can be restarted at each deploy the problem is obviously not a real problem. However if a tomcat instance contains more than one application being able to hot deploy a single one is very useful as it does not force all apps down for the server restart.",Bug,Major,31.72897857,2026-02-18T17:14:59.202Z,38.50306531,WW-5537,A0033,assignee,57,2025-03-03T10:06:44.000Z,2026-03-29T05:19:24.045Z,Fixed
+If the server can be restarted at each deploy the problem is obviously not a real problem. However if a tomcat instance contains more than one application being able to hot deploy a single one is very useful as it does not force all apps down for the server restart.",Bug,Normal,3,31.72897857,2026-02-18T17:14:59.202Z,38.50306531,WW-5537,A0033,assignee,57,2025-03-03T10:06:44.000Z,2026-03-29T05:19:24.045Z,Fixed
 Make JSON plugin more configurable,"The JSON plugin currently provides limited configuration options for controlling deserialization behavior. Other Struts components (e.g., {{fileUpload}} interceptor) offer fine-grained, per-action configurable limits, but the JSON plugin has no equivalent controls.
 
 This ticket adds the following configurable options:
@@ -608,14 +608,14 @@ These options should be:
 2. Overridable per-action via interceptor {{<param>}} elements (same pattern as {{fileUpload}})
 3. Exposed through `JSONConstants` and {{JSONConstantConfig}}
 
-Additionally, {{JSONReader}} should be made injectable via the Struts Container (matching the existing {{JSONWriter}} pattern), allowing users to provide custom reader implementations.",Improvement,Minor,30.89163527,2026-03-17T15:23:19.802Z,3.82511314,WW-5618,A0033,assignee,59,2026-03-17T11:09:22.000Z,2026-03-21T11:11:29.577Z,Fixed
+Additionally, {{JSONReader}} should be made injectable via the Struts Container (matching the existing {{JSONWriter}} pattern), allowing users to provide custom reader implementations.",Improvement,Low,2,30.89163527,2026-03-17T15:23:19.802Z,3.82511314,WW-5618,A0033,assignee,59,2026-03-17T11:09:22.000Z,2026-03-21T11:11:29.577Z,Fixed
 Harden XML parsers against Entity Expansion (Billion Laughs) attacks,"Defense-in-depth hardening of XML parsers. Modern JDKs (7u45+) already enforce a 64K entity expansion limit, so this is not an exploitable vulnerability — all XML sources come from the classpath, not user input.
 
 Changes:
   - Remove unused {{parseStringAsXML}} feature from {{StringAdapter}} to eliminate theoretical attack surface
   - Deprecate {{getParseStringAsXML()}} / {{setParseStringAsXML()}} for future removal
   - Enable {{FEATURE_SECURE_PROCESSING}} in Tiles {{DigesterDefinitionsReader}}
-  - Add unit test verifying JDK entity expansion limit rejects Billion Laughs payloads",Improvement,Minor,30.57269933,2026-03-29T05:42:45.212Z,6.15146197,WW-5621,A0033,assignee,61,2026-03-29T05:41:12.000Z,2026-04-04T09:20:51.526Z,Fixed
+  - Add unit test verifying JDK entity expansion limit rejects Billion Laughs payloads",Improvement,Low,2,30.57269933,2026-03-29T05:42:45.212Z,6.15146197,WW-5621,A0033,assignee,61,2026-03-29T05:41:12.000Z,2026-04-04T09:20:51.526Z,Fixed
 Optimize Hibernate proxy detection to avoid repeated exception overhead when Hibernate is absent,"When Hibernate is not on the application classpath, Hibernate proxy detection methods throw and internally catch exceptions (NoClassDefFoundError in 6.x, LinkageError in 7.x) on every invocation. Applications with many distinct classes flowing through OGNL experience hundreds of thousands of caught exceptions, causing measurable performance degradation.
 
 h3. Impact
@@ -636,7 +636,7 @@ h3. Affected Methods
 - {{isHibernateProxy()}}                                  
 - {{isHibernateProxyMember()}}
 - {{getHibernateProxyTarget()}}
-",Improvement,Major,30.17880841,2026-04-04T09:36:11.250Z,1.28809177,WW-5622,A0033,assignee,62,2026-04-04T09:35:16.000Z,2026-04-05T16:31:02.379Z,Fixed
+",Improvement,Normal,3,30.17880841,2026-04-04T09:36:11.250Z,1.28809177,WW-5622,A0033,assignee,62,2026-04-04T09:35:16.000Z,2026-04-05T16:31:02.379Z,Fixed
 Refactor JSON/REST @StrutsParameter enforcement to per-property authorization,"  Follow-up to WW-5624. The initial fix enforces {{@StrutsParameter}} on JSON/REST request bodies via post-hoc reflection — {{ContentTypeInterceptor}} deserializes into a fresh instance, then recursively copies only authorized properties. This works but has several drawbacks:
 
   * ~250 lines of reflection-based copy logic in {{ContentTypeInterceptor}} ({{copyAuthorizedProperties}}, {{deepCopyAuthorizedCollection}}, {{deepCopyAuthorizedMap}}, {{deepCopyAuthorizedArray}})
@@ -665,7 +665,7 @@ Refactor JSON/REST @StrutsParameter enforcement to per-property authorization," 
   * Removes ~200 lines of reflection-based copy logic
   * Lifts the no-arg constructor requirement
   * Authorization happens at the right layer (the deserializer), matching {{ParametersInterceptor}}'s per-parameter check semantics
-",Improvement,Major,29.72022560,2026-05-04T08:51:12.936Z,10.17353919,WW-5626,A0033,assignee,63,2026-05-04T08:51:05.000Z,2026-05-14T13:01:06.722Z,Fixed
+",Improvement,Normal,3,29.72022560,2026-05-04T08:51:12.936Z,10.17353919,WW-5626,A0033,assignee,63,2026-05-04T08:51:05.000Z,2026-05-14T13:01:06.722Z,Fixed
 CookieInterceptor bypasses @StrutsParameter authorization,"h2. Problem
   
 {{CookieInterceptor.populateCookieValueIntoStack}} calls {{stack.setValue(cookieName, cookieValue)}} directly ({{CookieInterceptor.java}} lines 339 and 348), which:
@@ -690,7 +690,7 @@ Builds on [WW-5626|https://issues.apache.org/jira/browse/WW-5626] — reuses {{P
 h2. Backward compatibility
   
 Behavior change: apps relying on cookies populating un-annotated setters will stop working under strict authorization. Affected users must either add {{@StrutsParameter}} to the relevant setters or drop {{cookiesName=*}}. Migration-guide entry required.
-",Improvement,Major,29.72022560,2026-05-09T10:16:56.302Z,9.06664038,WW-5627,A0033,assignee,63,2026-05-09T10:06:37.000Z,2026-05-18T11:52:54.031Z,Fixed
+",Improvement,Normal,3,29.72022560,2026-05-09T10:16:56.302Z,9.06664038,WW-5627,A0033,assignee,63,2026-05-09T10:06:37.000Z,2026-05-18T11:52:54.031Z,Fixed
 Add opt-in @StrutsParameter enforcement to ChainingInterceptor,"h2. Summary
 
 Add an opt-in option to make {{ChainingInterceptor}} honour the {{@StrutsParameter}} annotation on the target action when copying properties during action chaining.
@@ -716,7 +716,7 @@ h2. Acceptance criteria
 * New {{struts.chaining.requireAnnotations}} constant and {{default.properties}} entry (default {{false}}).
 * {{ChainingInterceptor}} enforces {{@StrutsParameter}} on the target when enabled.
 * Unit tests cover: flag off, flag on with annotated/unannotated target, transition mode, proxied target, and fail-closed introspection.
-  * Updated {{ChainingInterceptor}} JavaDoc.",New Feature,Major,29.10175989,2026-05-27T09:16:04.742Z,14.08600502,WW-5631,A0033,assignee,65,2026-05-27T06:01:26.000Z,2026-06-10T11:19:55.576Z,Fixed
+  * Updated {{ChainingInterceptor}} JavaDoc.",New Feature,Normal,3,29.10175989,2026-05-27T09:16:04.742Z,14.08600502,WW-5631,A0033,assignee,65,2026-05-27T06:01:26.000Z,2026-06-10T11:19:55.576Z,Fixed
 Harden commons-fileupload2 dependency against milestone binary-incompatibility,"h3. Background
 
 [WW-5615|https://issues.apache.org/jira/browse/WW-5615] fixed the {{NoSuchMethodError}}
@@ -751,7 +751,7 @@ h3. Proposed changes
   (narrow scope, near-zero blast radius).
 * *(B)* Add a once-per-JVM reflective guard in {{AbstractMultiPartRequest}} that throws a
   clear {{StrutsException}} reporting the {{-core}} vs {{-jakarta-servlet6}} version skew
-  instead of an opaque {{NoSuchMethodError}}.",New Feature,Major,29.10175989,2026-06-10T11:15:47.942Z,2.80077758,WW-5632,A0033,assignee,65,2026-06-10T11:15:41.000Z,2026-06-13T06:28:55.125Z,Fixed
+  instead of an opaque {{NoSuchMethodError}}.",New Feature,Normal,3,29.10175989,2026-06-10T11:15:47.942Z,2.80077758,WW-5632,A0033,assignee,65,2026-06-10T11:15:41.000Z,2026-06-13T06:28:55.125Z,Fixed
 JSON plugin ignores struts.json.writer / struts.json.reader override (regression since 7.2.x),"h2. Summary
 
 A custom JSON writer/reader configured the documented way via the {{struts.json.writer}} /
@@ -821,7 +821,7 @@ Add a test exercising the full bootstrap ({{struts-default.xml}} + the JSON plug
 {{struts-plugin.xml}} + a user override config, in that order) and assert the *effective*
 writer and reader used by {{JSONUtil}} are the overrides — covering both {{struts.json.writer}}
 and {{struts.json.reader}}.
-",Bug,Major,45.47262732,2026-07-06T17:19:27.295Z,5.67387568,WW-5641,A0033,assignee,68,2026-07-06T17:16:03.000Z,2026-07-12T09:29:50.154Z,Fixed
+",Bug,Normal,3,45.47262732,2026-07-06T17:19:27.295Z,5.67387568,WW-5641,A0033,assignee,68,2026-07-06T17:16:03.000Z,2026-07-12T09:29:50.154Z,Fixed
 Refactor JSON plugin reader/writer to per-request instances instead of shared mutable state,"h2. Background
 
 The JSON plugin's request parser (StrutsJSONReader) and response serializer
@@ -889,7 +889,7 @@ h2. Acceptance criteria
 h2. Related
 
 * Supersedes the interim approach in #1775 (WW-5643) and #1776 (WW-5644).
-",Improvement,Major,44.89583381,2026-07-14T06:50:09.348Z,5.48333241,WW-5650,A0033,assignee,69,2026-07-12T10:32:27.000Z,2026-07-19T18:26:09.268Z,Fixed
+",Improvement,Normal,3,44.89583381,2026-07-14T06:50:09.348Z,5.48333241,WW-5650,A0033,assignee,69,2026-07-12T10:32:27.000Z,2026-07-19T18:26:09.268Z,Fixed
 Upgrade bundled Bootstrap in sample apps from 3.3.4 to 5.3.x,"h2. Summary
 
 Upgrade the bundled Bootstrap in the sample applications from the current *3.3.4* to the latest *5.3.x* release. Bootstrap 3.3.4 (released 2015) is long out of support, ships known-vulnerable assets, and predates the removal of the jQuery dependency in Bootstrap 5.
@@ -933,12 +933,12 @@ h2. Acceptance Criteria
 * All showcase and rest-showcase pages render correctly with Bootstrap 5.3.x.
 * Interactive Bootstrap components function without jQuery.
 * Build passes ({{mvn clean install -DskipAssembly}}) and the apps deploy and run.
-",Improvement,Major,44.89583381,2026-07-17T18:40:28.769Z,2.89985600,WW-5653,A0033,assignee,69,2026-07-17T18:40:22.000Z,2026-07-20T16:16:16.327Z,Fixed
-CDI proxies won't be recognized as proxy in SecurityMemberAccess,ProxyUtil should also handle CDI proxies or the cdi-plugin provides an extended SecurityMemberAccess which handles the proxies.,Bug,Major,44.33279808,2026-07-20T12:22:12.874Z,0.85862646,WW-5604,A0033,assignee,70,2026-01-13T06:56:03.000Z,2026-07-21T08:58:38.200Z,Fixed
+",Improvement,Normal,3,44.89583381,2026-07-17T18:40:28.769Z,2.89985600,WW-5653,A0033,assignee,69,2026-07-17T18:40:22.000Z,2026-07-20T16:16:16.327Z,Fixed
+CDI proxies won't be recognized as proxy in SecurityMemberAccess,ProxyUtil should also handle CDI proxies or the cdi-plugin provides an extended SecurityMemberAccess which handles the proxies.,Bug,Normal,3,44.33279808,2026-07-20T12:22:12.874Z,0.85862646,WW-5604,A0033,assignee,70,2026-01-13T06:56:03.000Z,2026-07-21T08:58:38.200Z,Fixed
 Concurrency performance enhancements,"We've identified some code which can be made more performant by improving the locking mechanism in the following classes:
  * XWorkConverter
  * DefaultActionValidatorManager
- * StrutsTypeConverterHolder",Improvement,Minor,43.15353261,2026-07-21T14:20:50.404Z,3.84041659,WW-5539,A0033,assignee,72,2025-03-06T04:30:38.000Z,2026-07-25T10:31:02.397Z,Fixed
+ * StrutsTypeConverterHolder",Improvement,Low,2,43.15353261,2026-07-21T14:20:50.404Z,3.84041659,WW-5539,A0033,assignee,72,2025-03-06T04:30:38.000Z,2026-07-25T10:31:02.397Z,Fixed
 Multipart misbehavior with commons-io 2.16.0 and 2.16.1,"commons-io 2.16.0 has broken the implementation of 
 DeferredFileOutputStream changing the behavior of its superclass ThresholdingOutputStream: IO-854
  
@@ -956,7 +956,7 @@ To really fix the issue, I suggest to avoid specifying -1 on the DiskFileItemFac
  
 Avoiding always spilling to disk each and every multipart part should also be a performance win, considering that multipart can also be used to transfer normal form inputs and not only files.
  
-What do you think?",Bug,Major,43.15353261,2026-07-22T12:42:16.997Z,3.57615000,WW-5413,A0033,assignee,72,2024-04-13T17:02:16.000Z,2026-07-26T02:31:56.357Z,Fixed
+What do you think?",Bug,Normal,3,43.15353261,2026-07-22T12:42:16.997Z,3.57615000,WW-5413,A0033,assignee,72,2024-04-13T17:02:16.000Z,2026-07-26T02:31:56.357Z,Fixed
 struts.multipart.maxFiles does not work as described/expected,"According to the documentation the property struts.multipart.maxFiles (which defaults to 256) is supposed to set a limit to how many files a multi-part form submission may include. But in reality, the specified value sets a limit to how many parameter values the form may submit, including strings, integers, booleans (from all input fields, checkboxes, hiddens, etc).
 
 The problem is in the method JakartaMultiPartRequest.parsePrequest (part of struts) when in the last line it calls upload.parseRequest which is in FileUploadBase (part of commons-fileupload). That methods tries to find the FileItems from the provided RequestContext, but considers every parameter value to be a FileItem and then throws a new FileCountLimitExceededException when the number of parameter values (of any type) reaches the fileCountMax.
@@ -965,8 +965,8 @@ I am not sure if the problem is in struts or in fileupload. Maybe the provided R
 
 I also found the issue [FILEUPLOAD-351|https://issues.apache.org/jira/browse/FILEUPLOAD-351] that seems to point out the confusing behaviour. But until the issue has been resolved in fileupload, struts behaves contrary to its own documentation at [https://struts.apache.org/core-developers/file-upload]
 
- ",Bug,Major,43.15353261,2026-07-22T16:49:44.019Z,3.42211122,WW-5474,A0033,assignee,72,2024-10-18T10:58:29.000Z,2026-07-26T02:57:34.428Z,Fixed
-Add caching to AbstractLocalizedTextProvider,Performance enhancement,Improvement,Minor,43.15353261,2026-07-23T07:36:37.758Z,3.01088851,WW-5540,A0033,assignee,72,2025-03-06T04:32:44.000Z,2026-07-26T07:52:18.525Z,Fixed
+ ",Bug,Normal,3,43.15353261,2026-07-22T16:49:44.019Z,3.42211122,WW-5474,A0033,assignee,72,2024-10-18T10:58:29.000Z,2026-07-26T02:57:34.428Z,Fixed
+Add caching to AbstractLocalizedTextProvider,Performance enhancement,Improvement,Low,2,43.15353261,2026-07-23T07:36:37.758Z,3.01088851,WW-5540,A0033,assignee,72,2025-03-06T04:32:44.000Z,2026-07-26T07:52:18.525Z,Fixed
 Mark ConversionRule.COLLECTION and the Collection_ prefix as @Deprecated,"h2. Summary
 
 {{ConversionRule.COLLECTION}} and {{DefaultObjectTypeDeterminer.DEPRECATED_ELEMENT_PREFIX}} ({{""Collection_""}}) have been documented as deprecated since WebWork 2.1.x, but neither carries an actual {{@Deprecated}} annotation. Users get no compile-time signal — only prose in Javadoc and an {{INFO}} log line at runtime, and the log fires only when the fallback is actually hit.
@@ -1030,7 +1030,7 @@ h2. Notes
 Found while implementing WW-3871, which routes every {{@TypeConversion}} key through a single prefix resolver. That work has to treat {{Collection_}} as a first-class prefix precisely because {{COLLECTION}} and {{ELEMENT}} are interchangeable — {{@TypeConversion(key = ""Element_users"", rule = COLLECTION)}} is a legitimate combination today and must keep resolving to {{Element_users}}. Deprecating the constant does not change that; it only tells authors not to write new code against it.
 
 This is a documentation and API-hygiene change with no behavioural component.
-",Improvement,Minor,42.61499678,2026-07-25T19:20:34.510Z,6.64230551,WW-5656,A0033,assignee,73,2026-07-25T18:52:11.000Z,2026-08-01T10:45:29.706Z,Fixed
+",Improvement,Low,2,42.61499678,2026-07-25T19:20:34.510Z,6.64230551,WW-5656,A0033,assignee,73,2026-07-25T18:52:11.000Z,2026-08-01T10:45:29.706Z,Fixed
 Apply input length limits consistently when reading request bodies,"h2. Summary
 
 Two request-body reading paths apply input limits less consistently than the rest of the framework. This issue makes the JSON input length limit apply uniformly while reading, and gives the CSP reporting path a configurable limit of its own.
@@ -1065,7 +1065,7 @@ h2. Compatibility notes
 h2. Notes
 
 {{JSONUtil}} is already marked for removal in 8.0.0 under WW-5619. This change targets the existing class and does not affect that plan.
-",Improvement,Major,41.06452519,2026-07-29T05:44:46.770Z,3.09742824,WW-5666,A0033,assignee,76,2026-07-29T05:44:40.000Z,2026-08-01T08:05:04.570Z,Fixed
+",Improvement,Normal,3,41.06452519,2026-07-29T05:44:46.770Z,3.09742824,WW-5666,A0033,assignee,76,2026-07-29T05:44:40.000Z,2026-08-01T08:05:04.570Z,Fixed
 Make the localized-text provider caches size-bounded and align request-locale resolution across entry points,"Two related follow-ups to the localized-text provider work in WW-5540.
 
 h2. 1. Bounded caches, consistent with the rest of the framework
@@ -1091,7 +1091,7 @@ h2. Scope / acceptance
 * Request-locale resolution is consistent across {{Dispatcher}} and {{I18nInterceptor}}.
 * Documented in {{default.properties}} alongside the other cache settings.
 * Tests: cache size stays within the configured bound as locale/key diversity grows; correct localized text is still returned for normal and repeated locales; locale resolution behaviour is covered for both entry points.
-",Improvement,Major,41.06452519,2026-07-30T07:17:07.982Z,2.10992977,WW-5668,A0033,assignee,76,2026-07-30T07:17:00.000Z,2026-08-01T09:55:25.914Z,Fixed
+",Improvement,Normal,3,41.06452519,2026-07-30T07:17:07.982Z,2.10992977,WW-5668,A0033,assignee,76,2026-07-30T07:17:00.000Z,2026-08-01T09:55:25.914Z,Fixed
 Performance Issue: SecurityMemberAccess re-parses excluded packages/classes config string on every OGNL access — O(n) String.split per request,"In stress test is consuming 9% of a server with 4 CPUs.
 
 **Struts version:** 7.2.1
@@ -1126,7 +1126,7 @@ Cache the parsed `Set<String>` in `SecurityMemberAccess` as a field.
 Rebuild it only when the raw config string reference changes (compare
 with `==` or store the last-seen string). Since the excluded-packages
 config is set once at startup and never changes at runtime, the cache
-never needs invalidation in practice.",Bug,Major,39.65510858,2026-08-03T10:12:21.942Z,20.30842571,WW-5667,A0033,assignee,79,2026-07-29T15:24:06.000Z,2026-08-23T17:36:29.923Z,Fixed
+never needs invalidation in practice.",Bug,Normal,3,39.65510858,2026-08-03T10:12:21.942Z,20.30842571,WW-5667,A0033,assignee,79,2026-07-29T15:24:06.000Z,2026-08-23T17:36:29.923Z,Fixed
 Make SecurityMemberAccess.isClassBelongsToPackages allocation-free,"Sub-task of WW-5667.
 
 {{SecurityMemberAccess.isClassBelongsToPackages(Class, Set)}} runs on the OGNL member-access hot path and allocates heavily on every call. It splits the package name with a regex-based {{String.split(""\\."")}}, wraps the result in a {{List}}, then streams over the prefixes and builds a brand-new joined {{String}} for every one of them before probing the set. For a class in {{org.apache.struts2.ognl}} that is one array plus four {{String.join}} allocations.
@@ -1144,7 +1144,7 @@ SecurityMemberAccess.isPackageExcluded(Class) :371
 
 The same prefix-matching can be done by walking the package name from each {{'.'}} and probing the set with a substring, with no array, stream, or join allocations.
 
-This is the OGNL security gate, so the change must preserve exact allow/deny semantics. Equivalence tests are required for: the default package (empty package name), single-segment packages, exact matches, sub-package matches, and near-misses that share a character prefix but not a package boundary (e.g. {{org.apache.struts2x}} must not match {{org.apache.struts2}}).",Sub-task,Major,39.65510858,2026-08-03T10:12:29.254Z,11.04294779,WW-5674,A0033,assignee,79,2026-08-03T10:09:57.000Z,2026-08-14T11:14:19.943Z,Fixed
+This is the OGNL security gate, so the change must preserve exact allow/deny semantics. Equivalence tests are required for: the default package (empty package name), single-segment packages, exact matches, sub-package matches, and near-misses that share a character prefix but not a package boundary (e.g. {{org.apache.struts2x}} must not match {{org.apache.struts2}}).",Sub-task,Normal,3,39.65510858,2026-08-03T10:12:29.254Z,11.04294779,WW-5674,A0033,assignee,79,2026-08-03T10:09:57.000Z,2026-08-14T11:14:19.943Z,Fixed
 Stop re-parsing OGNL security config on every SecurityMemberAccess instantiation,"Sub-task of WW-5667.
 
 {{SecurityMemberAccess}} is a {{Scope.PROTOTYPE}} bean ({{StrutsBeanSelectionProvider}}, since WW-5343). Every {{container.getInstance(SecurityMemberAccess.class)}} therefore constructs a fresh instance and re-runs all of its {{@Inject}} setters, each of which re-parses a raw comma-delimited configuration string from scratch.
@@ -1209,7 +1209,7 @@ The OGNL allow/deny semantics must not change. The dev-mode configuration switch
 h2. Related
 * WW-5674 — the per-access half of the parent report ({{isClassBelongsToPackages}} allocations). Handled separately; it does not move this cost.
 * WW-5677 — remaining redundant {{getPackage()}} lookups on the per-access path. Same file, different root cause.
-* WW-5678 — helper naming and visibility cleanup for 8.0.0. Its first item may be resolved for free here, see the design note above.",Sub-task,Major,39.29745657,2026-08-14T11:16:29.345Z,9.19183299,WW-5675,A0033,assignee,80,2026-08-03T10:10:21.000Z,2026-08-23T15:52:43.715Z,Fixed
+* WW-5678 — helper naming and visibility cleanup for 8.0.0. Its first item may be resolved for free here, see the design note above.",Sub-task,Normal,3,39.29745657,2026-08-14T11:16:29.345Z,9.19183299,WW-5675,A0033,assignee,80,2026-08-03T10:10:21.000Z,2026-08-23T15:52:43.715Z,Fixed
 Remove the remaining redundant getPackage() lookups on the OGNL member-access path,"Sub-task of WW-5667. Residual items found while reviewing WW-5674, which optimised {{isClassBelongsToPackages}} and {{toPackageName}} but deliberately left these two call sites alone as out of scope.
 
 Both sit on the same per-access hot path WW-5674 just optimised, within twenty lines of it, so leaving them is a visible inconsistency.
@@ -1248,7 +1248,7 @@ This is the OGNL security gate. Both changes must be behaviour-preserving, and t
 
 h2. Related
 
-{{ConfigParseUtil.validatePackageNames}} evaluating {{Pattern.compile(""\\s"")}} once per package name rather than once overall is a per-instantiation cost, not a per-access one, and is tracked on WW-5675 instead.",Sub-task,Major,38.92578221,2026-08-23T15:53:41.178Z,0.05074823,WW-5677,A0033,assignee,81,2026-08-03T12:20:48.000Z,2026-08-23T17:06:45.825Z,Fixed
+{{ConfigParseUtil.validatePackageNames}} evaluating {{Pattern.compile(""\\s"")}} once per package name rather than once overall is a per-instantiation cost, not a per-access one, and is tracked on WW-5675 instead.",Sub-task,Normal,3,38.92578221,2026-08-23T15:53:41.178Z,0.05074823,WW-5677,A0033,assignee,81,2026-08-03T12:20:48.000Z,2026-08-23T17:06:45.825Z,Fixed
 DefaultConversionFileProcessor silently drops the rest of a -conversion.properties file after the first already-mapped key,"h3. Problem
 
 {{DefaultConversionFileProcessor.process}} iterates the entries of a {{-conversion.properties}} file and skips keys that are already present in the converter mapping. The skip is written as a {{break}} rather than a {{continue}}, so instead of skipping that one entry it abandons the whole file:
@@ -1285,7 +1285,7 @@ WW-3871 fixed the identical {{break}} instead of {{continue}} defect in the anno
 
 h3. Suggested fix
 
-Change the {{break}} to {{continue}}, and add a regression test with a {{-conversion.properties}} file whose first key is already mapped, asserting the later keys still register. A hierarchy case (subclass and superclass files sharing a key) covers the realistic trigger.",Bug,Major,38.23310280,2026-08-23T17:53:44.857Z,0.00778201,WW-5685,A0033,assignee,83,2026-08-15T05:05:39.000Z,2026-08-23T18:04:57.223Z,Fixed
+Change the {{break}} to {{continue}}, and add a regression test with a {{-conversion.properties}} file whose first key is already mapped, asserting the later keys still register. A hierarchy case (subclass and superclass files sharing a key) covers the realistic trigger.",Bug,Normal,3,38.23310280,2026-08-23T17:53:44.857Z,0.00778201,WW-5685,A0033,assignee,83,2026-08-15T05:05:39.000Z,2026-08-23T18:04:57.223Z,Fixed
 "RestActionMapper maps URIs with an id into the empty namespace, so actions declared at namespace ""/"" 404","Split out of [WW-2820|https://issues.apache.org/jira/browse/WW-2820], a 2008 umbrella of five unrelated REST plugin claims. This is the only one of the five that still reproduces on {{main}}. Originally reported by Alvin Singh.
 
 h3. Symptom
@@ -1325,7 +1325,7 @@ The companion assertion for {{GET /dog}} passes against the same configuration, 
 
 h3. Security assessment
 
-Not a security issue. The defect makes actions _less_ reachable rather than more, and aligning {{/dog/1}} with what {{/dog}} already resolves to exposes no surface that the {{/dog}} path does not already expose.",Bug,Major,37.77803946,2026-08-23T18:54:59.211Z,0.60058528,WW-5688,A0033,assignee,84,2026-08-23T18:28:46.000Z,2026-08-24T09:19:49.779Z,Fixed
+Not a security issue. The defect makes actions _less_ reachable rather than more, and aligning {{/dog/1}} with what {{/dog}} already resolves to exposes no surface that the {{/dog}} path does not already expose.",Bug,Normal,3,37.77803946,2026-08-23T18:54:59.211Z,0.60058528,WW-5688,A0033,assignee,84,2026-08-23T18:28:46.000Z,2026-08-24T09:19:49.779Z,Fixed
 Remove core's FreeMarker dependency from DefaultDispatcherErrorHandler,"Part of the WW-5689 lean-core work, but self-contained and shippable in 7.x.
 
 *Scope note.* This is about _core's own_ dependency on FreeMarker. Applications using the Struts tag library still require FreeMarker regardless: {{struts.ui.templateSuffix}} defaults to {{ftl}} and all 129 bundled theme templates are {{.ftl}}. What these tickets buy is that a REST/JSON-only application — one that never renders a tag — stops paying for FreeMarker.
@@ -1349,7 +1349,7 @@ Failing that, the minimum acceptable change is to make the template load lazy an
 
 h2. Compatibility
 
-{{error.ftl}} is an internal template, not a documented extension point. If the plain renderer lands, note the change in the migration guide for anyone who has overridden it.",Task,Major,37.34065765,2026-08-24T09:49:00.321Z,0.11259756,WW-5690,A0033,assignee,85,2026-08-24T09:35:53.000Z,2026-08-24T12:31:08.750Z,Fixed
+{{error.ftl}} is an internal template, not a documented extension point. If the plain renderer lands, note the change in the migration guide for anyone who has overridden it.",Task,Normal,3,37.34065765,2026-08-24T09:49:00.321Z,0.11259756,WW-5690,A0033,assignee,85,2026-08-24T09:35:53.000Z,2026-08-24T12:31:08.750Z,Fixed
 Restrict the indexed-access fast path in XWorkMethodAccessor to real indexed property accessors,"{{XWorkMethodAccessor.callMethod(...)}} carries a long-standing fast path, inherited from XWork, that skips the {{denyMethodExecution}} check purely on the shape of the call:
 
 {code:java}//HACK - we pass indexed method access i.e. setXXX(A,B) pattern
@@ -1381,7 +1381,7 @@ Restrict the fast path to genuine indexed property accessors, by resolving a {{P
 
 Real indexed getters of the form {{getFoo(int)}} depend on this path, so the change must keep them working; the accompanying tests should cover an indexed accessor as well as a same-shaped method that is not a property accessor.
 
-Also decide the fate of {{DENY_INDEXED_ACCESS_EXECUTION}}. As it is never written it is effectively dead configuration, and it should either be wired up or removed rather than left as an apparent control that does nothing.",Task,Major,36.90777323,2026-08-27T05:07:20.668Z,4.48920093,WW-5697,A0033,assignee,86,2026-08-27T04:58:53.000Z,2026-08-31T16:51:47.628Z,Fixed
+Also decide the fate of {{DENY_INDEXED_ACCESS_EXECUTION}}. As it is never written it is effectively dead configuration, and it should either be wired up or removed rather than left as an apparent control that does nothing.",Task,Normal,3,36.90777323,2026-08-27T05:07:20.668Z,4.48920093,WW-5697,A0033,assignee,86,2026-08-27T04:58:53.000Z,2026-08-31T16:51:47.628Z,Fixed
 ModelDriven exemption in StrutsParameterAuthorizer also exempts the action's own members,"{{StrutsParameterAuthorizer.isAuthorized(...)}} exempts {{ModelDriven}} actions from the {{@StrutsParameter}} requirement:
 
 {code:java}// ModelDriven exemption: only exempt when the action explicitly implements ModelDriven
@@ -1417,7 +1417,7 @@ This is a behavioural change. An application with a {{ModelDriven}} action that 
 
 Related to WW-5697, which concerns method invocation during binding and has a separate cause and a separate fix; the two only overlap in that a {{ModelDriven}} action is the easiest way to reach both.
 
-The exemption is also currently undocumented. Whatever scope it ends up with should be stated in the {{@StrutsParameter}} and ModelDriven documentation, together with the advice that a model should be a request DTO rather than a domain or persistence object.",Task,Major,36.90777323,2026-08-27T06:18:35.335Z,4.48839267,WW-5698,A0033,assignee,86,2026-08-27T04:59:25.000Z,2026-08-31T18:01:52.462Z,Fixed
+The exemption is also currently undocumented. Whatever scope it ends up with should be stated in the {{@StrutsParameter}} and ModelDriven documentation, together with the advice that a model should be a request DTO rather than a domain or persistence object.",Task,Normal,3,36.90777323,2026-08-27T06:18:35.335Z,4.48839267,WW-5698,A0033,assignee,86,2026-08-27T04:59:25.000Z,2026-08-31T18:01:52.462Z,Fixed
 "Failed type conversion stores the NO_CONVERSION_POSSIBLE marker string into typed Maps, Lists and Collections","h2. Summary
 
 When conversion of a request parameter into a typed collection fails, Struts stores its internal
@@ -1521,7 +1521,7 @@ h2. Backward compatibility
 
 Narrow. Previously an unconvertible entry was stored as the marker String; now nothing is stored.
 Nothing can reasonably depend on the old behaviour, and the conversion error is reported either way,
-so validation-driven actions see no change at all.",Bug,Major,36.90777323,2026-08-27T08:24:07.702Z,4.40185331,WW-5700,A0033,assignee,86,2026-08-27T07:51:15.000Z,2026-08-31T18:02:47.828Z,Fixed
+so validation-driven actions see no change at all.",Bug,Normal,3,36.90777323,2026-08-27T08:24:07.702Z,4.40185331,WW-5700,A0033,assignee,86,2026-08-27T07:51:15.000Z,2026-08-31T18:02:47.828Z,Fixed
 CollectionConverter silently drops a legitimate element whose text equals the NO_CONVERSION_POSSIBLE marker,"h2. Summary
 
 CollectionConverter decides whether an element converted successfully by comparing the converted value to the marker constant TypeConverter.NO\_CONVERSION\_POSSIBLE with equals() rather than reference identity. The marker's value is the ordinary text ""ognl.NoConversionPossible"", so a legitimate element whose content happens to be that text is mistaken for a conversion failure and silently dropped from the resulting collection.
@@ -1564,7 +1564,7 @@ WW-5700 fixed the mirror-image defect in XWorkMapPropertyAccessor and XWorkListP
 
 h2. Backward compatibility
 
-Narrow, and strictly a fix. The only behaviour that changes is that an element whose text is exactly ""ognl.NoConversionPossible"" is now kept rather than discarded. Nothing can reasonably depend on the current silent removal.",Bug,Major,36.90777323,2026-08-27T09:20:49.147Z,4.36316372,WW-5701,A0033,assignee,86,2026-08-27T09:03:26.000Z,2026-08-31T18:03:46.492Z,Fixed
+Narrow, and strictly a fix. The only behaviour that changes is that an element whose text is exactly ""ognl.NoConversionPossible"" is now kept rather than discarded. Nothing can reasonably depend on the current silent removal.",Bug,Normal,3,36.90777323,2026-08-27T09:20:49.147Z,4.36316372,WW-5701,A0033,assignee,86,2026-08-27T09:03:26.000Z,2026-08-31T18:03:46.492Z,Fixed
 StringConverter does not bound fraction digits when formatting BigDecimal,"{{StringConverter.convertToString()}} sets {{format.setMaximumFractionDigits(Integer.MAX_VALUE)}} for {{BigDecimal}}, {{Double}} and {{Float}}.
 
 That constant arrived with WW-4871, which fixed round-trip precision loss when formatting {{double}} and {{float}}. Both of those types are naturally bounded — the widest {{double}} needs 325 fraction digits ({{Double.MIN_VALUE}}) and the widest {{float}} needs 45 — so {{Integer.MAX_VALUE}} is far wider than WW-4871 actually required.
@@ -1573,7 +1573,7 @@ That constant arrived with WW-4871, which fixed round-trip precision loss when f
 
 Bound {{maximumFractionDigits}} to 340 instead. That preserves WW-4871's intent exactly — every {{double}} and {{float}} value still formats in full, as does every {{BigDecimal}} within that range — while making the output length independent of an arbitrarily large scale.
 
-Add a regression test covering the bound.",Bug,Major,35.46456787,2026-08-31T18:42:21.179Z,2.71450079,WW-5711,A0033,assignee,90,2026-08-31T18:31:32.000Z,2026-09-03T11:51:14.047Z,Fixed
+Add a regression test covering the bound.",Bug,Normal,3,35.46456787,2026-08-31T18:42:21.179Z,2.71450079,WW-5711,A0033,assignee,90,2026-08-31T18:31:32.000Z,2026-09-03T11:51:14.047Z,Fixed
 Bound the per-locale definition caches in the Tiles plugin,"The Tiles plugin caches parsed definitions per resolved {{Locale}} in two maps that grow without limit and are never reduced during the lifetime of the web application:
 * {{org.apache.tiles.core.definition.dao.CachingLocaleUrlDefinitionDAO#locale2definitionMap}} — a {{HashMap}} keyed by {{Locale}}, populated on each cache miss and never evicted. It is only cleared when {{checkRefresh}} is enabled and a refresh is required, and {{checkRefresh}} is {{false}} by default.
 * {{org.apache.tiles.core.definition.pattern.AbstractPatternDefinitionResolver#localePatternPaths}} — populated via {{computeIfAbsent}} per locale customization key and never swept.
@@ -1586,7 +1586,7 @@ Bound both per-locale maps in the plugin's vendored Tiles code — for example a
 
 h3. Notes
 * Affects every version that ships the Tiles plugin; the vendored caching DAO is unbounded across all of them.
-* Deployments that pin a fixed locale via {{struts.locale}}, or that enable {{struts.locale.validateRequestLocale=true}} (7.3.0+/6.11.0+), already constrain the key set. This change makes the plugin robust by default without requiring that configuration.",Improvement,Major,35.10467702,2026-09-04T08:14:40.205Z,7.08565362,WW-5716,A0033,assignee,91,2026-09-04T08:12:23.000Z,2026-09-11T10:18:00.678Z,Fixed
+* Deployments that pin a fixed locale via {{struts.locale}}, or that enable {{struts.locale.validateRequestLocale=true}} (7.3.0+/6.11.0+), already constrain the key set. This change makes the plugin robust by default without requiring that configuration.",Improvement,Normal,3,35.10467702,2026-09-04T08:14:40.205Z,7.08565362,WW-5716,A0033,assignee,91,2026-09-04T08:12:23.000Z,2026-09-11T10:18:00.678Z,Fixed
 Address OWASP dependency-check finding in Spring Framework (spring-core),"The OWASP dependency-check run (the {{owasp-nvd-api}} profile, which is configured with {{failBuildOnCVSS=0}} so it reports every CVE regardless of severity) flags a vulnerability in Spring Framework's {{spring-core}}.
 
 This is a dependency-hygiene item, independent of any current feature branch — no source change introduced it; it stems from the pinned Spring version.
@@ -1603,7 +1603,7 @@ h3. Resolution options
 
 h3. Notes
 * {{spring-core}} is not shipped by every module; e.g. the Tiles plugin only pulls {{spring-test}} (test scope).
-* The exact CVE id from the scan output should be recorded here to drive the decision (upgrade vs. suppress) and to document the rationale if suppressed.",Task,Minor,35.10467702,2026-09-11T05:14:16.961Z,0.04220620,WW-5717,A0033,assignee,91,2026-09-04T09:00:22.000Z,2026-09-11T06:15:03.577Z,Fixed
+* The exact CVE id from the scan output should be recorded here to drive the decision (upgrade vs. suppress) and to document the rationale if suppressed.",Task,Low,2,35.10467702,2026-09-11T05:14:16.961Z,0.04220620,WW-5717,A0033,assignee,91,2026-09-04T09:00:22.000Z,2026-09-11T06:15:03.577Z,Fixed
 REST plugin does not bound the request body read in ContentTypeInterceptor,"h2. Summary
 
 {{ContentTypeInterceptor}} reads the request body with no length limit, while the two sibling body reads in the framework are bounded. This issue applies the same limit to the REST plugin.
@@ -1630,7 +1630,7 @@ A request whose body exceeds the configured limit is rejected rather than proces
 
 Applies to both maintenance lines.
 
-Reported by n0mi1k.",Improvement,Major,34.42638138,2026-09-11T12:17:08.961Z,1.17997532,WW-5723,A0033,assignee,93,2026-09-11T10:36:35.000Z,2026-09-12T16:36:18.829Z,Fixed
+Reported by n0mi1k.",Improvement,Normal,3,34.42638138,2026-09-11T12:17:08.961Z,1.17997532,WW-5723,A0033,assignee,93,2026-09-11T10:36:35.000Z,2026-09-12T16:36:18.829Z,Fixed
 Cached MessageFormat instances in AbstractLocalizedTextProvider are shared between concurrent callers,"h2. Summary
 
 {{AbstractLocalizedTextProvider}} caches {{java.text.MessageFormat}} instances keyed by pattern and locale and returns the cached instance from {{buildMessageFormat}}, while {{DefaultTextProvider}} builds a fresh instance per call. {{MessageFormat}} is not thread-safe, so callers rendering the same message concurrently format through one shared instance.
@@ -1649,7 +1649,7 @@ h2. Compatibility notes
 
 No configuration or API change. Descendant classes that override {{buildMessageFormat}} keep their current behaviour; only the base implementation changes.
 
-Applies to both maintenance lines.",Bug,Major,34.42638138,2026-09-11T13:49:34.407Z,1.11728617,WW-5724,A0033,assignee,93,2026-09-11T12:40:42.000Z,2026-09-12T16:38:27.932Z,Fixed
+Applies to both maintenance lines.",Bug,Normal,3,34.42638138,2026-09-11T13:49:34.407Z,1.11728617,WW-5724,A0033,assignee,93,2026-09-11T12:40:42.000Z,2026-09-12T16:38:27.932Z,Fixed
 AuthorizingSettableBeanProperty does not authorize the buffered set() path in the REST plugin,"h2. Summary
 
 {{AuthorizingSettableBeanProperty}} authorizes a property in {{deserializeAndSet}} and {{deserializeSetAndReturn}}, and wraps the value deserializer for creator-bound properties. It does not override {{set(Object, Object)}} or {{setAndReturn(Object, Object)}}, which is the path Jackson takes for a non-creator property it has buffered during property-based creation. That property is then assigned without an authorization check.
@@ -1672,7 +1672,7 @@ h2. Compatibility notes
 
 No configuration or API change. A request that previously had an unauthorized property assigned only because of its position in the body now has it dropped, consistent with every other position.
 
-Reported by 0xCc.zhang.",Bug,Major,34.42638138,2026-09-11T14:44:32.634Z,1.71002620,WW-5725,A0033,assignee,93,2026-09-11T13:54:29.000Z,2026-09-13T07:46:58.898Z,Fixed
+Reported by 0xCc.zhang.",Bug,Normal,3,34.42638138,2026-09-11T14:44:32.634Z,1.71002620,WW-5725,A0033,assignee,93,2026-09-11T13:54:29.000Z,2026-09-13T07:46:58.898Z,Fixed
 "JasperReports plugin: ValueStackShadowMap overloads get/containsKey instead of overriding them, so the value-stack fallback never reaches JasperReports","{{org.apache.struts2.views.jasperreports.ValueStackShadowMap}} (the {{struts2-jasperreports-plugin}}, JasperReports 6.x line) is documented as a {{HashMap}} whose {{containsKey}} and {{get}} fall back to {{ValueStack.findValue(key)}} when the key is not in the map, so that a report parameter declared in the {{.jasper}} can be resolved straight from the action. That is how {{JasperReportsResult}} hands the parameter map to {{JasperFillManager.fillReport}}.
 
 The two methods are declared as
@@ -1689,7 +1689,7 @@ Fix: change the parameter type to {{Object}} and add {{@Override}}, matching the
 
 Note this is a behaviour change for the 6.x plugin: after the fix, a declared report parameter that the action exposes as a property but does not put in {{reportParameters}} starts being resolved from the value stack, as the Javadoc has always claimed. Worth a line in the version notes.
 
-Found while triaging WW-3245; no security impact (the fallback keys are the parameter names compiled into the developer's {{.jasper}}, not request data).",Bug,Minor,34.42638138,2026-09-12T09:00:04.423Z,0.04020240,WW-5729,A0033,assignee,93,2026-09-12T08:41:34.000Z,2026-09-12T09:57:57.910Z,Fixed
+Found while triaging WW-3245; no security impact (the fallback keys are the parameter names compiled into the developer's {{.jasper}}, not request data).",Bug,Low,2,34.42638138,2026-09-12T09:00:04.423Z,0.04020240,WW-5729,A0033,assignee,93,2026-09-12T08:41:34.000Z,2026-09-12T09:57:57.910Z,Fixed
 Add a struts-site page for the JasperReports 7 plugin,"The {{struts2-jasperreports7-plugin}} introduced by WW-5455 has no page on the site. {{source/plugins/jasperreports/index.md}} in {{struts-site}} documents only the original {{struts2-jasperreports-plugin}} (JasperReports 6.x line), and the plugins index does not mention the 7 variant at all.
 
 A user picking a plugin today cannot tell from the site that the second plugin exists, which JasperReports major each one targets, or how the result type and its parameters differ ({{JasperReport7Result}}, {{JasperReport7Aware}}, the exporter providers, {{struts.jasperReport.csvDelimiter}} and friends in {{JasperReport7Constants}}).
@@ -1697,7 +1697,7 @@ A user picking a plugin today cannot tell from the site that the second plugin e
 Needed:
 * a {{source/plugins/jasperreports7/index.md}} page mirroring the structure of the existing one (description, usage with the result parameters, examples, settings, installation), sourced from the Javadoc of {{JasperReport7Result}} and {{JasperReport7Constants}};
 * an entry in the plugins index next to the existing JasperReports plugin, and a line on the existing page pointing to the new one for JasperReports 7 users;
-* once WW-3245 merges, the ""Filling from report parameters"" section applies to both plugins and should appear on both pages.",Task,Major,34.42638138,2026-09-12T09:01:12.553Z,0.01712735,WW-5728,A0033,assignee,93,2026-09-12T08:41:17.000Z,2026-09-12T09:25:52.356Z,Fixed
+* once WW-3245 merges, the ""Filling from report parameters"" section applies to both plugins and should appear on both pages.",Task,Normal,3,34.42638138,2026-09-12T09:01:12.553Z,0.01712735,WW-5728,A0033,assignee,93,2026-09-12T08:41:17.000Z,2026-09-12T09:25:52.356Z,Fixed
 JasperReport7CsvExporterProvider sets the record delimiter to the field delimiter,"{{JasperReport7CsvExporterProvider.createExporter}} in {{struts2-jasperreports7-plugin}} configures the CSV exporter with
 
 {code:java}SimpleCsvExporterConfiguration config = new SimpleCsvExporterConfiguration();
@@ -1711,7 +1711,7 @@ The 6.x plugin ({{JasperReportsResult}}) only sets {{JRCsvExporterParameter.FIEL
 
 {{JasperReport7ResultTest.testExportToCsv}} does not catch it because it only asserts that the output contains the report title; an assertion on the line count would.
 
-Affects every release since 7.1.0.",Bug,Major,34.06032549,2026-09-12T09:34:58.014Z,0.01686201,WW-5731,A0033,assignee,94,2026-09-12T09:17:32.000Z,2026-09-12T09:59:14.892Z,Fixed
+Affects every release since 7.1.0.",Bug,Normal,3,34.06032549,2026-09-12T09:34:58.014Z,0.01686201,WW-5731,A0033,assignee,94,2026-09-12T09:17:32.000Z,2026-09-12T09:59:14.892Z,Fixed
 "JasperReport7Result Javadoc example uses upper-case format ""CSV"" which fails the exporter lookup","The class Javadoc of {{JasperReport7Result}} (snippet {{example1}}) shows
 
 {code:xml}<result name=""success"" type=""jasperReport7"">
@@ -1730,7 +1730,7 @@ and the providers are registered in {{struts-plugin.xml}} under the lower-case n
 
 The 6.x plugin used upper-case constants ({{FORMAT_CSV = ""CSV""}}), which is presumably where the example came from.
 
-Either fix the example to {{csv}} and state in the {{format}} parameter description that the value is case-sensitive, or lower-case {{format}} in {{initializeProperties}} so both spellings work; the second also eases migration from the 6.x plugin. The site page added in WW-5728 documents the lower-case values.",Bug,Trivial,33.35132980,2026-09-12T10:02:47.472Z,0.02075719,WW-5732,A0033,assignee,96,2026-09-12T09:17:42.000Z,2026-09-12T10:32:40.893Z,Fixed
+Either fix the example to {{csv}} and state in the {{format}} parameter description that the value is case-sensitive, or lower-case {{format}} in {{initializeProperties}} so both spellings work; the second also eases migration from the 6.x plugin. The site page added in WW-5728 documents the lower-case values.",Bug,Lowest,1,33.35132980,2026-09-12T10:02:47.472Z,0.02075719,WW-5732,A0033,assignee,96,2026-09-12T09:17:42.000Z,2026-09-12T10:32:40.893Z,Fixed
 JasperReports 7 exporter providers close the response stream before the report is written — empty response on Tomcat,"Every {{JasperReport7*ExporterProvider.createExporter}} in {{struts2-jasperreports7-plugin}} (CSV, HTML, PDF, RTF, XML, XLSX) wires the exporter output like this:
 
 {code:java}try (OutputStream responseStream = response.getOutputStream()) {
@@ -1752,12 +1752,12 @@ The 6.x {{struts2-jasperreports-plugin}} is unaffected: {{JasperReportsResult}} 
 
 Fix: obtain {{response.getOutputStream()}} without try-with-resources in all six providers (the {{IOException}} is still wrapped into {{StrutsException}}), keep streaming directly to the response, and leave flushing to {{JasperReport7Result}} and closing to the container. Guard it with a test that runs the result against an {{HttpServletResponseWrapper}} whose {{ServletOutputStream}} rejects writes after {{close()}}, which is the semantics the mock lacks.
 
-Affects every release since 7.1.0.",Bug,Major,33.35132980,2026-09-12T10:06:16.895Z,0.09956378,WW-5733,A0033,assignee,96,2026-09-12T10:00:16.000Z,2026-09-12T12:29:39.206Z,Fixed
+Affects every release since 7.1.0.",Bug,Normal,3,33.35132980,2026-09-12T10:06:16.895Z,0.09956378,WW-5733,A0033,assignee,96,2026-09-12T10:00:16.000Z,2026-09-12T12:29:39.206Z,Fixed
 Run the JasperReports 7 plugin end-to-end on an embedded Tomcat in its test suite,"{{struts2-jasperreports7-plugin}} shipped in 7.1.0 and has never been exercised end-to-end: no sample application uses it, and its unit tests drive {{JasperReport7Result}} against Spring's {{MockHttpServletResponse}}, which does not model container behaviour. That is how WW-5731 (single-line CSV), WW-5732 (case-sensitive format lookup) and WW-5733 (every export an empty {{200}} on Tomcat) went unnoticed for four minor releases.
 
 Adding the plugin to the showcase is not an option: JasperReports is LGPL (ASF Category X) and the showcase WAR is part of the release assembly — the previous showcase example was removed for exactly that reason in 2006.
 
-Add an integration test to the plugin module instead: boot Struts on {{tomcat-embed-core}} (test scope, so the LGPL dependency is not distributed), configure a package extending {{jasperreports7-default}} with an action returning a {{jasperReport7}} result over a compiled {{.jrxml}}, and assert that a real HTTP request returns a non-empty body of the expected content type for each bundled format. The test stays in the module's surefire run so CI exercises the plugin on every build.",Task,Trivial,32.67191818,2026-09-12T13:36:49.114Z,0.00013023,WW-5734,A0033,assignee,98,2026-09-12T12:35:23.000Z,2026-09-12T13:37:00.366Z,Fixed
+Add an integration test to the plugin module instead: boot Struts on {{tomcat-embed-core}} (test scope, so the LGPL dependency is not distributed), configure a package extending {{jasperreports7-default}} with an action returning a {{jasperReport7}} result over a compiled {{.jrxml}}, and assert that a real HTTP request returns a non-empty body of the expected content type for each bundled format. The test stays in the module's surefire run so CI exercises the plugin on every build.",Task,Lowest,1,32.67191818,2026-09-12T13:36:49.114Z,0.00013023,WW-5734,A0033,assignee,98,2026-09-12T12:35:23.000Z,2026-09-12T13:37:00.366Z,Fixed
 JasperReports 7 plugin bundles the LGPL jasperreports jar into the release distribution,"{{plugins/jasperreports7/pom.xml}} declares {{net.sf.jasperreports:jasperreports}} as a plain compile-scope, non-optional dependency. The 6.x {{struts2-jasperreports-plugin}} has always declared it {{provided}}, precisely so that the LGPL library is never part of an Apache Struts distribution — users add it to their own application.
 
 Because the assembly collects the runtime dependency set of every plugin, the jar is now shipped: {{struts-7.3.0-lib.zip}} on {{archive.apache.org}} contains {{struts-7.3.0/lib/jasperreports-7.0.7.jar}} (3.8 MB), and {{LICENSE.txt}} / {{NOTICE.txt}} do not mention it. The same applies to {{struts-7.3.0-all.zip}} and to every release since the plugin was introduced in 7.1.0. Users depending on {{struts2-jasperreports7-plugin}} from Maven also pull the LGPL jar transitively by default.
@@ -1766,7 +1766,7 @@ JasperReports is LGPL, which is ASF Category X and may not be included in an Apa
 
 Fix: declare {{jasperreports}} with {{<scope>provided</scope>}}, matching the 6.x plugin. Applications using the plugin must then add {{net.sf.jasperreports:jasperreports}} (and {{jasperreports-pdf}} for PDF output, which is already optional) themselves; the plugin documentation page should say so. Verify afterwards that the assembly's {{lib/}} no longer contains any {{net.sf.jasperreports}} artifact.
 
-This is a licensing and distribution issue, not a security vulnerability.",Bug,Trivial,32.34190012,2026-09-12T13:42:49.107Z,0.11705608,WW-5735,A0033,assignee,99,2026-09-12T13:36:31.000Z,2026-09-12T16:31:22.752Z,Fixed
+This is a licensing and distribution issue, not a security vulnerability.",Bug,Lowest,1,32.34190012,2026-09-12T13:42:49.107Z,0.11705608,WW-5735,A0033,assignee,99,2026-09-12T13:36:31.000Z,2026-09-12T16:31:22.752Z,Fixed
 CSP nonce source is not configurable: struts.csp.nonceSource never reaches the injection point,"h2. Problem
 
 The constant {{StrutsConstants.STRUTS_CSP_NONCE_SOURCE}} declares the key {{struts.csp.nonce.source}}, but {{default.properties}} defines the setting as {{struts.csp.nonceSource}}. The two names never meet, so the injection point is never satisfied and the setting has no effect.
@@ -1808,7 +1808,7 @@ Which name should win is worth deciding deliberately:
 
 The first option is the safer default. Supporting both names, with the camelCase form deprecated, would avoid the migration entirely if that is preferred.
 
-Documentation on struts.apache.org should be checked and corrected to whichever name is chosen.",Bug,Major,31.12594617,2026-09-13T08:30:20.321Z,0.00619356,WW-5669,A0033,assignee,103,2026-07-31T08:40:59.000Z,2026-09-13T08:39:15.445Z,Fixed
+Documentation on struts.apache.org should be checked and corrected to whichever name is chosen.",Bug,Normal,3,31.12594617,2026-09-13T08:30:20.321Z,0.00619356,WW-5669,A0033,assignee,103,2026-07-31T08:40:59.000Z,2026-09-13T08:39:15.445Z,Fixed
 "Dispatcher.getLocale logs ""defaulting to request locale"" for a locale that may not come from the request","Follow-up to WW-5668.
 
 {{Dispatcher.getLocale(...)}} handles an unparseable {{struts.locale}} by falling back to a locale resolved from the request, and logs a WARN saying it is ""defaulting to request locale [X]"".
@@ -1824,7 +1824,7 @@ h2. Scope / acceptance
 * Optionally, avoid the second parse of a {{struts.locale}} value already known to be unparseable on that path.
 * No change to which locale is actually resolved; this is a diagnostics fix only.
 
-Only affects the 7.x line. The 6.x backport carries the same wording but will not be changed there.",Bug,Trivial,30.82671778,2026-09-13T09:24:39.206Z,0.02144162,WW-5670,A0033,assignee,104,2026-08-01T07:59:31.000Z,2026-09-13T09:55:31.762Z,Fixed
+Only affects the 7.x line. The 6.x backport carries the same wording but will not be changed there.",Bug,Lowest,1,30.82671778,2026-09-13T09:24:39.206Z,0.02144162,WW-5670,A0033,assignee,104,2026-08-01T07:59:31.000Z,2026-09-13T09:55:31.762Z,Fixed
 "<s:date/> renders a java.sql.Date with the current wall-clock time, making DateTest.testJavaSqlDate flaky","{{org.apache.struts2.components.Date.end}} fills in the missing time-of-day of a {{java.sql.Date}} from the current clock:
 
 {code:java}Object dateObject = findValue(name);
@@ -1862,7 +1862,7 @@ Restore {{toLocalDate().atStartOfDay(tz)}} for {{java.sql.Date}} and assert agai
 
 If the current behaviour is instead considered intentional, the test still has to stop racing the clock — inject a fixed clock or assert only the date fields — and the substitution should be documented on the tag.
 
-_Affects:_ 6.2.0 onwards, on every maintained line.",Bug,Minor,30.53333420,2026-09-13T10:17:07.354Z,0.19278828,WW-5686,A0033,assignee,105,2026-08-23T16:44:56.000Z,2026-09-13T14:54:44.261Z,Fixed
+_Affects:_ 6.2.0 onwards, on every maintained line.",Bug,Low,2,30.53333420,2026-09-13T10:17:07.354Z,0.19278828,WW-5686,A0033,assignee,105,2026-08-23T16:44:56.000Z,2026-09-13T14:54:44.261Z,Fixed
 Clear the conversion and validator caches on Dispatcher.cleanup() (WW-5537 defence-in-depth follow-on),"Follow-on from WW-5537 (Closed/Fixed, shipped 6.9.0 and 7.2.1), which built the {{InternalDestroyable}} cleanup framework. This item was identified during that work but never filed, and is still not on {{main}} as of 2026-08-23.
 
 h3. What it is, and what it is not
@@ -1899,7 +1899,7 @@ A test that asserts the caches are non-empty before {{Dispatcher.cleanup()}} and
 
 h3. Provenance
 
-The original plan text lived only in unpushed local commit {{8019e6994}} ({{docs/superpowers/plans/2026-03-23-WW-5537-classloader-leak-fixes.md}}, Task 5b), on a branch deleted 2026-08-23. Its Step 3 prescribed the naive dual registration described above, which the identity probe shows would be a no-op — that correction is the main thing this ticket adds over the original note.",Improvement,Minor,30.24710263,2026-09-13T15:09:47.073Z,0.01266968,WW-5687,A0033,assignee,106,2026-08-23T17:21:27.000Z,2026-09-13T15:28:01.733Z,Fixed
+The original plan text lived only in unpushed local commit {{8019e6994}} ({{docs/superpowers/plans/2026-03-23-WW-5537-classloader-leak-fixes.md}}, Task 5b), on a branch deleted 2026-08-23. Its Step 3 prescribed the naive dual registration described above, which the identity probe shows would be a no-op — that correction is the main thing this ticket adds over the original note.",Improvement,Low,2,30.24710263,2026-09-13T15:09:47.073Z,0.01266968,WW-5687,A0033,assignee,106,2026-08-23T17:21:27.000Z,2026-09-13T15:28:01.733Z,Fixed
 @StrutsParameter enforcement does not recognise fluent (non-void) setters,"{{java.beans.Introspector}} treats a {{set*}} method as a property write method only when its return type is {{void}}. OGNL does not: {{OgnlRuntime._getSetMethod}} matches a setter on name and argument count alone, with no return-type check.
 
 {{StrutsParameterAuthorizer}} derives its view of what a target can bind from {{java.beans}} property descriptors, so a fluent setter such as
@@ -1922,7 +1922,7 @@ h3. Suggested fix
 
 Identify setters the way OGNL does — by name and arity rather than by {{java.beans}} write methods — in both {{StrutsParameterAuthorizer.declaresProperty}} and {{hasValidAnnotatedPropertyDescriptor}}, so the authorizer's model of what is bindable matches what OGNL will actually bind.
 
-Found while reviewing WW-5698 / PR [#1872|https://github.com/apache/struts/pull/1872].",Task,Major,29.96453784,2026-09-13T16:04:54.386Z,0.01226119,WW-5709,A0033,assignee,107,2026-08-31T17:14:37.000Z,2026-09-13T16:22:33.753Z,Fixed
+Found while reviewing WW-5698 / PR [#1872|https://github.com/apache/struts/pull/1872].",Task,Normal,3,29.96453784,2026-09-13T16:04:54.386Z,0.01226119,WW-5709,A0033,assignee,107,2026-08-31T17:14:37.000Z,2026-09-13T16:22:33.753Z,Fixed
 Allowlist priming targets the ModelDriven model even when the parameter was authorised on the action,"{{ParametersInterceptor.isParameterAnnotatedAndAllowlist}} resolves the binding target once and uses it for both steps:
 
     Object target = parameterAuthorizer.resolveTarget(action);
@@ -1941,7 +1941,7 @@ h3. Suggested fix
 
 Prime against the object the authorisation was actually granted on — either by having {{ParameterAuthorizer.isAuthorized}} report which object it authorised against, or by priming against both the model and the action on the ModelDriven path.
 
-Found while reviewing WW-5698 / PR [#1872|https://github.com/apache/struts/pull/1872].",Task,Major,29.68720194,2026-09-13T16:53:18.091Z,0.03055426,WW-5710,A0033,assignee,108,2026-08-31T17:14:42.000Z,2026-09-13T17:37:17.979Z,Fixed
+Found while reviewing WW-5698 / PR [#1872|https://github.com/apache/struts/pull/1872].",Task,Normal,3,29.68720194,2026-09-13T16:53:18.091Z,0.03055426,WW-5710,A0033,assignee,108,2026-08-31T17:14:42.000Z,2026-09-13T17:37:17.979Z,Fixed
 "DefaultActionInvocation.mergedParams resolves interceptor params by name, merging the wrong ref when a name repeats","h3. Problem
 
 {{DefaultActionInvocation.mergedParams}} assembles the parameters handed to a
@@ -2037,7 +2037,7 @@ h3. References
   {{createInterceptors}}
 * WW-5585 - introduced the lookup
 * WW-5659 - fixed the shared-map mutation in the same method; left this deliberately
-",Bug,Major,29.41512261,2026-09-13T17:39:34.027Z,0.01885241,WW-5663,A0033,assignee,109,2026-07-27T13:40:17.000Z,2026-09-13T18:06:42.875Z,Fixed
+",Bug,Normal,3,29.41512261,2026-09-13T17:39:34.027Z,0.01885241,WW-5663,A0033,assignee,109,2026-07-27T13:40:17.000Z,2026-09-13T18:06:42.875Z,Fixed
 Polish HTML5 constraint derivation: scope gaps and attribute hygiene found reviewing WW-5695,"Follow-up to WW-5695 (PR #1865), collecting review findings that are real but not blocking. None of these is a false-reject; the false-reject class was fixed on the WW-5695 branch itself.
 
 The governing rule for the feature is unchanged: emit a constraint only when the browser cannot reject input the server would accept, and never set or change an input's {{type}}.
@@ -2101,7 +2101,7 @@ h3. 13. Visitor validators are re-resolved once per field
 h3. Suggested test additions
 * a form with no action attribute (item 3 has no coverage today)
 * a real action passed through the provider test helper, so the message path stops being invisible (item 2)
-* end-to-end template rendering of pattern, and of required on radio and file; only minlength is currently asserted through a template",Task,Major,29.14788379,2026-09-13T18:17:15.464Z,0.54361744,WW-5702,A0033,assignee,110,2026-08-27T09:56:18.000Z,2026-09-14T07:20:04.011Z,Fixed
+* end-to-end template rendering of pattern, and of required on radio and file; only minlength is currently asserted through a template",Task,Normal,3,29.14788379,2026-09-13T18:17:15.464Z,0.54361744,WW-5702,A0033,assignee,110,2026-08-27T09:56:18.000Z,2026-09-14T07:20:04.011Z,Fixed
 Resolve HTML5 constraint messages for visitor-validated fields against the visited object,"Follow-up to WW-5702 item 4, found in review of its PR.
 
 {{Form.getFieldValidators}} now unwraps {{FieldVisitorValidatorWrapper}}, so a field such as {{user.name}} behind a {{visitor}} validator on {{user}} gets its concrete constraint and a {{data-msg-requiredstring}} message. The message text, however, is resolved by {{StrutsHtmlConstraintProvider.addMessage}} via {{validator.getMessage(action)}}, which builds a {{DelegatingValidatorContext}} over the *action's* bundles only.
@@ -2120,7 +2120,7 @@ Fixing it means the provider needs the object each validator ran against, not on
 * {{HtmlConstraintProvider.constraintsFor}} receives it — an interface change, acceptable while 7.4.0 is unreleased
 * {{addMessage}} resolves through the same composite text provider validation uses, with the action as fallback
 
-Test: a {{<message key=.../>}} in the visited class's own validation file, with the text in the visited class's {{.properties}}; assert the rendered {{data-msg-*}} carries the text, not the key.",Improvement,Minor,28.89018769,2026-09-14T07:29:03.328Z,0.11870111,WW-5740,A0033,assignee,111,2026-09-13T19:42:33.000Z,2026-09-14T10:19:59.104Z,Fixed
+Test: a {{<message key=.../>}} in the visited class's own validation file, with the text in the visited class's {{.properties}}; assert the rendered {{data-msg-*}} carries the text, not the key.",Improvement,Low,2,28.89018769,2026-09-14T07:29:03.328Z,0.11870111,WW-5740,A0033,assignee,111,2026-09-13T19:42:33.000Z,2026-09-14T10:19:59.104Z,Fixed
 HTML5 pattern false-rejects whitespace-only input that the regex validator accepts,"Found reviewing WW-5695 (PR #1865). Violates that feature's governing rule: emit a constraint only when the browser cannot reject input the server would accept.
 
 h3. What happens
@@ -2156,7 +2156,7 @@ h3. Possible closures
 
 h3. Test gap
 
-{{StrutsHtmlConstraintProviderTest.regexEmitsPatternWhenPortableAndCaseSensitive}} asserts only that the attribute is produced, so nothing currently catches this. A case pinning server-side acceptance of a whitespace-only value should land with the fix.",Bug,Major,28.63329942,2026-09-14T10:21:45.785Z,0.06376069,WW-5703,A0033,assignee,112,2026-08-27T10:01:18.000Z,2026-09-14T11:53:34.709Z,Fixed
+{{StrutsHtmlConstraintProviderTest.regexEmitsPatternWhenPortableAndCaseSensitive}} asserts only that the attribute is produced, so nothing currently catches this. A case pinning server-side acceptance of a whitespace-only value should land with the fix.",Bug,Normal,3,28.63329942,2026-09-14T10:21:45.785Z,0.06376069,WW-5703,A0033,assignee,112,2026-08-27T10:01:18.000Z,2026-09-14T11:53:34.709Z,Fixed
 HTML5 required false-rejects on radio/file when the bound property is never null,"Found reviewing WW-5695 (PR #1865). Violates that feature's governing rule: emit a constraint only when the browser cannot reject input the server would accept.
 
 h3. What happens
@@ -2204,7 +2204,7 @@ The {{requiredstring}} mapping is sound and should stay: {{RequiredStringValidat
 
 h3. Test gap
 
-No test renders {{required}} end-to-end on {{s:radio}} or {{s:file}}; only {{minlength}} is asserted through a template.",Bug,Major,28.38047164,2026-09-14T11:54:29.443Z,0.11922976,WW-5704,A0033,assignee,113,2026-08-27T10:01:35.000Z,2026-09-14T14:46:10.894Z,Fixed
+No test renders {{required}} end-to-end on {{s:radio}} or {{s:file}}; only {{minlength}} is asserted through a template.",Bug,Normal,3,28.38047164,2026-09-14T11:54:29.443Z,0.11922976,WW-5704,A0033,assignee,113,2026-08-27T10:01:35.000Z,2026-09-14T14:46:10.894Z,Fixed
 REST body authorization keys off the Jackson external property name instead of the Java member,"Found while triaging WW-5712; independent of it and present on main today.
 
 {{AuthorizingSettableBeanProperty.deserializeAndSet}} (line 85) and {{deserializeSetAndReturn}} (line 105) derive the authorization path from {{getName()}}, which is Jackson's _external_ property name — the key as it appears in the request body. The authorizer on the other side resolves that string against the _Java member_: {{StrutsParameterAuthorizer.hasValidAnnotatedMember}} introspects the target for a bean property or public field of that name and reads its {{@StrutsParameter}}.
@@ -2231,7 +2231,7 @@ Scope: this needs the application to rename properties, and for the permissive d
 
 Fix shape: derive the path from the Java member — {{getMember()}}, the way {{AuthorizingSettableAnyProperty}} already does when it reads the annotation — rather than the wire name. Note that the path prefix for nested objects is currently built from wire names, so member-based and prefix-based naming have to be made consistent, not changed in one place only.
 
-A regression test should cover both directions: an annotated member renamed by a naming strategy must still bind, and an unannotated member renamed onto an annotated member's name must not.",Bug,Minor,28.13256601,2026-09-14T15:14:15.315Z,0.04157392,WW-5715,A0033,assignee,114,2026-09-03T18:36:30.000Z,2026-09-14T16:14:07.302Z,Fixed
+A regression test should cover both directions: an annotated member renamed by a naming strategy must still bind, and an unannotated member renamed onto an annotated member's name must not.",Bug,Low,2,28.13256601,2026-09-14T15:14:15.315Z,0.04157392,WW-5715,A0033,assignee,114,2026-09-03T18:36:30.000Z,2026-09-14T16:14:07.302Z,Fixed
 Merged polymorphic property with a non-null initial value is not authorized in the REST plugin,"h2. Summary
 
 A property that is mergeable ({{@JsonMerge}}, or merge enabled through configuration), carries a value type deserializer ({{@JsonTypeInfo}} on the property or its declared type), and has a non-null initial value is deserialized by Jackson through a path that reaches neither {{AuthorizingSettableBeanProperty}} nor {{AuthorizingValueDeserializer}}. The property is assigned without an authorization check, and its members are authorized against the enclosing prefix instead of their own.
@@ -2258,7 +2258,7 @@ Add a test in the same direction as the WW-5725 tests: a {{@JsonMerge}} {{@JsonT
 
 h2. Compatibility notes
 
-An application that relies on merging into a polymorphic property with a non-null initial value through the REST plugin will see that definition rejected (or merge disabled for it) until the property is given a null initial value or the type deserializer is dropped. No other property kind is affected.",Bug,Major,27.88829652,2026-09-14T16:16:15.605Z,0.53613966,WW-5726,A0033,assignee,115,2026-09-11T14:45:52.000Z,2026-09-15T05:08:18.072Z,Fixed
+An application that relies on merging into a polymorphic property with a non-null initial value through the REST plugin will see that definition rejected (or merge disabled for it) until the property is given a null initial value or the type deserializer is dropped. No other property kind is affected.",Bug,Normal,3,27.88829652,2026-09-14T16:16:15.605Z,0.53613966,WW-5726,A0033,assignee,115,2026-09-11T14:45:52.000Z,2026-09-15T05:08:18.072Z,Fixed
 The @JsonIdentityInfo id property is not authorized in the REST plugin,"h2. Summary
 
 On a type annotated with {{@JsonIdentityInfo}} using a property-based generator, the id property is assigned through Jackson's {{ObjectIdReader}}, which holds a reference to the property captured before {{ParameterAuthorizingModule}} runs. The reader writes through that original property, so the authorization wrapper installed by the module is never consulted and the id is assigned without a check.
@@ -2281,7 +2281,7 @@ Add a test with a {{@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGen
 
 h2. Compatibility notes
 
-No configuration or API change. An id property on such a type is now subject to the same {{@StrutsParameter}} authorization as any other property; an application relying on it being bound without a grant needs to annotate it.",Bug,Major,27.65250206,2026-09-15T05:12:34.882Z,0.04910598,WW-5727,A0033,assignee,116,2026-09-12T07:30:34.000Z,2026-09-15T06:23:17.639Z,Fixed
+No configuration or API change. An id property on such a type is now subject to the same {{@StrutsParameter}} authorization as any other property; an application relying on it being bound without a grant needs to annotate it.",Bug,Normal,3,27.65250206,2026-09-15T05:12:34.882Z,0.04910598,WW-5727,A0033,assignee,116,2026-09-12T07:30:34.000Z,2026-09-15T06:23:17.639Z,Fixed
 REST plugin authorizes a forward-referenced object-id property at the depth where the reference resolves,"h2. Summary
 
 When a property refers to an object by {{@JsonIdentityInfo}} id before that object has appeared in the body, Jackson defers the assignment: {{ObjectIdReferenceProperty}} registers a {{PropertyReferring}} and, once the referenced object is deserialized, calls the referring property's {{set()}} from {{handleResolvedForwardReference}}. That call happens wherever the referenced object turns up in the document, which can be at a different nesting depth than the referring property.
@@ -2300,7 +2300,7 @@ Capture the path prefix when the referring property is first read and use it whe
 
 h2. Compatibility notes
 
-No configuration or API change. Only forward references across nesting depths are affected, and only in the direction of a spurious rejection.",Bug,Minor,27.41657560,2026-09-15T06:46:57.697Z,0.10245949,WW-5745,A0033,assignee,117,2026-09-15T06:28:03.000Z,2026-09-15T09:14:30.197Z,Fixed
+No configuration or API change. Only forward references across nesting depths are affected, and only in the direction of a spurious rejection.",Bug,Low,2,27.41657560,2026-09-15T06:46:57.697Z,0.10245949,WW-5745,A0033,assignee,117,2026-09-15T06:28:03.000Z,2026-09-15T09:14:30.197Z,Fixed
 Members of a bean-typed @JsonIdentityInfo id are authorized at the enclosing path in the REST plugin,"h2. Summary
 
 For a type using a property-based {{@JsonIdentityInfo}}, the id value is read by {{ObjectIdValueProperty}} through the {{ObjectIdReader}}'s own deserializer, which {{BeanDeserializerFactory.addObjectIdReader}} resolves with {{findRootValueDeserializer(idType)}}. That deserializer is not the property's value deserializer, so it is not wrapped by {{AuthorizingValueDeserializer}} and pushes no path prefix. When the id type is a bean rather than a scalar, its members are therefore authorized at the enclosing bean's level — {{k}} instead of {{id.k}} — and a grant on a same-named property of the enclosing bean authorizes the nested write.
@@ -2317,7 +2317,7 @@ Wrapping the reader's deserializer is not a drop-in fix: the same deserializer i
 
 h2. Compatibility notes
 
-No configuration or API change. Only bean-typed ids under a property-based generator are affected, an unusual shape; an application relying on the enclosing grant for the id's members needs a grant at the nested path instead.",Bug,Minor,27.18510004,2026-09-15T09:17:06.130Z,0.08274698,WW-5746,A0033,assignee,118,2026-09-15T06:28:18.000Z,2026-09-15T11:16:15.469Z,Fixed
+No configuration or API change. Only bean-typed ids under a property-based generator are affected, an unusual shape; an application relying on the enclosing grant for the id's members needs a grant at the nested path instead.",Bug,Low,2,27.18510004,2026-09-15T09:17:06.130Z,0.08274698,WW-5746,A0033,assignee,118,2026-09-15T06:28:18.000Z,2026-09-15T11:16:15.469Z,Fixed
 RedactionAwareDeserializer leaves the parser mid-object when it drops a REST body object,"h2. Summary
 
 {{RedactionAwareDeserializer}} wraps every bean deserializer in the REST plugin's Jackson authorization and, when construction fails after a {{@StrutsParameter}} redaction marked its scope, catches the {{JsonMappingException}} and returns {{null}} so the whole object is dropped rather than partially exposed. It returns without moving the parser: whatever tokens of the dropped object remain unread are then consumed by the _enclosing_ bean's property loop.
@@ -2362,7 +2362,7 @@ Resync before returning {{null}}: record the parser's nesting depth (and whether
 
 h2. Compatibility notes
 
-No configuration or API change. Only bodies that already trigger an object drop are affected, and only in that the enclosing object is now read correctly afterwards.",Bug,Major,26.95734917,2026-09-15T11:37:05.370Z,0.10961741,WW-5747,A0033,assignee,119,2026-09-15T09:53:30.000Z,2026-09-15T14:14:56.314Z,Fixed
+No configuration or API change. Only bodies that already trigger an object drop are affected, and only in that the enclosing object is now read correctly afterwards.",Bug,Normal,3,26.95734917,2026-09-15T11:37:05.370Z,0.10961741,WW-5747,A0033,assignee,119,2026-09-15T09:53:30.000Z,2026-09-15T14:14:56.314Z,Fixed
 Registering ParameterAuthorizingModule breaks unwrapped XML lists in JacksonXmlHandler,"h2. Summary
 
 {{JacksonXmlHandler}} registers {{ParameterAuthorizingModule}} on its {{XmlMapper}}. {{ObjectMapper.registerModule}} inserts a module's {{BeanDeserializerModifier}} at the _head_ of the modifier list, so the Struts modifier runs before Jackson XML's own {{XmlBeanDeserializerModifier}}. The Struts modifier wraps every bean deserializer in {{RedactionAwareDeserializer}} (a {{DelegatingDeserializer}}); the XML modifier then tests the deserializer it receives with {{instanceof BeanDeserializerBase}}, does not recognise the wrapper, and skips installing its {{WrapperHandlingDeserializer}}. Unwrapped-list handling is therefore lost for every bean read through the XML handler.
@@ -2395,7 +2395,7 @@ Add a test on {{JacksonXmlHandler}} with an unwrapped list, with and without an 
 
 h2. Compatibility notes
 
-No configuration or API change; only restores documented Jackson XML behaviour for the REST plugin's XML handler.",Bug,Major,26.73361807,2026-09-15T14:19:29.625Z,0.10122595,WW-5748,A0033,assignee,120,2026-09-15T14:14:05.000Z,2026-09-15T16:45:15.547Z,Fixed
+No configuration or API change; only restores documented Jackson XML behaviour for the REST plugin's XML handler.",Bug,Normal,3,26.73361807,2026-09-15T14:19:29.625Z,0.10122595,WW-5748,A0033,assignee,120,2026-09-15T14:14:05.000Z,2026-09-15T16:45:15.547Z,Fixed
 AuthorizingSettableAnyProperty logs one WARN per rejected dynamic key,"Follow-up to WW-5712.
 
 When {{struts.rest.anySetter.requireAnnotations}} is enabled, {{AuthorizingSettableAnyProperty.rejectPermission}} and {{rejectDepth}} emit a WARN for every rejected dynamic key. For the existing {{AuthorizingSettableBeanProperty}} a per-property WARN is fine, because the set of property names is bounded by the target class's declared members. For an any-setter the key space is whatever the request body contains, so the number of WARN lines written per request is bounded only by the body itself: a body with ten thousand unknown keys against an unannotated sink produces ten thousand WARN lines.
@@ -2405,7 +2405,7 @@ Log once per body instead. Suggested shape:
 * count rejections per request in the same request-scoped state that {{DynamicKeyAuthorizationContext}} already holds, and emit a single WARN with the count and the sink (target class plus member) when the scope is cleared at the end of the mapper read, which both Jackson handlers already do in a {{finally}};
 * keep the distinct messages for the three rejection reasons (missing consent, depth exceeded, creator-parameter form), since they point at different fixes on the application side.
 
-The rejection behaviour itself does not change; only the log volume does.",Improvement,Minor,26.51351566,2026-09-15T16:54:12.312Z,0.04152226,WW-5720,A0033,assignee,121,2026-09-11T03:44:52.000Z,2026-09-15T17:53:59.835Z,Fixed
+The rejection behaviour itself does not change; only the log volume does.",Improvement,Low,2,26.51351566,2026-09-15T16:54:12.312Z,0.04152226,WW-5720,A0033,assignee,121,2026-09-11T03:44:52.000Z,2026-09-15T17:53:59.835Z,Fixed
 Plugin-provided default interceptor stacks omit the resource-isolation interceptors,"{{WW-5083}} added the Fetch Metadata resource-isolation interceptor to core's {{defaultStack}} in 6.0.0, alongside {{coop}} and {{coep}}. All three are declared enabled in {{core/src/main/resources/struts-default.xml}}:
 
 {code}<interceptor-ref name=""coep"">
@@ -2434,7 +2434,7 @@ Add {{coep}}, {{coop}} and {{fetchMetadata}} to {{restDefaultStack}} and {{beanV
 h3. Notes
 * Affects 6.x and 7.x alike: {{WW-5083}} shipped in 6.0.0, and both plugin stacks lack the interceptors on {{main}} and on {{support/struts-6-x-x}}.
 * This is a behaviour change for existing REST and Bean Validation deployments: {{fetchMetadata}} rejects requests whose {{Sec-Fetch-Site}} marks them cross-site, so a REST API deliberately serving cross-origin browser clients will start seeing 403s unless it configures {{exemptedPaths}} or disables the interceptor. It should be called out in the migration notes.
-* The wider point is structural: a plugin that replaces {{defaultStack}} inherits nothing from it afterwards, so every future addition to {{defaultStack}} has to be mirrored by hand into each fork. Worth considering whether these stacks can extend the core stack rather than restate it.",Improvement,Major,26.29653211,2026-09-16T16:40:33.282Z,0.03604573,WW-5718,A0033,assignee,122,2026-09-04T17:06:50.000Z,2026-09-16T17:32:27.633Z,Fixed
+* The wider point is structural: a plugin that replaces {{defaultStack}} inherits nothing from it afterwards, so every future addition to {{defaultStack}} has to be mirrored by hand into each fork. Worth considering whether these stacks can extend the core stack rather than restate it.",Improvement,Normal,3,26.29653211,2026-09-16T16:40:33.282Z,0.03604573,WW-5718,A0033,assignee,122,2026-09-04T17:06:50.000Z,2026-09-16T17:32:27.633Z,Fixed
 REST XML handlers throw NullPointerException when there is no target to render,"{{JacksonXmlHandler.fromObject}} and {{JuneauXmlHandler.fromObject}} dereference the object they are asked to render before checking it:
 
 {code:java}public String fromObject(ActionInvocation invocation, Object obj, String resultCode, Writer stream) throws IOException {
@@ -2451,7 +2451,7 @@ For the JSON handler this is harmless (Jackson writes {{null}}). For the two XML
 
 Reproduction: a {{rest-default}} action answering a POST with the {{xml}} extension under the default {{restrictToGet=true}}; the response is a 500 with an XML-serialised {{NullPointerException}} instead of the intended status with an empty body.
 
-Found while reviewing WW-5718; not caused by it.",Bug,Major,26.08303222,2026-09-16T17:38:30.887Z,0.02589086,WW-5749,A0033,assignee,123,2026-09-16T17:34:02.000Z,2026-09-16T18:15:47.857Z,Fixed
+Found while reviewing WW-5718; not caused by it.",Bug,Normal,3,26.08303222,2026-09-16T17:38:30.887Z,0.02589086,WW-5749,A0033,assignee,123,2026-09-16T17:34:02.000Z,2026-09-16T18:15:47.857Z,Fixed
 ActionNameSpecificityComparator can rank a broad ** pattern ahead of a narrower */* one,"Follow-up to WW-3784 (7.3.0), which introduced {{ActionNameSpecificityComparator}} in the Convention plugin so annotated wildcard actions are matched most-specific-first instead of in class-scan order.
 
 The comparator's keys, in order, are: fewer wildcard tokens first, more literal characters first, fewer path-spanning {{\*\*}} tokens first, then lexical. Because the raw token count comes before the {{\*\*}} count, a pattern with one {{\*\*}} outranks a pattern with two {{\*}} even though {{\*\*}} crosses {{/}} and {{\*}} does not ({{WildcardHelper}} MATCH\_PATH vs MATCH\_FILE) — so {{\*\*}} is the broader pattern of the two and should lose:
@@ -2462,7 +2462,7 @@ Today the first sorts ahead of the second and shadows it for {{a/x/y}}.
 
 Proposed refinement: lift the {{**}}-count key above the raw token-count key (fewer {{\*\*}} first, then fewer tokens, then more literals). Ordering stays per-package by design. Worth a test pair in {{ActionNameSpecificityComparatorTest}} for exactly the {{a/\*\*}} vs {{a/\*/\*}} case, plus the {{\{var\}}} equivalent for {{NamedVariablePatternMatcher}} users.
 
-Fix version intentionally left unset.",Improvement,Major,25.87289398,2026-09-17T06:40:25.978Z,0.01791788,WW-5743,A0033,assignee,124,2026-09-14T15:09:13.000Z,2026-09-17T07:06:14.083Z,Fixed
+Fix version intentionally left unset.",Improvement,Normal,3,25.87289398,2026-09-17T06:40:25.978Z,0.01791788,WW-5743,A0033,assignee,124,2026-09-14T15:09:13.000Z,2026-09-17T07:06:14.083Z,Fixed
 null can no longer be passed as parameter to interceptor,"Upgrading from 7.2.1 to 7.3.0 seems to have made a change so that null cannot be passed as a parameter to the ActionFileUploadInterceptor.
 
 I have an interceptor like this:
@@ -2483,7 +2483,7 @@ The upload validation policy could not be resolved, rejecting the file: file ""t
 
 Looking at the code and the release notes of 7.3.0, I can find that this probably relates to the changes made in WithLazyParams.java and AbstractFileUploadInterceptor.java (using a policy) as part of WW-5659. But I do not see in the release notes anything about this being intended or what the migration path would be. The javadoc of WithLazyParams.resolveInto() mentions null and empty value becoming unresolved, but not what to do about it.
 
-Obviously, I can set a very large number or create a second interceptor and interceptorStack to get around this, but I felt that this should be reported so that either it can be fixed, or it can be confirmed as the intended behaviour and if so, perhaps write something about it in the release notes (under Breaking changes) or in a migration guide.",Bug,Major,25.66605417,2026-09-23T13:20:26.250Z,8.22570258,WW-5751,A0033,assignee,125,2026-09-23T11:45:39.000Z,2026-10-01T18:45:26.953Z,Fixed
+Obviously, I can set a very large number or create a second interceptor and interceptorStack to get around this, but I felt that this should be reported so that either it can be fixed, or it can be confirmed as the intended behaviour and if so, perhaps write something about it in the release notes (under Breaking changes) or in a migration guide.",Bug,Normal,3,25.66605417,2026-09-23T13:20:26.250Z,8.22570258,WW-5751,A0033,assignee,125,2026-09-23T11:45:39.000Z,2026-10-01T18:45:26.953Z,Fixed
 BeanValidationInterceptor resolves the interpolated constraint message as a text key instead of the message template,"{{BeanValidationInterceptor}} builds the field and action error text from {{ConstraintViolation.getMessage()}}, which is the message *after* the Bean Validation provider has interpolated it, and passes that string to the Struts text provider ({{getText(...)}}) as the text key.
 
 The key a developer declares is the constraint's {{message}} attribute, which is what {{ConstraintViolation.getMessageTemplate()}} returns. Using the interpolated message as the key means:
@@ -2507,12 +2507,12 @@ Apply the same change on the 6.x line.
 
 h2. Documentation
 
-The Bean Validation plugin page should state that {{message}} is looked up as a Struts key, and that a message produced by the provider is shown literally.",Bug,Major,25.52763868,2026-10-05T13:41:26.031Z,0.95955998,WW-5757,A0033,assignee,126,2026-10-05T13:33:50.000Z,2026-10-06T12:43:12.013Z,Fixed
+The Bean Validation plugin page should state that {{message}} is looked up as a Struts key, and that a message produced by the provider is shown literally.",Bug,Normal,3,25.52763868,2026-10-05T13:41:26.031Z,0.95955998,WW-5757,A0033,assignee,126,2026-10-05T13:33:50.000Z,2026-10-06T12:43:12.013Z,Fixed
 Upgrade OGNL to version 3.4.15,"Upgrade OGNL from 3.4.14 to [3.4.15|https://github.com/orphan-oss/ognl/releases].
 
 OGNL 3.4.15 includes orphan-oss/ognl#660 (3.4.x backport of #658): {{OgnlRuntime.hasSetProperty}} no longer reports a property as settable when its only backing member is a static or final field, which {{setFieldValue}} refuses to write. {{CompoundRootAccessor}} relies on that answer to decide which value stack object takes a parameter, so it now matches what OGNL can actually write.
 
-Builds on WW-5759, which moves Struts to OGNL 3.4.14.",Dependency,Major,25.33418925,2026-10-06T13:23:09.521Z,0.08051932,WW-5760,A0033,assignee,127,2026-10-06T12:07:35.000Z,2026-10-06T15:19:06.390Z,Fixed
+Builds on WW-5759, which moves Struts to OGNL 3.4.14.",Dependency,Normal,3,25.33418925,2026-10-06T13:23:09.521Z,0.08051932,WW-5760,A0033,assignee,127,2026-10-06T12:07:35.000Z,2026-10-06T15:19:06.390Z,Fixed
 Make struts.convention.result.path scopable per package,"A follow-up to the package-scoped constants from [WW-3476|https://issues.apache.org/jira/browse/WW-3476], whose first adopter was [WW-5768|https://issues.apache.org/jira/browse/WW-5768] ({{struts.ui.theme}}, {{struts.ui.templateDir}}).
 
 h2. Goal
@@ -2549,7 +2549,7 @@ h2. Tests
 
 h2. Docs
 
-On the struts-site, list the constant on the scoped-constants section of {{core-developers/package-configuration.md}}, and mention it on the Convention plugin page.",Improvement,Major,25.13689495,2026-10-14T06:02:38.768Z,0.13563944,WW-5770,A0033,assignee,128,2026-10-12T19:32:13.000Z,2026-10-14T09:17:58.016Z,Fixed
+On the struts-site, list the constant on the scoped-constants section of {{core-developers/package-configuration.md}}, and mention it on the Convention plugin page.",Improvement,Normal,3,25.13689495,2026-10-14T06:02:38.768Z,0.13563944,WW-5770,A0033,assignee,128,2026-10-12T19:32:13.000Z,2026-10-14T09:17:58.016Z,Fixed
 ExecuteAndWaitInterceptor re-stores the transaction token from request parameters instead of the token validated in the request,"{{ExecuteAndWaitInterceptor}} puts a transaction token back into the session every time it returns the wait result. It reads the {{token}} request parameter as the value and the {{struts.token.name}} request parameter as the name, and passes both to {{TokenHelper.setSessionToken(...)}}.
 
 This was added in WW-1741 so that an action using both {{token}} and {{execAndWait}} keeps accepting its wait-page refreshes after {{TokenInterceptor}} has consumed the token. The interceptor does not check that a token was validated in the current request, though, so it stores whatever name and value any request supplies, including requests to an execAndWait action that has no token check at all, such as one using the shipped {{executeAndWaitStack}}.
@@ -2568,7 +2568,7 @@ h2. Tests
 * An action using {{token}} and {{execAndWait}} keeps accepting the wait-page refresh that carries the validated token.
 * The same holds with {{tokenSession}} in place of {{token}}.
 
-Apply the same change on the 6.x line.",Bug,Major,24.94308677,2026-10-15T16:59:01.236Z,0.50242137,WW-5765,A0033,assignee,129,2026-10-10T09:59:13.000Z,2026-10-16T05:02:30.442Z,Fixed
+Apply the same change on the 6.x line.",Bug,Normal,3,24.94308677,2026-10-15T16:59:01.236Z,0.50242137,WW-5765,A0033,assignee,129,2026-10-10T09:59:13.000Z,2026-10-16T05:02:30.442Z,Fixed
 default values are restored for some properties on ModelDriven bean,"Hello,
 
 Some curl tests on the same ModelDriven action (in a package that extends both rest-default and json-default) have changed their result regarding the Struts version and it is summary by:
@@ -2587,7 +2587,7 @@ One solution we found is to set:
 
 But on model bean it should not be necessary to annotate if we understand well the documentation.
 
- ",Improvement,Minor,24.75508165,2026-10-22T19:34:20.113Z,0.40491661,WW-5789,A0033,assignee,130,2026-10-22T14:01:24.000Z,2026-10-23T05:17:24.908Z,Fixed
+ ",Improvement,Low,2,24.75508165,2026-10-22T19:34:20.113Z,0.40491661,WW-5789,A0033,assignee,130,2026-10-22T14:01:24.000Z,2026-10-23T05:17:24.908Z,Fixed
 REST two-phase body copy writes constructor defaults over values already set on the target,"Follow-up to [WW-5789|https://issues.apache.org/jira/browse/WW-5789], which covered the handlers that do not read the body at all.
 
 When {{struts.parameters.requireAnnotations=true}} and the selected content-type handler does not implement {{AuthorizationAwareContentTypeHandler}}, {{ContentTypeInterceptor.applyTwoPhaseDeserialize}} creates a fresh instance of the target with its no-arg constructor, lets the handler fill it from the body, and then copies every non-null property from that instance onto the real target. The copy cannot tell a value the body supplied from a value the constructor assigned, so a property the body omits is still copied when it has a non-null constructor default. That overwrites whatever was on the target before the {{rest}} interceptor ran: a value bound by {{params}}, or one loaded in {{prepare()}}.
@@ -2621,14 +2621,14 @@ Tests to add in {{ContentTypeInterceptorIntegrationTest}}, with a non-aware hand
 
 Docs: a paragraph under the 7.2.0 enforcement note on the REST plugin page, and a line in the Version Notes.
 
-Out of scope, candidates for their own tickets: making {{XStreamHandler}} authorization-aware so no shipped handler is left on the two-phase path, and deprecating the two-phase path for removal at 8.0.0 once that is done.",Bug,Major,24.56920253,2026-10-23T06:17:08.526Z,0.07465002,WW-5790,A0033,assignee,131,2026-10-22T20:00:22.000Z,2026-10-23T08:04:38.288Z,Fixed
+Out of scope, candidates for their own tickets: making {{XStreamHandler}} authorization-aware so no shipped handler is left on the two-phase path, and deprecating the two-phase path for removal at 8.0.0 once that is done.",Bug,Normal,3,24.56920253,2026-10-23T06:17:08.526Z,0.07465002,WW-5790,A0033,assignee,131,2026-10-22T20:00:22.000Z,2026-10-23T08:04:38.288Z,Fixed
 Verify HTTP method restrictions for Convention plugin actions,"Follow-up to WW-3717, which adds an {{http-method}} attribute to {{<action>}} in {{struts.xml}}, enforced by {{HttpMethodInterceptor}}, with a 405 response (and an {{Allow}} header) when no {{bad-request}} result is mapped.
 
 Actions discovered by the Convention plugin have no XML declaration, so they cannot use the new attribute. The expectation is that they are already covered by the existing annotations ({{@HttpGet}}, {{@HttpPost}}, {{@HttpPut}}, {{@HttpDelete}}, {{@HttpGetOrPost}}, {{@AllowedHttpMethod}}) on the action class or method.
 
 Verify this and pick one outcome:
 * *Covered:* add tests in the Convention plugin that pin it: an annotated Convention action (class-level and method-level, including an {{@Action}}-mapped method) rejects a disallowed method with the mapped {{bad-request}} result, or with 405 + {{Allow}} when none is mapped, and accepts an allowed one.
-* *Gap confirmed:* document what is missing (for example, a case the annotations cannot express for Convention actions) and open a New Feature ticket at 8.0.0 for an {{@Action(httpMethod = ...)}} style attribute, linking it here.",Task,Major,24.38363773,2026-10-23T08:18:24.886Z,0.13846041,WW-5786,A0033,assignee,132,2026-10-16T14:22:10.000Z,2026-10-23T11:37:47.865Z,Fixed
+* *Gap confirmed:* document what is missing (for example, a case the annotations cannot express for Convention actions) and open a New Feature ticket at 8.0.0 for an {{@Action(httpMethod = ...)}} style attribute, linking it here.",Task,Normal,3,24.38363773,2026-10-23T08:18:24.886Z,0.13846041,WW-5786,A0033,assignee,132,2026-10-16T14:22:10.000Z,2026-10-23T11:37:47.865Z,Fixed
 Struts Boot: run a Struts application from main() with an embedded container and programmatic action registration,"h2. Goal
 
 Give newcomers a working Struts application with almost no setup: add one dependency, write an action class, run {{main()}}, see the page. No {{web.xml}}, no {{struts.xml}}, no external servlet container. Standalone — no Spring dependency.
@@ -2679,7 +2679,7 @@ h2. Parked for later
 * Optional bridge to Convention plugin annotations.
 * Dev-mode reload of templates and registry.
 * Project generator / quick-start archetype.
-* Health and info endpoints.",New Feature,Major,24.38363773,2026-10-23T09:59:49.008Z,0.91205103,WW-5791,A0033,assignee,132,2026-10-23T09:13:28.000Z,2026-10-24T07:53:10.217Z,Fixed
+* Health and info endpoints.",New Feature,Normal,3,24.38363773,2026-10-23T09:59:49.008Z,0.91205103,WW-5791,A0033,assignee,132,2026-10-23T09:13:28.000Z,2026-10-24T07:53:10.217Z,Fixed
 XmlDocConfigurationProvider#verifyAction does not fail startup for a non-public action class,"h2. Problem
 
 {{XmlDocConfigurationProvider#verifyAction}} is meant to fail fast when an action class declared in XML is not public. It throws a {{ConfigurationException}} with the message ""Action class [...] is not public"" — but the throw happens inside the same {{try}} block whose {{catch (RuntimeException ex)}} handler logs at INFO (""Unable to verify action class [...] exists at initialization"") and carries on. {{ConfigurationException}} extends {{StrutsException}}, which extends {{RuntimeException}}, so the check never takes effect and startup continues.
@@ -2700,7 +2700,7 @@ A non-public action class fails configuration loading with the ""is not public""
 
 h2. Notes
 
-Found while adding the same check to the Struts Boot registry provider (WW-5791), which fails startup for non-public action classes. There is currently no core test for the non-public branch.",Bug,Major,24.02754248,2026-10-24T07:57:01.636Z,0.09123933,WW-5792,A0033,assignee,134,2026-10-23T11:53:06.000Z,2026-10-24T10:08:24.714Z,Fixed
+Found while adding the same check to the Struts Boot registry provider (WW-5791), which fails startup for non-public action classes. There is currently no core test for the non-public branch.",Bug,Normal,3,24.02754248,2026-10-24T07:57:01.636Z,0.09123933,WW-5792,A0033,assignee,134,2026-10-23T11:53:06.000Z,2026-10-24T10:08:24.714Z,Fixed
 Support datetextfield tag in the html5 theme,"h2. Problem
 
 {{datetextfield}} has a native HTML counterpart, {{input type=""date""}}, yet the html5 theme (like the simple theme it extends) renders only a placeholder: ""Tag datetextfield works only with the JavaTemplates Plugin!"". The only working implementation is in the JavaTemplates plugin's simple theme.
@@ -2712,7 +2712,7 @@ Implement {{template/html5/datetextfield.ftl}} rendering {{input type=""date""}}
 * Common attributes, dynamic attributes and HTML5 constraint attributes ({{min}}, {{max}}, {{required}}) consistent with the other html5 templates
 * Tests with expected-output fixtures, and the tag reference updated to state html5 support
 
-Related: WW-5776 (removal of the tags the html5 theme cannot support)",Task,Major,23.85023653,2026-10-24T10:09:58.034Z,0.14067704,WW-5778,A0033,assignee,135,2026-10-15T07:36:33.000Z,2026-10-24T13:32:32.530Z,Fixed
+Related: WW-5776 (removal of the tags the html5 theme cannot support)",Task,Normal,3,23.85023653,2026-10-24T10:09:58.034Z,0.14067704,WW-5778,A0033,assignee,135,2026-10-15T07:36:33.000Z,2026-10-24T13:32:32.530Z,Fixed
 Support java.time types in the datetextfield tag,"h2. Problem
 
 {{datetextfield}} only works with {{java.util.Date}} properties:
@@ -2729,7 +2729,7 @@ Support {{java.time}} property types (at least {{LocalDate}}) in {{datetextfield
 * JavaTemplates theme: format the split fields from {{java.time}} values and have {{DateTextFieldInterceptor}} set the property's declared type
 * Tests for each supported type, and the tag reference updated to list them
 
-Related: WW-5778 (datetextfield in the html5 theme)",Improvement,Major,23.67590153,2026-10-24T13:35:35.134Z,0.03574358,WW-5810,A0033,assignee,136,2026-10-24T10:36:28.000Z,2026-10-24T14:27:03.379Z,Fixed
+Related: WW-5778 (datetextfield in the html5 theme)",Improvement,Normal,3,23.67590153,2026-10-24T13:35:35.134Z,0.03574358,WW-5810,A0033,assignee,136,2026-10-24T10:36:28.000Z,2026-10-24T14:27:03.379Z,Fixed
 DateConverter silently drops the time when the date-time separator does not match the locale pattern,"When a {{java.util.Date}} (or {{java.sql.Timestamp}}) property receives a date-time whose separator between date and time differs from the locale's date-time pattern, {{DateConverter}} converts it to midnight of that date instead of rejecting it.
 
 h2. Example
@@ -2751,7 +2751,7 @@ h2. Possible fix
 
 Require the final parse to consume the whole input (a {{ParsePosition}} check, as WW-5812's format selection already does), and throw {{TypeConversionException}} otherwise.
 
-This is a behaviour change: any input with trailing text after a valid date, which converts today, would then be rejected. It should be called out in the release notes.",Bug,Major,23.50334564,2026-10-25T05:16:09.164Z,0.04298275,WW-5813,A0033,assignee,137,2026-10-25T05:13:22.000Z,2026-10-25T06:18:02.874Z,Fixed
+This is a behaviour change: any input with trailing text after a valid date, which converts today, would then be rejected. It should be called out in the release notes.",Bug,Normal,3,23.50334564,2026-10-25T05:16:09.164Z,0.04298275,WW-5813,A0033,assignee,137,2026-10-25T05:13:22.000Z,2026-10-25T06:18:02.874Z,Fixed
 DateConverter reads a trailing Z in an ISO date-time as server-local time instead of UTC,"{{DateConverter}} accepts ISO date-times such as {{1996-12-19T16:39:57Z}} and {{2026-10-25T05:14:42.000Z}} (the form JavaScript's {{Date.toISOString()}} produces) for {{java.util.Date}} properties, but treats the {{Z}} as a literal. The value is interpreted in the server's default time zone, so a UTC timestamp sent by a client is shifted by the server's offset.
 
 Other RFC 3339 forms are not accepted at all: a numeric offset ({{+02:00}}), and fractional seconds with other than three digits.
@@ -2769,7 +2769,7 @@ Reading {{Z}} as UTC changes the instant every existing {{...Z}} value converts 
 
 {{java.sql.Timestamp}} (no ISO support today), the {{java.time}} types ({{OffsetDateTime}} already parses offsets) and the JSON plugin's own date handling are out of scope.
 
-The default flips to {{true}} in 8.0.0 under a separate ticket.",Bug,Major,23.33334301,2026-10-25T06:21:15.775Z,0.02695171,WW-5814,A0033,assignee,138,2026-10-25T05:25:24.000Z,2026-10-25T07:00:04.403Z,Fixed
+The default flips to {{true}} in 8.0.0 under a separate ticket.",Bug,Normal,3,23.33334301,2026-10-25T06:21:15.775Z,0.02695171,WW-5814,A0033,assignee,138,2026-10-25T05:25:24.000Z,2026-10-25T07:00:04.403Z,Fixed
 Derive HTML5 min/max and required constraints for temporal controls,"h2. Problem
 
 HTML5 constraint derivation ({{struts.ui.html5.constraints}}) maps range validators to {{min}}/{{max}} only for {{number}} and {{range}} controls. {{HtmlControlType.supportsRange()}} already includes the temporal controls ({{date}}, {{month}}, {{week}}, {{time}}, {{datetime-local}}), but {{StrutsHtmlConstraintProvider}} deliberately skips them, because their {{min}}/{{max}} values need per-control ISO formatting. As a result, {{DateRangeFieldValidator}} emits nothing.
@@ -2794,7 +2794,7 @@ Requirements:
 * Skip the attribute for controls/value types that cannot be represented exactly, as the numeric path does for fractional {{min}}
 * Tests for each temporal control, including {{datetextfield}} (replace {{Html5ConstraintRenderingTest.testRendersNoRequiredOnADateTextField}}), and the tag reference updated
 
-Related: WW-5778 (datetextfield in the html5 theme), WW-5810 (java.time support in datetextfield)",Improvement,Major,23.16567113,2026-10-25T07:38:03.779Z,0.52475440,WW-5811,A0033,assignee,139,2026-10-24T10:40:01.000Z,2026-10-25T20:13:42.559Z,Fixed
+Related: WW-5778 (datetextfield in the html5 theme), WW-5810 (java.time support in datetextfield)",Improvement,Normal,3,23.16567113,2026-10-25T07:38:03.779Z,0.52475440,WW-5811,A0033,assignee,139,2026-10-24T10:40:01.000Z,2026-10-25T20:13:42.559Z,Fixed
 Add a range validator for java.time.LocalDate properties,"h2. Problem
 
 {{DateRangeFieldValidator}} ({{date}}) is a {{RangeValidatorSupport<Date>}}. On a {{java.time.LocalDate}} property it compares the {{LocalDate}} value against a {{java.util.Date}} bound, which throws {{ClassCastException}}, so a {{LocalDate}} field has no working range validation. {{DateConverter}} and the date tags have supported {{LocalDate}} for some time (WW-5016, WW-5530, WW-5810); the validators have not.
@@ -2815,7 +2815,7 @@ h2. Requirements
 * Tests: XML and annotation configuration, inclusive bounds, null value skipped, expressions
 * Validator reference docs on struts-site
 
-Related: WW-5811 (HTML5 {{min}}/{{max}} for {{date}} controls), which will map this validator's bounds directly to {{min=""yyyy-MM-dd""}}.",New Feature,Major,23.16567113,2026-10-25T08:36:33.061Z,0.15935649,WW-5816,A0033,assignee,139,2026-10-25T08:36:20.000Z,2026-10-25T12:26:01.462Z,Fixed
+Related: WW-5811 (HTML5 {{min}}/{{max}} for {{date}} controls), which will map this validator's bounds directly to {{min=""yyyy-MM-dd""}}.",New Feature,Normal,3,23.16567113,2026-10-25T08:36:33.061Z,0.15935649,WW-5816,A0033,assignee,139,2026-10-25T08:36:20.000Z,2026-10-25T12:26:01.462Z,Fixed
 Javatemplates plugin renders dynamic attributes differently from the simple theme: values are not HTML-escaped and are evaluated a second time,"The javatemplates plugin is documented as a drop-in replacement for the simple theme. {{DynamicAttributesHandler.processDynamicAttributes}} differs from the FreeMarker {{dynamic-attributes.ftl}} in two ways.
 # Dynamic attribute values are stored with {{Attributes.put}}. Every other handler in the plugin goes through {{Attributes.add}} or {{addIfExists}}, which apply {{escapeHtml4}}, and the FreeMarker template writes the value under the configuration's HTML auto-escaping. {{XHTMLTagSerializer.start}} then writes the stored value between double quotes as it is.
 # {{UIBean.setDynamicAttributes}} already translates the percent-brace expressions for every component that is not lazily evaluated. The handler tests the resolved value with {{ComponentUtils.isExpression}} again and calls {{findString}} on it, so a value that resolves to text in the percent-brace form is evaluated a second time. The FreeMarker template evaluates only when {{evaluate_dynamic_attributes}} is set, which {{radiomap.ftl}} and {{checkboxlist.ftl}} do because {{Radio}} and {{CheckboxList}} return {{lazyEvaluation() == true}} and render their dynamic attributes per list item.
@@ -2846,7 +2846,7 @@ h2. Tests
 * A dynamic attribute on {{Radio}} is still evaluated per item in the handler.
 * The existing dynamic-attribute rendering tests keep passing for every tag in {{SimpleTheme}}.
 
-Reported by Claude and Ada Logics.",Bug,Major,22.84193190,2026-10-31T06:28:19.892Z,0.09509340,WW-5823,A0033,assignee,141,2026-10-31T06:25:10.000Z,2026-10-31T08:45:15.962Z,Fixed
+Reported by Claude and Ada Logics.",Bug,Normal,3,22.84193190,2026-10-31T06:28:19.892Z,0.09509340,WW-5823,A0033,assignee,141,2026-10-31T06:25:10.000Z,2026-10-31T08:45:15.962Z,Fixed
 "Radio tag renders its name attribute without HTML escaping, unlike every other form tag","The radio template is the only bundled form template that writes the {{name}} attribute with {{?no_esc}}. Every sibling template (checkbox, checkboxlist, text, select, file, hidden, password, textarea, submit, reset, form) writes it under the FreeMarker auto-escaping configured for the UI templates, and the javatemplates plugin escapes it as well.
 
 The exception dates from the original template, which never carried the per-parameter {{?html}} the checkbox template had. When the templates moved to built-in auto-escaping in WW-4972, the radio template kept its previous output by adding {{?no_esc}} to that one attribute.
@@ -2866,14 +2866,14 @@ The radio name is written the same way as on every other tag, HTML-escaped.
 
 h2. Change
 
-Remove {{?no_esc}} from the {{name}} attribute in the {{simple}} and {{html5}} radio templates and pin the escaped output with a test. One existing fixture, Radio-6.txt, pins a name containing apostrophes; auto-escaping renders those as {{&#39;}}, as the combobox fixtures already show.",Bug,Minor,22.68174289,2026-10-31T09:15:10.568Z,0.02722273,WW-5824,A0033,assignee,142,2026-10-31T09:10:53.000Z,2026-10-31T09:54:22.612Z,Fixed
+Remove {{?no_esc}} from the {{name}} attribute in the {{simple}} and {{html5}} radio templates and pin the escaped output with a test. One existing fixture, Radio-6.txt, pins a name containing apostrophes; auto-escaping renders those as {{&#39;}}, as the combobox fixtures already show.",Bug,Low,2,22.68174289,2026-10-31T09:15:10.568Z,0.02722273,WW-5824,A0033,assignee,142,2026-10-31T09:10:53.000Z,2026-10-31T09:54:22.612Z,Fixed
 StringConverter does not bound integer digits when formatting BigDecimal,"WW-5711 bounded {{maximumFractionDigits}} to 340 in {{StringConverter.convertToString()}}, so the length of a formatted {{BigDecimal}} no longer follows a large positive scale. The integer side has no equivalent bound: {{DecimalFormat}} keeps its default {{maximumIntegerDigits}} of {{Integer.MAX_VALUE}}, and for a {{BigDecimal}} with a large negative scale it pads the integer part out to the full value, so the length of the output follows the scale of the value rather than its precision — the counterpart of WW-5711 on the other side of the decimal point.
 
 {{setMaximumIntegerDigits}} is not the right bound. {{DecimalFormat}} applies it by dropping the leading digits rather than by rounding, so an ordinary value wider than the bound would format as its trailing digits only.
 
 Bound the number of integer digits ({{precision() - scale()}}) to the same 340 instead. A {{BigDecimal}} within that bound formats exactly as before; past it, fall back to {{BigDecimal.toString()}}, which renders the value compactly in scientific notation. Every {{double}} still formats in full — the widest, {{Double.MAX_VALUE}}, has 309 integer digits, and the existing tests pin that.
 
-Add a regression test covering the bound on both sides of it.",Bug,Major,22.52331968,2026-10-31T14:26:12.788Z,0.72593490,WW-5828,A0033,assignee,143,2026-10-31T13:29:50.000Z,2026-11-01T07:51:33.563Z,Fixed
+Add a regression test covering the bound on both sides of it.",Bug,Normal,3,22.52331968,2026-10-31T14:26:12.788Z,0.72593490,WW-5828,A0033,assignee,143,2026-10-31T13:29:50.000Z,2026-11-01T07:51:33.563Z,Fixed
 Number tag and localized text arguments do not bound integer digits when formatting BigDecimal,"WW-5828 bounded the number of integer digits {{StringConverter}} emits when it formats a {{BigDecimal}}, falling back to {{BigDecimal.toString()}} past the bound so that the length of the output follows the precision of the value rather than its scale.
 
 Two other places in core format a {{BigDecimal}} without going through {{StringConverter}}, and neither applies the same bound:
@@ -2882,12 +2882,12 @@ Two other places in core format a {{BigDecimal}} without going through {{StringC
 
 Apply the WW-5828 bound to both paths, sharing the bound rather than duplicating the constant. For message arguments the bound has to be applied through the formatter, not by substituting the argument, since a number-typed message element rejects a {{String}} argument. Values within the bound must render byte-identically to today, including {{currency}} and typed message elements.
 
-Same fix on the 6.x line.",Bug,Major,22.37194895,2026-11-03T18:18:09.714Z,3.57775498,WW-5836,A0033,assignee,144,2026-11-03T18:06:39.000Z,2026-11-07T08:10:07.744Z,Fixed
+Same fix on the 6.x line.",Bug,Normal,3,22.37194895,2026-11-03T18:18:09.714Z,3.57775498,WW-5836,A0033,assignee,144,2026-11-03T18:06:39.000Z,2026-11-07T08:10:07.744Z,Fixed
 Upgrade OGNL to version 3.4.17,"Bump {{ognl:ognl}} from 3.4.16 to 3.4.17.
 
 OGNL 3.4.17 matches property names exactly in {{OgnlRuntime.getReadMethod}} / {{getWriteMethod}}; a mis-cased name no longer resolves to an accessor of a different spelling. One test fixture in {{OgnlSetPossiblePropertyTest}} relied on the case-insensitive lookup and needs updating alongside the bump.
 
-Supersedes Dependabot PR [#2103|https://github.com/apache/struts/pull/2103].",Dependency,Major,22.37194895,2026-11-04T06:37:01.568Z,0.03582167,WW-5837,A0033,assignee,144,2026-11-04T06:27:14.000Z,2026-11-04T07:28:36.560Z,Fixed
+Supersedes Dependabot PR [#2103|https://github.com/apache/struts/pull/2103].",Dependency,Normal,3,22.37194895,2026-11-04T06:37:01.568Z,0.03582167,WW-5837,A0033,assignee,144,2026-11-04T06:27:14.000Z,2026-11-04T07:28:36.560Z,Fixed
 "Exclude java.beans, java.lang.reflect and java.lang.invoke from OGNL member access by default","SecurityMemberAccess checks the declaring class and the target class of every member an OGNL expression resolves against {{struts.excludedClasses}} and {{struts.excludedPackageNames}}. The shipped lists in {{struts-excluded-classes.xml}} name the usual JDK entry points ({{java.lang.Runtime}}, {{java.lang.ProcessBuilder}}, {{java.lang.Class}}, {{java.lang.ClassLoader}}, {{java.io}}, {{java.net}}, {{javax}}, {{sun.reflect}}, ...) but not {{java.beans}}.
 
 {{java.beans.Expression}} and {{java.beans.Statement}} perform the method call they describe inside the JDK. An expression that constructs one and calls {{getValue()}} therefore has the inner call made on its behalf, and that call never appears as a member for SecurityMemberAccess to check, so neither the excluded-class check nor the static-method check applies to it.
@@ -2900,7 +2900,7 @@ Change, on both lines:
 
 {{java.lang.reflect}} and {{java.lang.invoke}} are reachable from an expression today only through a static call or a {{Class}} object, both of which are already rejected; they are added in the same pass for the same reason. The package rule also covers {{java.beans.beancontext}}. An application that needs expression access to a class in one of these packages can re-allow it with {{struts.excludedPackageExemptClasses}}.
 
-Reported by Yu Deshui (于得水, @qiushui\_sky) and by Daniel Owens.",Improvement,Major,22.21790669,2026-11-05T14:19:09.257Z,0.07029784,WW-5838,A0033,assignee,145,2026-11-05T14:11:05.000Z,2026-11-05T16:00:22.990Z,Fixed
+Reported by Yu Deshui (于得水, @qiushui\_sky) and by Daniel Owens.",Improvement,Normal,3,22.21790669,2026-11-05T14:19:09.257Z,0.07029784,WW-5838,A0033,assignee,145,2026-11-05T14:11:05.000Z,2026-11-05T16:00:22.990Z,Fixed
 Action mapping should rely on the servlet path and path info reported by the container,"RequestUtils.getServletPath derives the path to map from HttpServletRequest.getRequestURI() in two cases: when the request URI does not end with the servlet path reported by the container (WW-2268, to keep a {{;jsessionid=...}} suffix), and when the container reports an empty servlet path, as it does for a servlet mapped to {{/*}}. In both cases the value comes from the raw request URI, so it differs from the servlet path and path info the container has already decoded: it still carries percent-encoding and path parameters. {{DefaultActionMapper}} then drops everything after the first {{;}}, and {{RestActionMapper}} keeps a trailing {{;edit}} to select the edit method (WW-4585 added the same handling to the {{!method}} form).
 
 Every consumer of the helper afterwards works with the container's view of the request (action name and namespace, the exclusion patterns, the static resource lookup, {{<s:include>}} and {{ResourceUtil}}), so the reconstruction is a second interpretation of the same request that can differ from the container's.
@@ -2917,7 +2917,7 @@ h2. Compatibility
 
 Same change on the 6.x line.
 
-Reported by Svyatoslav Berestovsky.",Bug,Major,21.94043893,2026-11-07T10:26:27.696Z,0.22596355,WW-5842,A0033,assignee,147,2026-11-07T10:22:14.000Z,2026-11-07T15:51:50.947Z,Fixed
+Reported by Svyatoslav Berestovsky.",Bug,Normal,3,21.94043893,2026-11-07T10:26:27.696Z,0.22596355,WW-5842,A0033,assignee,147,2026-11-07T10:22:14.000Z,2026-11-07T15:51:50.947Z,Fixed
 Fetch Metadata policy rejects cross-site POST and HEAD navigations since WW-5753,"Follow-up to [WW-5753|https://issues.apache.org/jira/browse/WW-5753] (PR [#1983|https://github.com/apache/struts/pull/1983]).
 
 After WW-5753, {{StrutsResourceIsolationPolicy.isAllowedTopLevelNavigation}} accepts a cross-site request only when {{Sec-Fetch-Mode}} is {{navigate}} *and* the method is {{GET}}. {{FetchMetadataInterceptor}} is part of {{defaultStack}}, so with the default configuration the following now get a 403. Every release since 6.0.0 accepted them:
@@ -2933,7 +2933,7 @@ h2. Options
 h2. Also
 * Decide whether {{exemptedPaths}} should be matched against the request path (servlet path plus path info) rather than the context path.
 * {{FetchMetadataInterceptorTest.testValidTopLevelNavigation}} sends no {{Sec-Fetch-Site}} header, so it returns at the empty-site check and never reaches the navigation branch. Make it set {{cross-site}}, or drop it in favour of {{testCrossSiteTopLevelGetNavigationAllowed}}.
-* Add tests for a cross-site POST navigation and a cross-site HEAD navigation, asserting whichever behaviour is chosen.",Bug,Major,21.79371950,2026-11-07T16:18:23.055Z,0.05252760,WW-5754,A0033,assignee,148,2026-10-01T18:37:54.000Z,2026-11-07T17:34:01.440Z,Fixed
+* Add tests for a cross-site POST navigation and a cross-site HEAD navigation, asserting whichever behaviour is chosen.",Bug,Normal,3,21.79371950,2026-11-07T16:18:23.055Z,0.05252760,WW-5754,A0033,assignee,148,2026-10-01T18:37:54.000Z,2026-11-07T17:34:01.440Z,Fixed
 "FetchMetadata, COOP and COEP interceptors match exemptedPaths against the context path instead of the request path","Spun off from [WW-5754|https://issues.apache.org/jira/browse/WW-5754].
 
 {{FetchMetadataInterceptor}}, {{CoopInterceptor}} and {{CoepInterceptor}} all compare each {{exemptedPaths}} entry with the web application's context path:
@@ -2962,7 +2962,7 @@ This changes behaviour in both directions and needs a Version Notes / Migration 
 * Applications that listed their context path to disable an interceptor app-wide lose that. The replacement is the interceptor's {{disabled}} parameter, e.g. {{<param name=""fetchMetadata.disabled"">true</param>}}.
 * Entries that never matched will start exempting the paths they name. For COOP / COEP that means the headers are no longer sent on those paths.
 
-The matching semantics (exact match vs. prefix/wildcard) are documented on the Fetch Metadata, COOP and COEP interceptor pages.",Bug,Major,21.64780547,2026-11-07T17:34:09.722Z,0.02836916,WW-5846,A0033,assignee,149,2026-11-07T16:31:56.000Z,2026-11-07T18:15:00.817Z,Fixed
+The matching semantics (exact match vs. prefix/wildcard) are documented on the Fetch Metadata, COOP and COEP interceptor pages.",Bug,Normal,3,21.64780547,2026-11-07T17:34:09.722Z,0.02836916,WW-5846,A0033,assignee,149,2026-11-07T16:31:56.000Z,2026-11-07T18:15:00.817Z,Fixed
 doubleselect: preselection in the second list with doubleMultiple has never worked,"{{doubleselect.ftl}} in the simple theme preselects the second list's current value inside the generated script. The single-value branch writes {{doubleNameValue}} as a quoted string literal. The branch taken when {{doubleMultiple}} is set writes it unquoted, as the loop bound and in the comparison, so a plain {{String}} becomes a bare identifier and the script fails on page load; a {{Collection}} renders through {{toString}} with the same result, and a {{String[]}} fails the template render. The branch is also chosen by an existence check, so {{doubleMultiple=""false""}} takes it too.
 
 Present since WW-2809 (2.1.8). {{support/struts-6-x-x}} carries the identical template. The xhtml theme includes the simple template; the html5 theme renders a placeholder for this tag and is unaffected.
@@ -2978,4 +2978,4 @@ Preselecting several values in the second list works. The single-value path rend
 h2. Tests
 * A {{String}}, a {{Collection}} and a {{String[]}} under {{doubleMultiple=""true""}} each render a quoted list and preselect the matching options.
 * {{doubleMultiple=""false""}} renders the single-value path.
-* The existing DoubleSelect fixtures keep passing.",Bug,Major,21.50367589,2026-11-07T19:29:33.133Z,0.03126934,WW-5847,A0033,assignee,150,2026-11-07T19:15:01.000Z,2026-11-07T20:14:34.804Z,Fixed
+* The existing DoubleSelect fixtures keep passing.",Bug,Normal,3,21.50367589,2026-11-07T19:29:33.133Z,0.03126934,WW-5847,A0033,assignee,150,2026-11-07T19:15:01.000Z,2026-11-07T20:14:34.804Z,Fixed

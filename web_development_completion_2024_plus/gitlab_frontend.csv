@@ -1,4 +1,4 @@
-﻿title,Description,task_type,Priority,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
+﻿title,Description,task_type,Priority,priority_value,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
 Migrate half-migrated internal events on Frontend,"## Problem
 While working on https://gitlab.com/gitlab-org/gitlab/-/issues/415139, we have discovered that there are some events that have not been fully migrated to InternalEvents.
 
@@ -18,7 +18,7 @@ Events are fully migrated and related [sentry errors](https://new-sentry.gitlab.
 
 ## Possible Solution
 
-We need to find the places where these events have not been migrated in the frontend and use the InternalEvents trigger in those.",bug,P1,3.80982617,2024-02-07T04:01:12.156Z,2.24547859,gitlab#440704,G0001,project,2,2024-02-06T19:06:36.000Z,2024-02-09T09:54:41.506Z,workflow::complete
+We need to find the places where these events have not been migrated in the frontend and use the InternalEvents trigger in those.",bug,Highest,5,3.80982617,2024-02-07T04:01:12.156Z,2.24547859,gitlab#440704,G0001,project,2,2024-02-06T19:06:36.000Z,2024-02-09T09:54:41.506Z,workflow::complete
 Extra space in hierarchy widget,"### Summary
 
 The hierarchy widget has extra space at the bottom
@@ -69,5 +69,5 @@ https://gitlab.com/groups/gitlab-org/plan-stage/-/work_items/76
 </pre>
 </details>
 
-### Possible fixes",bug,P3,3.28837698,2024-02-09T15:46:12.765Z,3.85826919,gitlab#440693,G0002,project,3,2024-02-06T17:24:00.000Z,2024-02-13T12:22:07.223Z,workflow::complete
-Add support for diff_id in links to file in merge requests,If you switch between different versions of a merge request you won't be able to link to a file or a file line for this specific version. The link to the file or the file line always points to the latest version. We should incorporate `diff_id` parameter for these links to support linking to different versions of the MR in files.,bug,P3,3.43085003,2024-02-21T12:59:08.980Z,15.03364257,gitlab#440561,G0005,project,4,2024-02-06T08:19:11.000Z,2024-03-07T13:47:35.698Z,workflow::complete
+### Possible fixes",bug,Normal,3,3.28837698,2024-02-09T15:46:12.765Z,3.85826919,gitlab#440693,G0002,project,3,2024-02-06T17:24:00.000Z,2024-02-13T12:22:07.223Z,workflow::complete
+Add support for diff_id in links to file in merge requests,If you switch between different versions of a merge request you won't be able to link to a file or a file line for this specific version. The link to the file or the file line always points to the latest version. We should incorporate `diff_id` parameter for these links to support linking to different versions of the MR in files.,bug,Normal,3,3.43085003,2024-02-21T12:59:08.980Z,15.03364257,gitlab#440561,G0005,project,4,2024-02-06T08:19:11.000Z,2024-03-07T13:47:35.698Z,workflow::complete

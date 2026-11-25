@@ -1,10 +1,10 @@
-﻿title,Description,task_type,Priority,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
-Upgrade to Spock 2.3,,Dependency upgrade,Minor,28.60737842,2024-03-08T20:10:22.596Z,147.73022659,TAP5-2771,A0057,assignee,4,2024-01-28T19:31:52.000Z,2024-08-03T13:41:54.173Z,Fixed
-Tapestry 5.8.3 to 5.8.7 issues caused by the multiple classloader feature,TAP5-2742 ,Bug,Major,39.94653699,2024-05-07T01:10:05.017Z,95.49945749,TAP5-2779,A0055,assignee,6,2024-05-07T01:09:54.000Z,2024-08-10T13:09:18.144Z,Fixed
+﻿title,Description,task_type,Priority,priority_value,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
+Upgrade to Spock 2.3,,Dependency upgrade,Low,2,28.60737842,2024-03-08T20:10:22.596Z,147.73022659,TAP5-2771,A0057,assignee,4,2024-01-28T19:31:52.000Z,2024-08-03T13:41:54.173Z,Fixed
+Tapestry 5.8.3 to 5.8.7 issues caused by the multiple classloader feature,TAP5-2742 ,Bug,Normal,3,39.94653699,2024-05-07T01:10:05.017Z,95.49945749,TAP5-2779,A0055,assignee,6,2024-05-07T01:09:54.000Z,2024-08-10T13:09:18.144Z,Fixed
 Change build so it generates separate artifacts for jakarta- and javax-based subprojects,"Given the 2 branch approach ({{master}} using {{jakarta.servlet}} and {{javax}} using {{javax.servlet}}) was decided, there should be separate artifacts for the projects using the Servlet API directly: tapestry-core, tapestry-http, tapestry-spring, tapestry-test and tapestry-runner. 
 The {{jakarta}} ones need to be generated from the {{master}} branch and have the {{-jakarta}} suffix on their artifact ids/names. 
 The {{javax}} ones need to be generated from the {{javax}} branch and keep the current artifact ids/names. 
-The unaffected artifacts, such as Plastic and Tapestry-IoC, shall remain unchanged and generated from the {{master}} branch. The {{javax}} branch will only generate and publish the affected artifacts, thus avoiding duplication and possible mismatches between branches.",New Feature,Blocker,47.88266849,2024-08-18T13:55:03.281Z,0.25865483,TAP5-2785,A0055,assignee,7,2024-08-18T13:53:16.000Z,2024-08-18T20:07:31.058Z,Fixed
+The unaffected artifacts, such as Plastic and Tapestry-IoC, shall remain unchanged and generated from the {{master}} branch. The {{javax}} branch will only generate and publish the affected artifacts, thus avoiding duplication and possible mismatches between branches.",New Feature,Highest,5,47.88266849,2024-08-18T13:55:03.281Z,0.25865483,TAP5-2785,A0055,assignee,7,2024-08-18T13:53:16.000Z,2024-08-18T20:07:31.058Z,Fixed
 POST with body throws exception,"From Erik Fäßler's message to the users mailing list:
 
 public class Api {
@@ -18,10 +18,10 @@ curl -XPOST [http://localhost:8080/api] -d ‘asdfjhasdf’
 
 I get an application exception “STREAMED""
 
-rg.apache.tapestry5.runtime.ComponentEventException: Coercion of <Proxy for HttpServletRequest(javax.servlet.http.HttpServletRequest)> to type java.lang.String (via javax.servlet.http.HttpServletRequest --> String) failed: STREAMED",Bug,Major,41.92966678,2024-10-25T13:26:31.785Z,0.04684994,TAP5-2792,A0055,assignee,8,2024-10-25T13:25:55.000Z,2024-10-25T14:33:59.620Z,Fixed
-Create a component for rendering recursive data,"Tapestry doesn't yet provide any components for arbitrary rendering recursive or tree-like data structures. The Tree component exists, but it doesn't provide arbitrary rendering.",New Feature,Major,37.27602047,2024-10-25T17:46:32.991Z,0.21970616,TAP5-2793,A0055,assignee,9,2024-10-25T17:46:14.000Z,2024-10-25T23:02:55.603Z,Fixed
-Upgrade away from vulnerable commons-io and commons-fileupload dependencies,The vulnerabilities can be seen at https://mvnrepository.com/artifact/org.apache.tapestry/tapestry-upload/5.9.0-preview-2.,Bug,Critical,33.57038904,2024-10-26T12:58:04.091Z,0.02767184,TAP5-2794,A0055,assignee,10,2024-10-26T12:57:54.000Z,2024-10-26T13:37:54.938Z,Fixed
-Upgrade some more dependencies,"TestNG, EasyMock, {-}Geb{-}, commons-codec, ANTLR, HSQLDB. snakeyaml, {-}JSON{-}.",Improvement,Major,30.52105111,2024-10-26T14:59:28.052Z,8.82970546,TAP5-2796,A0055,assignee,11,2024-10-26T13:56:37.000Z,2024-11-04T10:54:14.604Z,Fixed
+rg.apache.tapestry5.runtime.ComponentEventException: Coercion of <Proxy for HttpServletRequest(javax.servlet.http.HttpServletRequest)> to type java.lang.String (via javax.servlet.http.HttpServletRequest --> String) failed: STREAMED",Bug,Normal,3,41.92966678,2024-10-25T13:26:31.785Z,0.04684994,TAP5-2792,A0055,assignee,8,2024-10-25T13:25:55.000Z,2024-10-25T14:33:59.620Z,Fixed
+Create a component for rendering recursive data,"Tapestry doesn't yet provide any components for arbitrary rendering recursive or tree-like data structures. The Tree component exists, but it doesn't provide arbitrary rendering.",New Feature,Normal,3,37.27602047,2024-10-25T17:46:32.991Z,0.21970616,TAP5-2793,A0055,assignee,9,2024-10-25T17:46:14.000Z,2024-10-25T23:02:55.603Z,Fixed
+Upgrade away from vulnerable commons-io and commons-fileupload dependencies,The vulnerabilities can be seen at https://mvnrepository.com/artifact/org.apache.tapestry/tapestry-upload/5.9.0-preview-2.,Bug,High,4,33.57038904,2024-10-26T12:58:04.091Z,0.02767184,TAP5-2794,A0055,assignee,10,2024-10-26T12:57:54.000Z,2024-10-26T13:37:54.938Z,Fixed
+Upgrade some more dependencies,"TestNG, EasyMock, {-}Geb{-}, commons-codec, ANTLR, HSQLDB. snakeyaml, {-}JSON{-}.",Improvement,Normal,3,30.52105111,2024-10-26T14:59:28.052Z,8.82970546,TAP5-2796,A0055,assignee,11,2024-10-26T13:56:37.000Z,2024-11-04T10:54:14.604Z,Fixed
 Palette with option groups within the SelectModel does not work properly.,"Option Groups are displayed correctly in the Palette. If you select options and then deselect them again, they are not placed in the correct option group.
 
 I am currently correcting the behavior of the Palette when overwriting the palette.js. But it would be much better if you could adopt the corrected behavior.
@@ -35,16 +35,16 @@ public static void overrideTapestryCoreModules(
 } {code}
  
 
-In Attachments is the change that corrects the behavior of the palette.",Bug,Trivial,35.68947106,2024-11-13T06:05:57.021Z,73.14621795,TAP5-2790,A0004,project,17,2024-09-27T08:34:28.000Z,2025-01-25T09:36:30.252Z,Fixed
+In Attachments is the change that corrects the behavior of the palette.",Bug,Lowest,1,35.68947106,2024-11-13T06:05:57.021Z,73.14621795,TAP5-2790,A0004,project,17,2024-09-27T08:34:28.000Z,2025-01-25T09:36:30.252Z,Fixed
 Convert Tapestry's JS code from CoffeeScript to TypeScript,"CoffeeScript was useful when JavaScript was lacking several features, but since then CS got obsolete and it's odd, way too different syntax from JavaScript makes adding or changing existing code much more difficult than it should.
 
-Besides converting the sources, Tapestry should also publish its JavaScript to npm to make it easier for developers to write their own JavaScript or TypeScript code which uses Tapestry's own one.",Improvement,Major,28.71343897,2025-04-04T17:06:50.444Z,72.75654465,TAP5-2804,A0055,assignee,12,2025-04-04T17:06:34.000Z,2025-06-16T11:16:15.902Z,Fixed
-Support for running Tapestry without Require.js,"Starting with 5.10.1, Tapestry has support for ES (ES6/JavaScript) modules, which have their own module resolution and dependency mechanisms provided by the browser itself. Require.js is an old tool for module resolution and dependencies, with its own problems, so Tapestry should, out of the box, support ability to run without Require.js if the user wants that.",New Feature,Major,32.10137018,2025-06-18T12:55:59.307Z,55.95323372,TAP5-2810,A0055,assignee,13,2025-06-18T12:33:49.000Z,2025-08-13T11:48:38.700Z,Fixed
+Besides converting the sources, Tapestry should also publish its JavaScript to npm to make it easier for developers to write their own JavaScript or TypeScript code which uses Tapestry's own one.",Improvement,Normal,3,28.71343897,2025-04-04T17:06:50.444Z,72.75654465,TAP5-2804,A0055,assignee,12,2025-04-04T17:06:34.000Z,2025-06-16T11:16:15.902Z,Fixed
+Support for running Tapestry without Require.js,"Starting with 5.10.1, Tapestry has support for ES (ES6/JavaScript) modules, which have their own module resolution and dependency mechanisms provided by the browser itself. Require.js is an old tool for module resolution and dependencies, with its own problems, so Tapestry should, out of the box, support ability to run without Require.js if the user wants that.",New Feature,Normal,3,32.10137018,2025-06-18T12:55:59.307Z,55.95323372,TAP5-2810,A0055,assignee,13,2025-06-18T12:33:49.000Z,2025-08-13T11:48:38.700Z,Fixed
 NPE when @Cached applied to method returning a generic type in multiple classloader mode,"With production mode on, methods annotated with @Cached and returning a generic type, for example {{@Cached public SomeType<T> getData()}} , would throw this error:
 {noformat}
 Caused by: org.apache.tapestry5.beanmodel.internal.services.PropertyExpressionException: Exception generating conduit for expression 'zoneId': java.lang.NullPointerException: Cannot invoke ""Object.getClass()"" because ""formal"" is null      at org.apache.tapestry5.beanmodel.internal.services.PropertyConduitSourceImpl.build(PropertyConduitSourceImpl.java:1531)      at org.apache.tapestry5.beanmodel.internal.services.PropertyConduitSourceImpl.create(PropertyConduitSourceImpl.java:1441)      at $PropertyConduitSource_b6f1dc0fd89.create(Unknown Source)      at org.apache.tapestry5.internal.bindings.PropBindingFactory.newBinding(PropBindingFactory.java:56)      at $BindingFactory_b6f1dc10776.newBinding(Unknown Source)      at $BindingFactory_b6f1dc1076e.newBinding(Unknown Source)      at org.apache.tapestry5.internal.services.BindingSourceImpl.newBinding(BindingSourceImpl.java:82)      ... 107 more
 Caused by: java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke ""Object.getClass()"" because ""formal"" is null      at org.apache.tapestry5.beanmodel.internal.services.PropertyAccessImpl.buildAdapter(PropertyAccessImpl.java:117)
-(...){noformat}",Bug,Minor,33.80507472,2025-10-04T18:00:34.990Z,176.09433488,TAP5-2813,A0055,assignee,14,2025-10-04T17:53:16.000Z,2026-03-29T20:16:25.524Z,Fixed
+(...){noformat}",Bug,Low,2,33.80507472,2025-10-04T18:00:34.990Z,176.09433488,TAP5-2813,A0055,assignee,14,2025-10-04T17:53:16.000Z,2026-03-29T20:16:25.524Z,Fixed
 "Javadoc: required Java version, custom taglet registration, minor fixes","h3. Problems
 
 * The min-JDK for running the javadoc task isn't consistent, and too high.
@@ -55,7 +55,7 @@ h3. Fix
 
 * Set Java version correctly in build.gradle/settings.gradle
 * Create Javadoc convention
-* Fix simple Javadoc issues (linking can't be fixed for certain low-level/high-level constructs, but works in aggregated form)",Bug,Major,46.88911139,2026-05-19T07:52:57.966Z,61.09112793,TAP5-2828,A0004,project,21,2026-05-19T07:52:50.000Z,2026-07-19T10:04:11.419Z,Fixed
+* Fix simple Javadoc issues (linking can't be fixed for certain low-level/high-level constructs, but works in aggregated form)",Bug,Normal,3,46.88911139,2026-05-19T07:52:57.966Z,61.09112793,TAP5-2828,A0004,project,21,2026-05-19T07:52:50.000Z,2026-07-19T10:04:11.419Z,Fixed
 Css class typo in Errors component,"The {{Errors}} component renders the ""alert-dismiss{color:#de350b}*a*{color}ble"" css class. This is wrong in terms of Bootstrap which expects ""alert-dismiss{color:#00875a}*i*{color}ble"" since at least Bootstrap 3.3.
 
 The typo causes the close button not to be positioned nicely.
@@ -69,7 +69,7 @@ public static void configureTapestry(MappedConfiguration<String, String> conf) {
     conf.add(SymbolConstants.ERRORS_BASE_CSS_CLASS, ""alert-dismissible"");
 }{code}
  
- ",Bug,Major,52.43194806,2026-05-23T13:21:47.952Z,0.02152271,TAP5-2829,A0057,assignee,5,2026-05-21T08:42:53.000Z,2026-05-23T13:52:47.514Z,Fixed
+ ",Bug,Normal,3,52.43194806,2026-05-23T13:21:47.952Z,0.02152271,TAP5-2829,A0057,assignee,5,2026-05-21T08:42:53.000Z,2026-05-23T13:52:47.514Z,Fixed
 "DOM types should support XPath, better navigation/mutation"," 
 h2. Description
 
@@ -111,7 +111,7 @@ Currently, the {{org.apache.tapestry5.dom.Visitor}} only supports {{Element}} no
 
 If possible in a non-breaking way, it should be expanded to visit all {{Node}} types.
 
-If not, a new {{NodeVisitor}} could be added.",Improvement,Minor,44.75876645,2026-06-27T07:51:42.336Z,0.00015567,TAP5-2827,A0004,project,22,2026-04-18T12:46:41.000Z,2026-06-27T07:51:55.786Z,Implemented
+If not, a new {{NodeVisitor}} could be added.",Improvement,Low,2,44.75876645,2026-06-27T07:51:42.336Z,0.00015567,TAP5-2827,A0004,project,22,2026-04-18T12:46:41.000Z,2026-06-27T07:51:55.786Z,Implemented
 Fail startup in production mode when tapestry.hmac-passphrase is not configured or too weak,"h2. Description
 
 {{ClientDataEncoderImpl}} ([tapestry-core/src/main/java/org/apache/tapestry5/internal/services/ClientDataEncoderImpl.java]) is responsible for HMAC-signing client-side data (form/URL state) using the {{SymbolConstants.HMAC_PASSPHRASE}} symbol as the signing key.
@@ -158,7 +158,7 @@ h2. Proposed Changes
 h2. Risks
  * *Breaking change for existing production deployments:* Any application currently running in production without {{tapestry.hmac-passphrase}} configured will fail to start after upgrading, where previously it started silently with a weak key. This is the intended effect, but should be called out prominently in release notes as a breaking change, with clear remediation steps (set the symbol).
  * *Testing/CI impact:* Test harnesses or example apps that run with production mode enabled but no passphrase configured will start failing. We need to audit Tapestry's own test suite and archetypes for this combination before merging.
- * *Severity of exception message:* The thrown exception must clearly name the missing symbol and link to documentation, otherwise this trades a recoverable warning for a confusing hard failure for users unfamiliar with the symbol.",Improvement,Major,42.81273989,2026-06-27T07:52:05.422Z,22.09090192,TAP5-2834,A0004,project,23,2026-06-21T10:13:58.000Z,2026-07-19T10:02:59.348Z,Implemented
+ * *Severity of exception message:* The thrown exception must clearly name the missing symbol and link to documentation, otherwise this trades a recoverable warning for a confusing hard failure for users unfamiliar with the symbol.",Improvement,Normal,3,42.81273989,2026-06-27T07:52:05.422Z,22.09090192,TAP5-2834,A0004,project,23,2026-06-21T10:13:58.000Z,2026-07-19T10:02:59.348Z,Implemented
 JavaScript source mapes (*.map) shouldn't be served by default when running in production mode,"h2. Problem
 
 Even though Tapestry doesn't generate sources maps, there are possible maps to be found in most projects:
@@ -199,7 +199,7 @@ h5. Mitigation
 Same override path as above.
 h3. Two independent rule chains
 
-Because context and classpath assets now have separate protection mechanisms, an app overriding one (e.g., to re-enable maps under {{{}context:{}}}) must remember the other chain ({{{}classpath:{}}}) still blocks them by default, and vice versa.",Improvement,Minor,42.81273989,2026-07-18T08:33:29.695Z,1.06262944,TAP5-2835,A0004,project,23,2026-07-18T08:33:23.000Z,2026-07-19T10:03:40.879Z,Implemented
+Because context and classpath assets now have separate protection mechanisms, an app overriding one (e.g., to re-enable maps under {{{}context:{}}}) must remember the other chain ({{{}classpath:{}}}) still blocks them by default, and vice versa.",Improvement,Low,2,42.81273989,2026-07-18T08:33:29.695Z,1.06262944,TAP5-2835,A0004,project,23,2026-07-18T08:33:23.000Z,2026-07-19T10:03:40.879Z,Implemented
 Make pipeline structure visible at runtime via toString(),"h2. Context
 
 {{PipelineBuilder}} creates filter chains using dynamically generated bridge proxies.
@@ -219,7 +219,7 @@ Calling {{toString()}} on the pipeline head will automatically compose and outpu
 Or something similar.
 h2. Possible Additions / Enhancements
  - Build-time / Startup Logging: Log the assembled pipeline string at {{DEBUG}} level when a pipeline is built in {{PipelineBuilderImpl}}
- - Tapestry 5 Dashboard: Expose the formatted pipeline structure on the dashboard for easier access",Improvement,Minor,31.47820658,2026-08-15T07:30:27.895Z,56.12774634,TAP5-2838,A0004,assignee,5,2026-08-08T09:08:51.000Z,2026-10-10T10:34:25.179Z,Implemented
+ - Tapestry 5 Dashboard: Expose the formatted pipeline structure on the dashboard for easier access",Improvement,Low,2,31.47820658,2026-08-15T07:30:27.895Z,56.12774634,TAP5-2838,A0004,assignee,5,2026-08-08T09:08:51.000Z,2026-10-10T10:34:25.179Z,Implemented
 Improve JSON serialization performance (toString/toCompactString),"h3. Overview
 
 {{JSONObject}}/{{JSONArray}}'s {{toString()}} and {{toCompactString()}} are slower than necessary due to synchronization overhead and per-{{String}} allocation in the print path.
@@ -251,7 +251,7 @@ h3. Risks
 
 * Low functional risk: escaping logic is a straight extraction/refactor, covered by existing tests.
 * Removing {{JSONStringer}} is a *breaking change* for any external caller referencing that class directly (it's currently public): Needs a compatibility/deprecation decision before merge.
-",Improvement,Minor,31.47820658,2026-08-15T07:30:31.056Z,56.12788247,TAP5-2837,A0004,assignee,5,2026-07-26T07:34:40.000Z,2026-10-10T10:34:40.101Z,Implemented
+",Improvement,Low,2,31.47820658,2026-08-15T07:30:31.056Z,56.12788247,TAP5-2837,A0004,assignee,5,2026-07-26T07:34:40.000Z,2026-10-10T10:34:40.101Z,Implemented
 LocalHostOnly doesn't identify some IPv6 localhost variants,"h1. Description
 
 The current implementation for checking if a request originates from {{localhost}} relies on string comparisons against a hardcoded list of loopback addresses:
@@ -287,4 +287,4 @@ h1. Proposed Solution
 
 We should switch to {{getRemoteAddr()}} to avoid reverse DNS resolution lookup penalties, strip off any arbitrary scope IDs, and use Java's native {{InetAddress}} class to reliably evaluate if the IP is a loopback address.
 
-That would require exposing the {{HttpServletRequest}} to {{WhitelistAnalyzer}} in some form.",Bug,Minor,31.47820658,2026-08-15T07:30:34.104Z,56.12801389,TAP5-2832,A0004,assignee,5,2026-06-21T09:32:16.000Z,2026-10-10T10:34:54.504Z,Fixed
+That would require exposing the {{HttpServletRequest}} to {{WhitelistAnalyzer}} in some form.",Bug,Low,2,31.47820658,2026-08-15T07:30:34.104Z,56.12801389,TAP5-2832,A0004,assignee,5,2026-06-21T09:32:16.000Z,2026-10-10T10:34:54.504Z,Fixed

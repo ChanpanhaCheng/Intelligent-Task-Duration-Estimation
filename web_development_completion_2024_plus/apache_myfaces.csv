@@ -1,12 +1,12 @@
-﻿title,Description,task_type,Priority,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
+﻿title,Description,task_type,Priority,priority_value,assignee_average_completion_days,actual_start_date,actual_completion_duration_days,issue_key,assignee_id,average_source,prior_completed_tasks_used,Created,Resolved,Resolution
 ViewScoped bean handling broken because of refactoring,"i restored the 2.3.x behavior
 
-this occured because of DeltaSpike putAll values from oldViewMap to newViewMap on redirect via SecurityAwareViewHandler",Bug,Major,6.88210559,2024-01-16T14:34:01.442Z,0.00003359,MYFACES-4649,A0054,project,80,2024-01-16T13:49:03.000Z,2024-01-16T14:34:04.344Z,Fixed
+this occured because of DeltaSpike putAll values from oldViewMap to newViewMap on redirect via SecurityAwareViewHandler",Bug,Normal,3,6.88210559,2024-01-16T14:34:01.442Z,0.00003359,MYFACES-4649,A0054,project,80,2024-01-16T13:49:03.000Z,2024-01-16T14:34:04.344Z,Fixed
 Faces 4.1 Spec Issue 1838: Remove references to the Java SecurityManager and associated APIs,"Link to specification issue: [https://github.com/jakartaee/faces/issues/1838]
 
  
 
-We need to clean up our references to the SecurityManager and associated APIs.",Bug,Major,5.09180100,2024-03-05T12:39:31.305Z,6.20289093,MYFACES-4653,A0040,assignee,27,2024-03-05T11:59:01.000Z,2024-03-11T17:31:41.081Z,Fixed
+We need to clean up our references to the SecurityManager and associated APIs.",Bug,Normal,3,5.09180100,2024-03-05T12:39:31.305Z,6.20289093,MYFACES-4653,A0040,assignee,27,2024-03-05T11:59:01.000Z,2024-03-11T17:31:41.081Z,Fixed
 faces.util.chain behavior changed,"Given the following generated HTML, an alert will occur.  If you click OK, it will perform an action on a backing bean. However, if you cancel, it should not.
 {code:java}
 <input  type=""submit"" value=""Test"" onclick=""return faces.util.chain(this, event,function(event){return confirm('Please Confirm');});"">{code}
@@ -43,7 +43,7 @@ Faces 4.0:
         });
         return ret;
     }{noformat}
-It looks like conditions changed here?  ""ret === false"" became ""returnVal !== false"" ? If cancel is pressed, false is returned, which means the chain function returns false in 3.0. In  faces 4.0, ret is never set (due to the new condition), so undefined (ret) is returned now instead.",Bug,Major,12.80597163,2024-04-04T14:46:20.751Z,0.16454064,MYFACES-4658,A0059,assignee,26,2024-04-03T15:58:07.000Z,2024-04-04T18:43:17.062Z,Fixed
+It looks like conditions changed here?  ""ret === false"" became ""returnVal !== false"" ? If cancel is pressed, false is returned, which means the chain function returns false in 3.0. In  faces 4.0, ret is never set (due to the new condition), so undefined (ret) is returned now instead.",Bug,Normal,3,12.80597163,2024-04-04T14:46:20.751Z,0.16454064,MYFACES-4658,A0059,assignee,26,2024-04-03T15:58:07.000Z,2024-04-04T18:43:17.062Z,Fixed
 servletRegistration.getClassName() may be null and cause an NPE,"Exception:
 {noformat}
 Stack Dump = java.lang.NullPointerException: type is null.
@@ -69,8 +69,8 @@ Web.xml Snippet to reproduce:
         <url-pattern>/test.jsp</url-pattern>
     </servlet-mapping>{code}
 {color:#172b4d}
-There is no servlet class in this scenario, so the code tries to search for a null class name. {color}",Bug,Minor,3.75406905,2024-04-26T20:39:55.398Z,0.00003826,MYFACES-4657,A0058,assignee,20,2024-03-27T18:57:14.000Z,2024-04-26T20:39:58.704Z,Fixed
-@BeforeDestroyed Not Implemented for 4.1,@Initialized and @Destroyed were completed in MYFACES-4506 but not for @BeforeDestroyed.,Bug,Major,3.57530568,2024-05-08T20:23:02.902Z,0.79577361,MYFACES-4665,A0058,assignee,21,2024-05-07T18:28:36.000Z,2024-05-09T15:28:57.742Z,Fixed
+There is no servlet class in this scenario, so the code tries to search for a null class name. {color}",Bug,Low,2,3.75406905,2024-04-26T20:39:55.398Z,0.00003826,MYFACES-4657,A0058,assignee,20,2024-03-27T18:57:14.000Z,2024-04-26T20:39:58.704Z,Fixed
+@BeforeDestroyed Not Implemented for 4.1,@Initialized and @Destroyed were completed in MYFACES-4506 but not for @BeforeDestroyed.,Bug,Normal,3,3.57530568,2024-05-08T20:23:02.902Z,0.79577361,MYFACES-4665,A0058,assignee,21,2024-05-07T18:28:36.000Z,2024-05-09T15:28:57.742Z,Fixed
 PushImpl.ts Socket#onerror attempting to use undefined variable,"While running some OpenLiberty FAT tests, specifically io.openliberty.org.apache.myfaces.4.0_fat/WebSocketTests, we discovered a small bug where JSON.parse(event.data) was running where event.data was undefined.
 Here is the line it occurs: [https://github.com/apache/myfaces/blob/dae36dde5cc42208d034dda23107ad79f68ecc3a/api/src/client/typescript/faces/impl/PushImpl.ts#L156]
 Volodymyr created a GitHub issue describing the issue here: [Faces 4.0 Fix WebSocketTests so that ""onerror listener"" occurs -  Issue #27598 -  OpenLiberty/open-liberty (github.com)|https://github.com/OpenLiberty/open-liberty/issues/27598]
@@ -80,8 +80,8 @@ Proposed Solution: Change
  JSON.parse(event.data) {code}
 to
 {code:java}
-JSON.parse(event.data === undefined ? null : event.data){code}",Bug,Minor,12.33777048,2024-06-21T20:45:16.564Z,0.00046270,MYFACES-4671,A0059,assignee,27,2024-06-18T21:25:38.000Z,2024-06-21T20:45:56.541Z,Fixed
-Quarkus: Update to 3.8 LTS,Update to the Quarkus LTS 3.8.5 and change the dev card name to Apache MyFaces.,Bug,Major,0.84219182,2024-06-27T17:57:11.165Z,0.00019571,MYFACES-4673,A0034,assignee,6,2024-06-26T20:46:09.000Z,2024-06-27T17:57:28.074Z,Fixed
+JSON.parse(event.data === undefined ? null : event.data){code}",Bug,Low,2,12.33777048,2024-06-21T20:45:16.564Z,0.00046270,MYFACES-4671,A0059,assignee,27,2024-06-18T21:25:38.000Z,2024-06-21T20:45:56.541Z,Fixed
+Quarkus: Update to 3.8 LTS,Update to the Quarkus LTS 3.8.5 and change the dev card name to Apache MyFaces.,Bug,Normal,3,0.84219182,2024-06-27T17:57:11.165Z,0.00019571,MYFACES-4673,A0034,assignee,6,2024-06-26T20:46:09.000Z,2024-06-27T17:57:28.074Z,Fixed
 Error Data Paylod Not Following Spec in Faces 4.0,"The [Error Data Payload (Table 16)|#a6973]] outlined in the spec isn't followed. As seen in the screenshot below something seems to be going wrong for responseText, responseCode, and status. Additionally, description and responseXML aren't included in the payload.
 
 !Screenshot 2024-07-22 153633.png|width=541,height=408!
@@ -91,7 +91,7 @@ The response from the server still seems to be accurate:
 <?xml version=""1.0"" encoding=""UTF-8""?><partial-response><error><error-name>org.apache.myfaces.view.facelets.el.ContextAwarePropertyNotFoundException</error-name><error-message><![CDATA[jakarta.el.PropertyNotFoundException: Target Unreachable, identifier [testCode] resolved to null]]></error-message></error></partial-response>{code}
 The information seems to be lost somewhere in between the server response and error payload generation.
 
- ",Bug,Trivial,11.89715235,2024-08-26T16:50:17.851Z,101.95597804,MYFACES-4676,A0059,assignee,28,2024-07-22T19:07:50.000Z,2024-12-06T15:46:54.354Z,Fixed
+ ",Bug,Lowest,1,11.89715235,2024-08-26T16:50:17.851Z,101.95597804,MYFACES-4676,A0059,assignee,28,2024-07-22T19:07:50.000Z,2024-12-06T15:46:54.354Z,Fixed
 TypeError: newBodyData is undefined," 
 
 The variable newBodyData is undefined in the current JSF 2.3 snapshot. This is reproducible via the jsf_ajax_keyword_web.war (attached).  Please set the project stage to development.
@@ -126,7 +126,7 @@ onsuccess http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/
 hitch http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development:2408 
 mixMaps http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development:2439 
 send http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development:7349 
-enqueue http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development:6152  {noformat}",Bug,Major,11.89715235,2024-10-27T18:38:37.552Z,2.97418991,MYFACES-4685,A0059,assignee,28,2024-10-15T16:43:00.000Z,2024-10-30T18:01:27.560Z,Fixed
+enqueue http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development:6152  {noformat}",Bug,Normal,3,11.89715235,2024-10-27T18:38:37.552Z,2.97418991,MYFACES-4685,A0059,assignee,28,2024-10-15T16:43:00.000Z,2024-10-30T18:01:27.560Z,Fixed
 "AJAX JS core should log a warning on the console, when component to update isnt found","when the AJAX response contains:
 
 {code:xml}
@@ -134,11 +134,11 @@ enqueue http://localhost:9080/jsf_ajax_keyword_web/faces/javax.faces.resource/js
 {code}
 
 our JS should log a warning to the console, like we do in PF:
-*https://github.com/primefaces/primefaces/blob/master/primefaces/src/main/resources/META-INF/resources/primefaces/core/core.ajax.js#L365*",Improvement,Major,11.58946399,2024-11-21T06:08:41.371Z,15.40097352,MYFACES-4691,A0059,assignee,29,2024-11-05T14:51:35.000Z,2024-12-06T15:46:05.483Z,Fixed
-faces.js response code string instead of number,,Bug,Minor,14.62746475,2024-12-06T15:59:59.616Z,0.01731319,MYFACES-4699,A0059,assignee,31,2024-12-06T15:57:40.000Z,2024-12-06T16:24:55.476Z,Fixed
+*https://github.com/primefaces/primefaces/blob/master/primefaces/src/main/resources/META-INF/resources/primefaces/core/core.ajax.js#L365*",Improvement,Normal,3,11.58946399,2024-11-21T06:08:41.371Z,15.40097352,MYFACES-4691,A0059,assignee,29,2024-11-05T14:51:35.000Z,2024-12-06T15:46:05.483Z,Fixed
+faces.js response code string instead of number,,Bug,Low,2,14.62746475,2024-12-06T15:59:59.616Z,0.01731319,MYFACES-4699,A0059,assignee,31,2024-12-06T15:57:40.000Z,2024-12-06T16:24:55.476Z,Fixed
 .asf.yml for myfaces core,"see [https://github.com/apache/infrastructure-asfyaml]
  
-for issue and pull request auto linking",Improvement,Minor,7.37910282,2024-12-21T16:58:53.215Z,58.74112020,MYFACES-4702,A0005,project,92,2024-12-21T16:58:40.000Z,2025-02-18T10:46:06.000Z,Fixed
+for issue and pull request auto linking",Improvement,Low,2,7.37910282,2024-12-21T16:58:53.215Z,58.74112020,MYFACES-4702,A0005,project,92,2024-12-21T16:58:40.000Z,2025-02-18T10:46:06.000Z,Fixed
 CommandScript: Behaves differently than Mojarra,"Original report: https://github.com/quarkiverse/quarkus-omnifaces/issues/194
 
 Basically if you pass a socket reponse message directly to a CommandScript its supposed to convert those params to Request Parameters.
@@ -163,7 +163,7 @@ Mojarra:
 
 MyFaces:
  !image-2025-02-03-11-04-58-475.png! 
-",Bug,Major,14.17089751,2025-02-24T19:40:27.233Z,15.01973845,MYFACES-4710,A0059,assignee,32,2025-02-03T16:05:03.000Z,2025-03-11T20:08:52.635Z,Fixed
+",Bug,Normal,3,14.17089751,2025-02-24T19:40:27.233Z,15.01973845,MYFACES-4710,A0059,assignee,32,2025-02-03T16:05:03.000Z,2025-03-11T20:08:52.635Z,Fixed
 ajax event listener looses 'source' in 'success' event,"I'm adding an event listener for the ajax events. I do this by calling `faces.ajax.addOnEvent(onEventFunction)` and I expect all forwarded events to have the 'source' value set to the original source that triggered the ajax flow. But this does not seem to work when switching to a different page. It works fine when the view stays on the same page.
 
 This used to work in 2.3.x versions and is needed by RichFaces.
@@ -191,7 +191,7 @@ My expectation is that this has to do with the render of the elements. The sourc
 
 And this also means that it does not sound that weird that the source is null. The element is gone anyway and so the meaning is minimal. But it very much looks like it used to be there.
 
-For reference I also added the same functionality with myfaces 2.3.11. With 2.3.11 everything works as expected. The source is also available in the SUCCESS event.",Bug,Major,14.17089751,2025-02-25T09:56:50.311Z,0.48864536,MYFACES-4712,A0059,assignee,32,2025-02-22T01:22:03.000Z,2025-02-25T21:40:29.270Z,Fixed
+For reference I also added the same functionality with myfaces 2.3.11. With 2.3.11 everything works as expected. The source is also available in the SUCCESS event.",Bug,Normal,3,14.17089751,2025-02-25T09:56:50.311Z,0.48864536,MYFACES-4712,A0059,assignee,32,2025-02-22T01:22:03.000Z,2025-02-25T21:40:29.270Z,Fixed
 HtmlUnit 4.10 Upgrade,"We are still on HtmlUnit 2.7.0 but it is not under a new Maven coordinates and new code.
 
 
@@ -203,7 +203,7 @@ HtmlUnit 4.10 Upgrade,"We are still on HtmlUnit 2.7.0 but it is not under a new 
     <scope>test</scope>
 </dependency>
 {code}
-",Bug,Major,0.72190667,2025-02-27T12:28:55.687Z,0.00004836,MYFACES-4713,A0034,assignee,7,2025-02-25T18:45:50.000Z,2025-02-27T12:28:59.865Z,Fixed
+",Bug,Normal,3,0.72190667,2025-02-27T12:28:55.687Z,0.00004836,MYFACES-4713,A0034,assignee,7,2025-02-25T18:45:50.000Z,2025-02-27T12:28:59.865Z,Fixed
 Ajax is not working for empty selection for h:selectManyListbox,"I have multiselect on the form:
 
 {code}
@@ -251,10 +251,10 @@ org.apache.myfaces.lifecycle.ProcessValidationsExecutor.execute(ProcessValidatio
 According to the _HtmlRendererUtils.decodeUISelectMany_ method, when posting an empty multiselect, no parameters for this multiselect should be sent to the server.
 But the parameter is sent - it is an empty string. It is filled in _XhrRequest.ts_ when calling _this.appendIssuingItem(formData);_
 I think this is a bug (probably introduced in MYFACES-4606) in js and with an empty multiselect the parameter should not be sent in the POST request.
-And the current behavior is as if an option with an empty value was selected in the multiselect, _submittedValue_ is an array of one element - an empty string, instead of empty array.",Bug,Major,13.79344424,2025-03-25T18:29:48.157Z,0.00039103,MYFACES-4716,A0059,assignee,34,2025-03-24T14:02:43.000Z,2025-03-25T18:30:21.942Z,Fixed
+And the current behavior is as if an option with an empty value was selected in the multiselect, _submittedValue_ is an array of one element - an empty string, instead of empty array.",Bug,Normal,3,13.79344424,2025-03-25T18:29:48.157Z,0.00039103,MYFACES-4716,A0059,assignee,34,2025-03-24T14:02:43.000Z,2025-03-25T18:30:21.942Z,Fixed
 New Typescript codebase produces a spring-boot warning in the test logs,"There is a spring-boot warning in the final test reports according to [~tandraschko]. The reason for this is very likely a spring boot dependency in the maven part of the upstream project or the test reports reporting it which somehow made it into the npm package.
 I already have prepared a new version where the maven part of the upstream project is deactivated and which is resynched with the latest myfaces codechanges     ""jsf.js_next_gen"": ""4.0.4-beta.7"". This issue is opened to track the changes. All which will be done is to upgrade the version the beta.7 in all 3 branches using the new codebase!
-",Bug,Trivial,13.39935700,2025-05-08T17:06:31.716Z,27.55142010,MYFACES-4723,A0059,assignee,35,2025-05-08T17:04:09.000Z,2025-06-05T06:20:34.413Z,Fixed
+",Bug,Lowest,1,13.39935700,2025-05-08T17:06:31.716Z,27.55142010,MYFACES-4723,A0059,assignee,35,2025-05-08T17:04:09.000Z,2025-06-05T06:20:34.413Z,Fixed
 Missing Form Data in Faces 3.0,"While running out test suite on MyFaces 3.0.3-SNAPSHOT, we encountered some failures in the ajax tests.
 
 It looks like the following two entries are not sent over when comparing the same app to MyFaces 2.3: 
@@ -267,7 +267,7 @@ It looks like the following two entries are not sent over when comparing the sam
 The app just adds a FacesMessage when the bean is invoked: 
 {code:java}
     <h:commandScript name=""submitFormScript"" action=""#{commandScriptBean.submitForm}"" render=""@form"" />
-    <h:messages/>{code}",Bug,Major,13.79246987,2025-06-05T06:24:13.547Z,82.38966705,MYFACES-4719,A0059,assignee,36,2025-04-03T17:17:46.000Z,2025-08-26T15:45:20.780Z,Fixed
+    <h:messages/>{code}",Bug,Normal,3,13.79246987,2025-06-05T06:24:13.547Z,82.38966705,MYFACES-4719,A0059,assignee,36,2025-04-03T17:17:46.000Z,2025-08-26T15:45:20.780Z,Fixed
 Uncaught TypeError: this._getMultipartReqClass(...) is not a constructor,"Found this error in the 3.0.3-SNAPSHOT:
 
 Exception: 
@@ -281,15 +281,15 @@ Code:
 {color:#cccccc} {color}{color:#808080}<{color}{color:#569cd6}h:inputFile{color}{color:#cccccc} {color}{color:#9cdcfe}id{color}{color:#cccccc}={color}{color:#ce9178}""file1""{color}{color:#cccccc} {color}{color:#9cdcfe}value{color}{color:#cccccc}={color}{color:#ce9178}""#\{fileBean.file}""{color}{color:#808080}>{color}
 {color:#cccccc} {color}{color:#808080}<{color}{color:#569cd6}f:ajax{color}{color:#cccccc} {color}{color:#9cdcfe}render{color}{color:#cccccc}={color}{color:#ce9178}""size""{color}{color:#cccccc} {color}{color:#9cdcfe}event{color}{color:#cccccc}={color}{color:#ce9178}""change""{color}{color:#808080}/>{color}
 {color:#cccccc} {color}{color:#808080}</{color}{color:#569cd6}h:inputFile{color}{color:#808080}>{color}
-{color:#cccccc} {color}{color:#808080}<{color}{color:#569cd6}h:outputText{color}{color:#cccccc} {color}{color:#9cdcfe}id{color}{color:#cccccc}={color}{color:#ce9178}""size""{color}{color:#cccccc} {color}{color:#9cdcfe}value{color}{color:#cccccc}={color}{color:#ce9178}""File Size: #\{fileBean.getFileSize()}""{color}{color:#808080}/>{color}",Bug,Major,13.79246987,2025-06-23T12:57:07.454Z,0.09455384,MYFACES-4725,A0059,assignee,36,2025-06-11T20:16:01.000Z,2025-06-23T15:13:16.906Z,Fixed
+{color:#cccccc} {color}{color:#808080}<{color}{color:#569cd6}h:outputText{color}{color:#cccccc} {color}{color:#9cdcfe}id{color}{color:#cccccc}={color}{color:#ce9178}""size""{color}{color:#cccccc} {color}{color:#9cdcfe}value{color}{color:#cccccc}={color}{color:#ce9178}""File Size: #\{fileBean.getFileSize()}""{color}{color:#808080}/>{color}",Bug,Normal,3,13.79246987,2025-06-23T12:57:07.454Z,0.09455384,MYFACES-4725,A0059,assignee,36,2025-06-11T20:16:01.000Z,2025-06-23T15:13:16.906Z,Fixed
 Sync jsf.js code between 2.3 and 3.0,"MYFACES-4522 synced up the javascript code between 2.3 and 2.3-next. 
 
-However, 2.3 and 3.0 branches are basically the same.  Therefore, the changes to 2.3 should be applied to 3.0.   Support-wise, it would be easier since they would share the same code base.",Bug,Major,13.42225592,2025-08-26T15:42:24.446Z,0.00045897,MYFACES-4706,A0059,assignee,37,2025-01-08T15:18:43.000Z,2025-08-26T15:43:04.101Z,Fixed
+However, 2.3 and 3.0 branches are basically the same.  Therefore, the changes to 2.3 should be applied to 3.0.   Support-wise, it would be easier since they would share the same code base.",Bug,Normal,3,13.42225592,2025-08-26T15:42:24.446Z,0.00045897,MYFACES-4706,A0059,assignee,37,2025-01-08T15:18:43.000Z,2025-08-26T15:43:04.101Z,Fixed
 Replace/remove javascript functions with share-alike license,"Some javascript function, e.g. _mozMatchesSelector in /META-INF/resources/jakarta.faces/faces-development.js, line 7152, contain a comment 
 {code:java}
 // source: https:// developer.mozilla.org/en-US/docs/Web/API/Element/matches
 // code snippet license: https:// creativecommons.org/licenses/by-sa/2.5/ {code}
-From my understanding, this by-sa (share-alike) means, that if one uses myfaces in its project, one has to use also the CC-BY-SA-2.5 license for his project ([https://creativecommons.org/licenses/by-sa/2.5/deed.en] ). So I wanted to ask if it would be possible to replace  or remove those functions, allowing users of myfaces to use a different license.",Improvement,Major,14.84650244,2025-12-22T20:20:42.348Z,158.49334716,MYFACES-4736,A0059,assignee,39,2025-11-26T11:52:15.000Z,2026-05-30T08:11:07.543Z,Fixed
+From my understanding, this by-sa (share-alike) means, that if one uses myfaces in its project, one has to use also the CC-BY-SA-2.5 license for his project ([https://creativecommons.org/licenses/by-sa/2.5/deed.en] ). So I wanted to ask if it would be possible to replace  or remove those functions, allowing users of myfaces to use a different license.",Improvement,Normal,3,14.84650244,2025-12-22T20:20:42.348Z,158.49334716,MYFACES-4736,A0059,assignee,39,2025-11-26T11:52:15.000Z,2026-05-30T08:11:07.543Z,Fixed
 h:commandScript can't make a function in a namespace.,"The h:commandScript can't make a function in a namespace.
 When I want my functions to go into a predefined JS namespace (object) then it places the function in the global JS namespace with a name of the [namespace][escape sequence for the dot][name of the function]
 With Mojarra this is working.
@@ -315,7 +315,7 @@ The Definitive Guide to Jakarta Faces in Jakarta EE 10
 
 Bauke Scholtz
 
-Arjan Tijms",Bug,Minor,14.84650244,2025-12-30T09:13:13.335Z,41.54544613,MYFACES-4737,A0059,assignee,39,2025-12-17T12:53:57.000Z,2026-02-09T22:18:39.881Z,Fixed
+Arjan Tijms",Bug,Low,2,14.84650244,2025-12-30T09:13:13.335Z,41.54544613,MYFACES-4737,A0059,assignee,39,2025-12-17T12:53:57.000Z,2026-02-09T22:18:39.881Z,Fixed
 Mockito Version in root pom is outdated,"The Mockito version in the parent pom is outdated, this also prevents that static mocks can be activated which are vital to make utils classes and static methods calling static methods testable. At least in 4.0 a preliminary prototype test I wrote for MYFACES-4737 showed that upgrading to the latest versions and adding the static mock support does not break the build (we are talking about test dependencies here)!
 
 So what is the goal for this issue?
@@ -324,7 +324,7 @@ Upgrade the mockito dependencies and add the static mock dependencies in all bra
 
  
 
- ",Improvement,Major,14.84650244,2026-02-07T18:27:16.299Z,0.02608081,MYFACES-4741,A0059,assignee,39,2026-02-07T18:05:20.000Z,2026-02-07T19:04:49.681Z,Fixed
+ ",Improvement,Normal,3,14.84650244,2026-02-07T18:27:16.299Z,0.02608081,MYFACES-4741,A0059,assignee,39,2026-02-07T18:05:20.000Z,2026-02-07T19:04:49.681Z,Fixed
 NPM warning on builds,"[INFO] npm WARN EBADENGINE Unsupported engine {
 	
 [INFO] npm WARN EBADENGINE   package: 'bundle-name@4.1.0',
@@ -433,8 +433,8 @@ NPM warning on builds,"[INFO] npm WARN EBADENGINE Unsupported engine {
 	
 [INFO] npm WARN EBADENGINE   current: { node: 'v16.13.1', npm: '8.1.2' }
 	
-[INFO] npm WARN EBADENGINE }",Bug,Major,15.13622249,2026-02-27T10:42:10.691Z,0.02682911,MYFACES-4744,A0059,assignee,41,2026-02-11T16:21:39.000Z,2026-02-27T11:20:48.726Z,Fixed
-AJAX integration test failing,i commented the ajax module in integration-tests/pom.xml for now,Bug,Major,14.77647503,2026-02-27T11:21:40.596Z,0.08842802,MYFACES-4745,A0059,assignee,42,2026-02-21T15:07:43.000Z,2026-02-27T13:29:00.777Z,Fixed
+[INFO] npm WARN EBADENGINE }",Bug,Normal,3,15.13622249,2026-02-27T10:42:10.691Z,0.02682911,MYFACES-4744,A0059,assignee,41,2026-02-11T16:21:39.000Z,2026-02-27T11:20:48.726Z,Fixed
+AJAX integration test failing,i commented the ajax module in integration-tests/pom.xml for now,Bug,Normal,3,14.77647503,2026-02-27T11:21:40.596Z,0.08842802,MYFACES-4745,A0059,assignee,42,2026-02-21T15:07:43.000Z,2026-02-27T13:29:00.777Z,Fixed
 Update the typescript compiler and build codebase to Typescript 6.0,"While functionally nothing should change, typescript 6 is an important stepping stone towards Typescript 7 which will be a Rust rewrite of the entire compiler codebase. With it there will be some breaking changes regarding module support which TS 6 already implements. The bundling now is offloaded into a separate bundler via the bundler directive and webpack is our bundler and has been quite a while. With the the node module support will get breaking changes in the build process.
 
 I have already prepared a new TS6 enabled version in my github project and this needs to be upstreamed now into myfaces, however here also some changes need to be performed on the setup for the build regarding the module resolution changes!
@@ -455,7 +455,7 @@ Full detailed changelist can be found in the downstream project:
 
  
 
- ",Improvement,Major,14.43489254,2026-05-03T14:13:39.561Z,1.59373571,MYFACES-4749,A0059,assignee,43,2026-04-28T22:00:57.000Z,2026-05-05T04:28:38.326Z,Fixed
+ ",Improvement,Normal,3,14.43489254,2026-05-03T14:13:39.561Z,1.59373571,MYFACES-4749,A0059,assignee,43,2026-04-28T22:00:57.000Z,2026-05-05T04:28:38.326Z,Fixed
 Spec change faces.d.ts must be provided,"[https://github.com/jakartaee/faces/issues/1598#issuecomment-4490784716]
 
  
@@ -464,15 +464,15 @@ As it seems mojarra also now has improved their typescript typescript, and there
 
 Still the preferred way probably for projects would be anyway just use the plain typescript files but, the d.ts file is valid and needs to be at least packaged in!
 
- ",Improvement,Major,17.35083249,2026-05-30T08:12:47.260Z,0.00004008,MYFACES-4750,A0059,assignee,45,2026-05-20T07:15:06.000Z,2026-05-30T08:12:50.723Z,Fixed
+ ",Improvement,Normal,3,17.35083249,2026-05-30T08:12:47.260Z,0.00004008,MYFACES-4750,A0059,assignee,45,2026-05-20T07:15:06.000Z,2026-05-30T08:12:50.723Z,Fixed
 faces.d.ts should be generated from source not copied from the upstream node package,"At the moment the upstream project generates the new faces.d.ts artifact, however given we can generate it from source and in the end, myfaces does its own end compile from the sources, faces.d.ts also should be generated by the build process.
 
-So the idea is to adapt the compile chain from the upstream project and integrate it into the myfaces npm compile chain to generate the faces.d.ts in the target folder location",Improvement,Minor,16.97364135,2026-05-31T16:44:06.895Z,0.00015832,MYFACES-4752,A0059,assignee,46,2026-05-31T16:21:12.000Z,2026-05-31T16:44:20.574Z,Fixed
+So the idea is to adapt the compile chain from the upstream project and integrate it into the myfaces npm compile chain to generate the faces.d.ts in the target folder location",Improvement,Low,2,16.97364135,2026-05-31T16:44:06.895Z,0.00015832,MYFACES-4752,A0059,assignee,46,2026-05-31T16:21:12.000Z,2026-05-31T16:44:20.574Z,Fixed
 Focus bug reported by Tobago,"We have a problem with retaining the focus if a component is rerendered or at least part of the ajax cycle. It was reported by Tobago and already is fixed in the upstream project.
 
 I just need to increase the jsf_ts version and copy the files in to have this fixed! (the latest version of the upstream project already has the fixes in, and is verified by the Tobago guys, tests for the focus are also added so that it wont crawl up again as regression issue)
 
- ",Bug,Major,16.61250341,2026-06-04T12:49:11.715Z,0.00020161,MYFACES-4753,A0059,assignee,47,2026-06-04T12:38:16.000Z,2026-06-04T12:49:29.134Z,Fixed
+ ",Bug,Normal,3,16.61250341,2026-06-04T12:49:11.715Z,0.00020161,MYFACES-4753,A0059,assignee,47,2026-06-04T12:38:16.000Z,2026-06-04T12:49:29.134Z,Fixed
 """Maximum call stack size exceeded"" when AJAX updating large DOM in Chromium based browsers","We chased this down to the spread operator used in the bottom of `querySelectAllDeep` in DomQuery.ts. Changing those spread operators that just copy to `.slice()` appears to rectify the issue.
 
 This is caused by an issue that Chromium (or more specifically V8) is aware of but don't care to fix, the earliest report I could find is from 2022: [https://issues.chromium.org/issues/41467953] .
@@ -501,15 +501,15 @@ The issue is reproducible with the following xhtml, which creates 100,000 empty 
         </h:commandLink>
     </h:form>
 </h:body></html>{noformat}
-I'm happy to prepare a PR for this if that'd help",Bug,Major,16.26641379,2026-06-11T20:22:38.824Z,0.00364993,MYFACES-4754,A0059,assignee,48,2026-06-11T07:07:37.000Z,2026-06-11T20:27:54.178Z,Fixed
+I'm happy to prepare a PR for this if that'd help",Bug,Normal,3,16.26641379,2026-06-11T20:22:38.824Z,0.00364993,MYFACES-4754,A0059,assignee,48,2026-06-11T07:07:37.000Z,2026-06-11T20:27:54.178Z,Fixed
 Focus Bug on checkboxes sending ajax requests,"Reported by Tobago: if a checkbox triggering an ajax request and is replaced by the very same request, a javascript error regarding setting the caret position is thrown and displayed in the browsers console window.
 
 This has to do with the new improved focus code which does not have a safety fallback yet for setCaretPosition on components which do not allow caret position settings!
 
-This already is fixed in the upstream project but needs to be integrated now in the myfaces codebase!",Bug,Minor,15.93452065,2026-06-12T12:19:33.888Z,0.00029212,MYFACES-4756,A0059,assignee,49,2026-06-12T11:58:59.000Z,2026-06-12T12:19:59.127Z,Fixed
+This already is fixed in the upstream project but needs to be integrated now in the myfaces codebase!",Bug,Low,2,15.93452065,2026-06-12T12:19:33.888Z,0.00029212,MYFACES-4756,A0059,assignee,49,2026-06-12T11:58:59.000Z,2026-06-12T12:19:59.127Z,Fixed
 Remove Ajax Table Integration Test,"We do not need the table integration test which is hard to maintain in the myfaces codebase for the new scripts. I have added a test which does the same on the jsf_ts unit test side, which tests for cell replacment row insert, header and footer replacement and row delete!
 
-The scope of this issue simply is to remove the test and bump up the jsf_ts version with the integrated test (and upgraded npm build dependencies)",Improvement,Major,15.61583608,2026-08-26T06:11:29.860Z,2.35671896,MYFACES-4763,A0059,assignee,50,2026-08-26T06:11:13.000Z,2026-08-28T14:45:10.378Z,Fixed
+The scope of this issue simply is to remove the test and bump up the jsf_ts version with the integrated test (and upgraded npm build dependencies)",Improvement,Normal,3,15.61583608,2026-08-26T06:11:29.860Z,2.35671896,MYFACES-4763,A0059,assignee,50,2026-08-26T06:11:13.000Z,2026-08-28T14:45:10.378Z,Fixed
 [CVE-2026-68536] Server-Side Request Forgery / Local File Inclusion in Apache MyFaces Core,"Severity: Moderate
 
 Affected versions:
@@ -537,4 +537,4 @@ Note:
 Version 2.2.x is end-of-life and no longer maintained. It is listed for awareness only. Users should upgrade to a supported release line.
 
 Original advisory:
-2026-09-15",Bug,Major,3.33364412,2026-09-16T15:17:06.092Z,0.00006229,MYFACES-4761,A0058,assignee,23,2026-08-18T17:16:58.000Z,2026-09-16T15:17:11.474Z,Fixed
+2026-09-15",Bug,Normal,3,3.33364412,2026-09-16T15:17:06.092Z,0.00006229,MYFACES-4761,A0058,assignee,23,2026-08-18T17:16:58.000Z,2026-09-16T15:17:11.474Z,Fixed
