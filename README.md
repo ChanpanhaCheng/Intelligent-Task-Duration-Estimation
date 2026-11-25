@@ -98,4 +98,11 @@ Incomplete or inconsistent timestamps and limited history can make labels and es
 
 ## Getting Started
 
-Setup instructions will be added after the technology stack and implementation are finalized.
+The repository includes a runnable React/Vite dashboard demo. It uses browser-local storage for the fictional task records, so saved estimates remain after a refresh in the same browser.
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local address printed by Vite (normally `http://localhost:5173`). Use the dashboard flow: create an estimate, save it, then record its completion from Task History. The Overview's **Dataset quality snapshot** reflects the local CSV audit: 1,193 source records, 2 blank `Labels` values, and an optional clean 1,191-record view when those rows are excluded.
